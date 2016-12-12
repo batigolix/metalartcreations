@@ -22,6 +22,13 @@
         "drupal/core": "~8.0",
         "drush/drush": "~8.0",
         "drupal/console": "~1.0"
+        "drupal/devel": "~1.0",
+        "drupal/ctools": "~3.0",
+        "drupal/environment_indicator": "~3.0",
+        "drupal/pathauto": "~1.0",
+        "drupal/token": "~1.0",
+        "drupal/config_devel": "~1.0",
+        "drupal/config_readonly": "~1.0"
     },
     "require-dev": {
         "behat/mink": "~1.7",
