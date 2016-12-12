@@ -1,0 +1,38 @@
+flickr:
+  version: 1.x
+  js:
+    js/flickr.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - core/drupal
+    - core/drupalSettings
+gtranslate:
+  version: 1.x
+  js:
+    js/gtranslate.js: {}
+gtranslate_external:
+  js:
+    //translate.google.com/translate_a/element.js?cb=googleTranslateElementInit { type: external }
+misc:
+  version: 1.x
+  js:
+    js/misc.js: {}
+  dependencies:
+    - core/jquery
+responsiveslides:
+  version: 1.x
+  js:
+    js/responsiveslides/responsiveslides.min.js: {}
+  dependencies:
+    - core/jquery
+slideshow:
+  version: 1.x
+  js:
+    js/slideshow.js: {}
+  dependencies:
+    - core/jquery
+ga:
+  version: 1.x
+  js:
+    js/ga.js: {}

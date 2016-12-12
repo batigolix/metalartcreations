@@ -1,0 +1,10 @@
+name: 'Metalartcreations tools'
+description: 'Misc. code for Metalartcreations project'
+core: 8.x
+dependencies:
+#- locale
+type: module
+package: Custom
+version: VERSION
+libraries:
+  - metalartcreations/flickr

@@ -1,0 +1,19 @@
+<?php
+
+function mac_tools_entity_presave(Drupal\Core\Entity\EntityInterface $entity) {
+
+  // Replaces old images folder in HTML source.
+  $from = array(
+    'src="../fotos/',
+    'src="fotos/',
+  );
+  $to = array(
+    'src="/legacy/images/fotos/',
+    'src="/legacy/images/fotos/',
+  );
+  if (isset($entity->body->value)) {
+    $entity->body->value = str_replace($from, $to, $entity->body->value);
+    $entity->body->format = $entity->body->format;
+    $entity->body->summary = $entity->body->summary;
+  }
+}

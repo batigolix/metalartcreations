@@ -1,0 +1,7 @@
+homepage.content:
+  path: '/homepage'
+  defaults:
+    _controller: '\Drupal\mac_tools\Controller\Homepage::content'
+    _title: NULL
+  requirements:
+    _permission: 'access content'
