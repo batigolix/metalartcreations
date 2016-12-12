@@ -1,0 +1,20 @@
+uuid: 3eddb97f-1042-4993-a763-866aed7d0224
+langcode: nl
+status: true
+dependencies:
+  module:
+    - mac_tools
+  theme:
+    - alpaca
+id: metalartcreationstoolsgoogleanalytics
+theme: alpaca
+region: post_footer
+weight: -9
+provider: null
+plugin: ga
+settings:
+  id: ga
+  label: 'Metalartcreations tools: Google analytics'
+  provider: mac_tools
+  label_display: '0'
+visibility: {  }

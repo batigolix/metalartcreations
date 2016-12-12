@@ -1,0 +1,43 @@
+uuid: f4dddcf6-19fe-4ba7-9ad8-8badfcf19ee9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.tutorial.body
+    - field.field.node.tutorial.field_image
+    - field.field.node.tutorial.field_tutorial_type
+    - node.type.tutorial
+  module:
+    - image
+    - options
+    - text
+    - user
+id: node.tutorial.default
+targetEntityType: node
+bundle: tutorial
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+  field_image:
+    weight: 103
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+  field_tutorial_type:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+  links:
+    weight: 100
+hidden:
+  langcode: true

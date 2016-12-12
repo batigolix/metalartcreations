@@ -1,0 +1,22 @@
+uuid: 08254018-db2f-4eff-aadf-a0549867d216
+langcode: nl
+status: true
+dependencies:
+  module:
+    - node
+id: tutorials
+label: Tutorials
+type: 'canonical_entities:node'
+pattern: 'lesmateriaal/[node:title]'
+selection_criteria:
+  f059f74a-e061-4d7e-b9af-e19df9569c66:
+    id: node_type
+    bundles:
+      tutorial: tutorial
+    negate: false
+    context_mapping:
+      node: node
+    uuid: f059f74a-e061-4d7e-b9af-e19df9569c66
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -1,0 +1,26 @@
+uuid: a1666811-53a7-457c-9c21-eb8c96716ed4
+langcode: nl
+status: true
+dependencies:
+  module:
+    - mac_tools
+    - system
+  theme:
+    - alpaca
+id: metalartcreationstoolsintro
+theme: alpaca
+region: content
+weight: -2
+provider: null
+plugin: mac_tools_intro
+settings:
+  id: mac_tools_intro
+  label: 'Metalartcreations tools: Intro'
+  provider: mac_tools
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: /homepage
+    negate: false
+    context_mapping: {  }

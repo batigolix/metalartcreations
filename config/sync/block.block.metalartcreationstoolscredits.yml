@@ -1,0 +1,35 @@
+uuid: 2acc0d4a-9433-4c00-b6f9-cdca9d2dd54f
+langcode: nl
+status: true
+dependencies:
+  module:
+    - mac_tools
+  theme:
+    - alpaca
+id: metalartcreationstoolscredits
+theme: alpaca
+region: post_footer
+weight: -9
+provider: null
+plugin: mac_tools_credits
+settings:
+  id: mac_tools_credits
+  label: Credits
+  provider: mac_tools
+  label_display: '0'
+  credits_markup_string: '<ul class="links"><li>© Birgit Doesborg. All rights reserved.</li><li>Design: Dope trope theme by <a href="http://html5up.net">HTML5 UP</a></li><li>Gemaakt met <a href="http://drupal.org">Drupal</a></li></ul>'
+  cache:
+    max_age: 3600
+    contexts:
+      - cache_context.user.roles
+      - cache_context.user.roles
+      - cache_context.user.roles
+      - cache_context.user.roles
+      - cache_context.user.roles
+      - cache_context.user.roles
+      - cache_context.user.roles
+      - cache_context.user.roles
+      - cache_context.user.roles
+      - cache_context.user.roles
+      - cache_context.user.roles
+visibility: {  }

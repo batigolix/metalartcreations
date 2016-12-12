@@ -1,0 +1,24 @@
+uuid: 3737cde6-d4c6-414b-8e72-87fdffd289ef
+langcode: nl
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - alpaca
+id: mainnavigation_2
+theme: alpaca
+region: footer
+weight: -8
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: Menu
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility: {  }

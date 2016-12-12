@@ -1,0 +1,15 @@
+uuid: e777564f-f274-4112-8a36-93bca942a15b
+name: Metalartcreations
+mail: birgit@metalartcreations.nl
+slogan: 'Cursussen en workshops goudsmeden en zilversmeden'
+page:
+  403: ''
+  404: ''
+  front: /homepage
+admin_compact_mode: false
+weight_select_max: 100
+langcode: nl
+default_langcode: nl
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI
+mail_notification: ''

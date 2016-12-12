@@ -1,0 +1,30 @@
+uuid: 451ad7e5-5fd5-47d8-b16b-d5f62eb0f575
+langcode: nl
+status: true
+dependencies:
+  config:
+    - views.view.trainings
+  module:
+    - system
+    - views
+  theme:
+    - alpaca
+id: views_block__trainings_block_1
+theme: alpaca
+region: content
+weight: -3
+provider: null
+plugin: 'views_block:trainings-block_1'
+settings:
+  id: 'views_block:trainings-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /workshops
+    negate: false
+    context_mapping: {  }

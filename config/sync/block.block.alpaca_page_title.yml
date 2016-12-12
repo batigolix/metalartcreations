@@ -1,0 +1,20 @@
+uuid: 2af776d1-cd21-4cf3-8a75-00f78df0d33f
+langcode: nl
+status: true
+dependencies:
+  theme:
+    - alpaca
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: alpaca_page_title
+theme: alpaca
+region: content
+weight: -6
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,17 @@
+uuid: cdb0fead-c9db-4017-916b-ba2b64a401d1
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Training
+type: training
+description: 'Gebruik <em>training</em> voor cursussen, workshops en andere trainingen'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

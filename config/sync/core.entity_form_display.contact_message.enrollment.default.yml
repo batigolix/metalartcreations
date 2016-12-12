@@ -1,0 +1,45 @@
+uuid: bcf350a7-cb80-4734-a08b-ba1b0a7facfe
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.enrollment
+    - field.field.contact_message.enrollment.field_first_name
+id: contact_message.enrollment.default
+targetEntityType: contact_message
+bundle: enrollment
+mode: default
+content:
+  copy:
+    weight: 50
+  field_first_name:
+    weight: 51
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  langcode:
+    type: language_select
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+  mail:
+    weight: -40
+  message:
+    type: string_textarea
+    weight: 0
+    settings:
+      rows: 12
+      placeholder: ''
+    third_party_settings: {  }
+  name:
+    weight: -50
+  subject:
+    type: string_textfield
+    weight: -10
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

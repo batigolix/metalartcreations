@@ -1,0 +1,22 @@
+uuid: 2988c271-db41-4bee-b9b8-8218c4c1e9f7
+langcode: nl
+status: true
+dependencies:
+  theme:
+    - alpaca
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: alpaca_local_tasks
+theme: alpaca
+region: content
+weight: -7
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

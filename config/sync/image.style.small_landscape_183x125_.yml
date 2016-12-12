@@ -1,0 +1,14 @@
+uuid: 78e3a18f-7334-400a-a62c-017263fb654a
+langcode: nl
+status: true
+dependencies: {  }
+name: small_landscape_183x125_
+label: 'Small landscape (183x125)'
+effects:
+  4ce6b8e0-a04c-4226-a239-1d2cf7e75c08:
+    uuid: 4ce6b8e0-a04c-4226-a239-1d2cf7e75c08
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 183
+      height: 125

@@ -1,0 +1,21 @@
+uuid: 6413080e-2e32-410c-b47e-0cf96d2f29fb
+langcode: nl
+status: true
+dependencies:
+  theme:
+    - alpaca
+id: feugiatconsequat_2
+theme: alpaca
+region: footer
+weight: -9
+provider: null
+plugin: 'block_content:358c5ab2-a572-4098-bfee-7d8b2b92b425'
+settings:
+  id: 'block_content:358c5ab2-a572-4098-bfee-7d8b2b92b425'
+  label: 'Feugiat consequat'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

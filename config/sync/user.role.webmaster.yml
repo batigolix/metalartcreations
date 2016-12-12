@@ -1,0 +1,53 @@
+uuid: 07e8d0b2-dc7a-4504-9adc-2689a05e2a52
+langcode: en
+status: true
+dependencies: {  }
+id: webmaster
+label: Webmaster
+weight: 3
+is_admin: null
+permissions:
+  2: 'access site-wide contact form'
+  3: 'access user contact forms'
+  4: 'access contextual links'
+  5: 'access files overview'
+  6: 'access content overview'
+  7: 'delete all revisions'
+  8: 'revert all revisions'
+  9: 'view all revisions'
+  10: 'view own unpublished content'
+  11: 'access content'
+  12: 'create page content'
+  13: 'delete any page content'
+  14: 'delete own page content'
+  15: 'delete page revisions'
+  16: 'edit any page content'
+  17: 'edit own page content'
+  18: 'revert page revisions'
+  19: 'view page revisions'
+  20: 'create training content'
+  21: 'delete any training content'
+  22: 'delete own training content'
+  23: 'delete training revisions'
+  24: 'edit any training content'
+  25: 'edit own training content'
+  26: 'revert training revisions'
+  27: 'view training revisions'
+  28: 'create tutorial content'
+  29: 'delete any tutorial content'
+  30: 'delete own tutorial content'
+  31: 'delete tutorial revisions'
+  32: 'edit any tutorial content'
+  33: 'edit own tutorial content'
+  34: 'revert tutorial revisions'
+  35: 'view tutorial revisions'
+  36: 'create url aliases'
+  37: 'access in-place editing'
+  38: 'customize shortcut links'
+  39: 'switch shortcut sets'
+  40: 'access shortcuts'
+  41: 'access administration pages'
+  42: 'access site in maintenance mode'
+  43: 'access toolbar'
+  44: 'view the administration theme'
+  46: 'use text format advanced_html'

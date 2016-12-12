@@ -1,0 +1,22 @@
+uuid: 912ac9c5-258b-4a2a-8381-c58726f90792
+langcode: nl
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - alpaca
+_core:
+  default_config_hash: jQQUUWN2Uxr5qZtc9zcJKBCxpKY8orN1u2HPqYYRQDI
+id: alpaca_powered
+theme: alpaca
+region: sidebar_first
+weight: -4
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

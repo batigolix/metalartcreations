@@ -1,0 +1,10 @@
+uuid: 7ff24cf8-616b-44fa-ad0b-6b4eb05b45e7
+langcode: nl
+status: true
+dependencies:
+  module:
+    - node
+id: node.cost_teaser
+label: 'Cost teaser'
+targetEntityType: node
+cache: true

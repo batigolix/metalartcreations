@@ -1,0 +1,20 @@
+uuid: cbc2e42b-358c-42dc-b4f9-5ccca5d05ffc
+langcode: nl
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+_core:
+  default_config_hash: zhtPXoRcC6REiepM0k16zw__FDW5YOXDR6U2WlldTrs
+name: 'Basic page'
+type: page
+description: 'Gebruik <em>basic pages</em> voor algemene pagina''s zoals ''About us'' of ''Routebeschrijving'''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

@@ -1,0 +1,14 @@
+uuid: 5bc2135b-1bce-438d-8eb9-cfd81b0bab3e
+langcode: nl
+status: true
+dependencies: {  }
+name: medium_landscape_367x255_
+label: 'Medium landscape (367x255)'
+effects:
+  5bff10b8-6ad4-4fb6-9590-c8e57bd3dc5a:
+    uuid: 5bff10b8-6ad4-4fb6-9590-c8e57bd3dc5a
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 367
+      height: 255

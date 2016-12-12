@@ -1,0 +1,21 @@
+uuid: 8860bf68-b2ab-43ea-85d6-80e355f332c6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tutorial_type
+    - node.type.tutorial
+  module:
+    - options
+id: node.tutorial.field_tutorial_type
+field_name: field_tutorial_type
+entity_type: node
+bundle: tutorial
+label: Type
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,10 @@
+uuid: 30608703-02be-4732-b946-700389b60d81
+langcode: nl
+status: true
+dependencies: {  }
+id: general
+label: 'Contact opnemen'
+recipients:
+  - birgit@metalartcreations.nl
+reply: ''
+weight: 0

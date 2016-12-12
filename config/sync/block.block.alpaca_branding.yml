@@ -1,0 +1,25 @@
+uuid: 9b7367d6-0aff-45c1-89a0-ccbf8719818c
+langcode: nl
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - alpaca
+_core:
+  default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
+id: alpaca_branding
+theme: alpaca
+region: header
+weight: -6
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

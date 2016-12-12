@@ -1,0 +1,21 @@
+uuid: 8c9b7ddb-dc07-483e-af1a-d59f0676c662
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_training_type
+    - node.type.training
+  module:
+    - options
+id: node.training.field_training_type
+field_name: field_training_type
+entity_type: node
+bundle: training
+label: 'Soort training'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

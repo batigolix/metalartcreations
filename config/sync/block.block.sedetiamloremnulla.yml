@@ -1,0 +1,21 @@
+uuid: 35e4db1b-a3aa-4801-80ae-bcc747a93096
+langcode: nl
+status: true
+dependencies:
+  theme:
+    - alpaca
+id: sedetiamloremnulla
+theme: alpaca
+region: sidebar_first
+weight: -8
+provider: null
+plugin: 'block_content:c8433bcd-18d0-4414-b4ec-850e96edf5ae'
+settings:
+  id: 'block_content:c8433bcd-18d0-4414-b4ec-850e96edf5ae'
+  label: 'Sed etiam lorem nulla'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

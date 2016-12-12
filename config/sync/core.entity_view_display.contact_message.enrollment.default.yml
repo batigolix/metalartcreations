@@ -1,0 +1,27 @@
+uuid: 71de0355-a1bc-4e12-aef3-c8a332cf9dda
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.enrollment
+    - field.field.contact_message.enrollment.field_first_name
+id: contact_message.enrollment.default
+targetEntityType: contact_message
+bundle: enrollment
+mode: default
+content:
+  field_first_name:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  message:
+    type: string
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden: {  }

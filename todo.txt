@@ -1,0 +1,83 @@
+
+- contact form
+-- remove preview button
+-- translate
+- remove EN
+- NL as default
+- enrollment form. https://docs.google.com/forms/d/e/1FAIpQLScKLOy3KPuwwn2KkK--EYSsOj0T2vEfF3mUkwQCCTd9EA2ucA/viewform.
+- x manage display
+- x manage form display
+- x disable personal contact form
+- X path auto
+-- X fine tunen
+-- X tutorial
+-- X page
+- translation
+- X resize while upload
+- rewrite legacy img path on save
+- theme
+- X discuss content model
+- image field on the training ct
+- google analytics
+- google webmaster tools
+
+- afbeeldingen. resizen
+- site in NL
+- velden
+- foto veld training
+- foto veld tutorial
+x- kosten veld
+- kosten overzicht pagina
+- field weight tutorial
+
+- 1 overzicht lesmateriaal. basic page & block tutorials
+- 1 overzicht workshop. bp + view
+- 1 overzicht cursussen. bp + view
+
+- permissies webmaster voor menus
+- status message
+
+
+- block cache
+
+birgit@metalartcreations.nl
+
+
+
+<ul class="social">
+	<li><a class="icon fa-facebook" href="https://www.facebook.com/pages/Metalartcreationsnl-CursussenWorkshops-edelsmeden/251140938298459"><span class="label">Facebook</span></a></li>
+	<li><a class="icon fa-twitter" href="http://twitter.com/#!/Doesdesign_nl"><span class="label">Twitter</span></a></li>
+	<li><a class="icon fa-youtube" href="http://www.youtube.com/user/metalartcreations"><span class="label">YouTube</span></a></li>
+	<li><a class="icon fa-linkedin" href="http://nl.linkedin.com/in/birgitdoesborg"><span class="label">LinkedIn</span></a></li>
+	<li><a class="icon fa-google-plus" href="https://plus.google.com/103824648539381715794"><span class="label">Google+</span></a></li>
+</ul>
+
+<ul class="contact">
+	<li>
+	<h3>Adres</h3>
+
+	<p>Metalartcreations<br />
+	Tramkade 20<br />
+	5211VB<br />
+	's Hertogenbosch</p>
+	</li>
+	<li>
+	<h3>E-mail</h3>
+
+	<p><a href="mailto:birgit@metalartcreations.nl">birgit@metalartcreations.nl</a></p>
+	</li>
+	<li>
+	<h3>Telefoon</h3>
+
+	<p>06-38343719</p>
+	</li>
+</ul>
+
+
+<ul class="links">
+	<li>© Birgit Doesborg. All rights reserved.</li>
+	<li>Design: Dope trope theme by <a href="http://html5up.net">HTML5 UP</a></li>
+	<li>Gemaakt met <a href="http://drupal.org">Drupal</a></li>
+</ul>
+
+

@@ -1,0 +1,17 @@
+uuid: 46a09fdb-0d0f-4023-8b98-2ffb84b7105a
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Tutorial
+type: tutorial
+description: 'Gebruik <em>Tutorial</em> voor lesmateriaal'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

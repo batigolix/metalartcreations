@@ -1,0 +1,14 @@
+uuid: 3ae1a316-b767-493a-aea2-95ce9bca7806
+langcode: nl
+status: true
+dependencies: {  }
+name: large_wide_783x290_
+label: 'Large wide (783x290)'
+effects:
+  becab680-725e-4f7e-b0c9-b5068784830e:
+    uuid: becab680-725e-4f7e-b0c9-b5068784830e
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 783
+      height: 290

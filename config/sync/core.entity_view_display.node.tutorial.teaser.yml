@@ -1,0 +1,29 @@
+uuid: 554047c4-152d-44a3-b347-ae75f4d6e47f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.tutorial.body
+    - field.field.node.tutorial.field_tutorial_type
+    - node.type.tutorial
+  module:
+    - text
+    - user
+id: node.tutorial.teaser
+targetEntityType: node
+bundle: tutorial
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  links:
+    weight: 100
+hidden:
+  field_tutorial_type: true
+  langcode: true
