@@ -5,7 +5,7 @@ global-styling:
       stylesheets/ie.css: {}
       stylesheets/screen.css: {}
       stylesheets/print.css: { media: print }
-#      "https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,700,900|Crimson+Text:400,700": {}
+      "https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,700,900|Crimson+Text:400,700": {}
 font-awesome:
   version: 1.x
   css:
