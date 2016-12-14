@@ -2,7 +2,7 @@
 
 /**
  * @file
- * Contains \Drupal\mac_tools\Plugin\Block\MacToolsCredits .
+ * Contains \Drupal\mac_tools\Plugin\Block\MacToolsAbout .
  */
 
 namespace Drupal\mac_tools\Plugin\Block;
@@ -14,22 +14,22 @@ use Drupal\Core\Form\FormStateInterface;
  * Provides a 'Example: configurable text string' block.
  *
  * @Block(
- *   id = "mac_tools_credits",
- *   subject = @Translation("Credits"),
- *   admin_label = @Translation("Metalartcreations tools: Credits"),
+ *   id = "mac_tools_about",
+ *   subject = @Translation("About"),
+ *   admin_label = @Translation("Metalartcreations tools: About"),
  * )
  */
-class MacToolsCredits extends BlockBase {
+class MacToolsAbout extends BlockBase {
 
-  protected $default_markup = '<ul class="links"><li>© Birgit Doesborg. All rights reserved.</li><li>Design: Dope trope theme by <a href="http://html5up.net">HTML5 UP</a></li><li>Gemaakt met <a href="http://drupal.org">Drupal</a></li></ul>';
+  protected $default_markup = '<p>Birgit Doesborg is meestergoudsmid en parttime docent metaaltechniek. De mogelijkheid bestaat om haar als gastdocent uit te nodigen bij kunst educatieve centra\'s en/of scholen.<br> Zie<a href="workshops-cursussen/Priveles.html"> privé workshops.</a> <br>Zelf ontwerpt zij haar eigen stijl, handgemaakte sieraden en objecten met als specialiteit Mokume-gane die te bezichtigen zijn op <a href="http://www.doesdesign.nl/">Doesdesign.nl</a>';
 
   /**
    * {@inheritdoc}
    */
   public function defaultConfiguration() {
     return array(
-      'label' => t("Credits"),
-      'credits_markup_string' => $this->default_markup,
+      'label' => t("About"),
+      'about_markup_string' => $this->default_markup,
       'cache' => array(
         'max_age' => 3600,
         'contexts' => array(
@@ -43,11 +43,11 @@ class MacToolsCredits extends BlockBase {
    * {@inheritdoc}
    */
   public function blockForm($form, FormStateInterface $form_state) {
-    $form['credits_markup_string_text'] = array(
+    $form['about_markup_string_text'] = array(
       '#type' => 'textarea',
-      '#title' => $this->t('Credits markup'),
+      '#title' => $this->t('About markup'),
       '#description' => $this->t('This text will appear in the example block.'),
-      '#default_value' => $this->configuration['credits_markup_string'],
+      '#default_value' => $this->configuration['about_markup_string'],
     );
     return $form;
   }
@@ -56,8 +56,8 @@ class MacToolsCredits extends BlockBase {
    * {@inheritdoc}
    */
   public function blockSubmit($form, FormStateInterface $form_state) {
-    $this->configuration['credits_markup_string']
-      = $form_state->getValue('credits_markup_string_text');
+    $this->configuration['about_markup_string']
+      = $form_state->getValue('about_markup_string_text');
   }
 
   /**
@@ -66,7 +66,7 @@ class MacToolsCredits extends BlockBase {
   public function build() {
     return array(
       '#type' => 'markup',
-      '#markup' => $this->configuration['credits_markup_string'],
+      '#markup' => $this->configuration['about_markup_string'],
     );
   }
 
