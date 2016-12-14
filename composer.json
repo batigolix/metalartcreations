@@ -28,7 +28,8 @@
         "drupal/pathauto": "~1.0",
         "drupal/token": "~1.0",
         "drupal/config_devel": "~1.0",
-        "drupal/config_readonly": "~1.0"
+        "drupal/config_readonly": "~1.0",
+      "drupal/redirect": "1.0-alpha1"
     },
     "require-dev": {
         "behat/mink": "~1.7",
