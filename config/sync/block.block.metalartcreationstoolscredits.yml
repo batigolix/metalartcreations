@@ -9,7 +9,7 @@ dependencies:
 id: metalartcreationstoolscredits
 theme: alpaca
 region: post_footer
-weight: -9
+weight: -8
 provider: null
 plugin: mac_tools_credits
 settings:
@@ -21,6 +21,8 @@ settings:
   cache:
     max_age: 3600
     contexts:
+      - cache_context.user.roles
+      - cache_context.user.roles
       - cache_context.user.roles
       - cache_context.user.roles
       - cache_context.user.roles

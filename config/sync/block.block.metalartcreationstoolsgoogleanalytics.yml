@@ -9,7 +9,7 @@ dependencies:
 id: metalartcreationstoolsgoogleanalytics
 theme: alpaca
 region: post_footer
-weight: -9
+weight: -8
 provider: null
 plugin: ga
 settings:

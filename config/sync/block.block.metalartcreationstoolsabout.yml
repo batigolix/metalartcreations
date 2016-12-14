@@ -1,0 +1,28 @@
+uuid: f6d136f7-ce09-4cb8-9d0a-5ab1a90a2d13
+langcode: nl
+status: true
+dependencies:
+  module:
+    - mac_tools
+  theme:
+    - alpaca
+id: metalartcreationstoolsabout
+theme: alpaca
+region: sidebar_first
+weight: -8
+provider: null
+plugin: mac_tools_about
+settings:
+  id: mac_tools_about
+  label: 'Over Birgit'
+  provider: mac_tools
+  label_display: visible
+  about_markup_string: '<p>Birgit Doesborg is meestergoudsmid en parttime docent metaaltechniek. De mogelijkheid bestaat om haar als gastdocent uit te nodigen bij kunst educatieve centra''s en/of scholen.<br> Zie<a href="workshops-cursussen/Priveles.html"> privé workshops.</a> <br>Zelf ontwerpt zij haar eigen stijl, handgemaakte sieraden en objecten met als specialiteit Mokume-gane die te bezichtigen zijn op <a href="http://www.doesdesign.nl/">Doesdesign.nl</a>'
+  cache:
+    max_age: 3600
+    contexts:
+      - cache_context.user.roles
+      - cache_context.user.roles
+      - cache_context.user.roles
+      - cache_context.user.roles
+visibility: {  }
