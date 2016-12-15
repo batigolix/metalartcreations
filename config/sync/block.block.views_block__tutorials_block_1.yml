@@ -1,22 +1,22 @@
-uuid: 451ad7e5-5fd5-47d8-b16b-d5f62eb0f575
+uuid: 3552695c-5e62-46d8-b100-bfee4157326f
 langcode: nl
 status: true
 dependencies:
   config:
-    - views.view.trainings
+    - views.view.tutorials
   module:
     - system
     - views
   theme:
     - alpaca
-id: views_block__trainings_block_1
+id: views_block__tutorials_block_1
 theme: alpaca
 region: content
-weight: -2
+weight: 0
 provider: null
-plugin: 'views_block:trainings-block_1'
+plugin: 'views_block:tutorials-block_1'
 settings:
-  id: 'views_block:trainings-block_1'
+  id: 'views_block:tutorials-block_1'
   label: ''
   provider: views
   label_display: visible
@@ -25,6 +25,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: /workshops
+    pages: /lesmateriaal
     negate: false
     context_mapping: {  }

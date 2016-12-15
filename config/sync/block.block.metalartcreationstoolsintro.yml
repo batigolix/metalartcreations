@@ -10,7 +10,7 @@ dependencies:
 id: metalartcreationstoolsintro
 theme: alpaca
 region: content
-weight: -2
+weight: -1
 provider: null
 plugin: mac_tools_intro
 settings:

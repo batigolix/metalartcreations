@@ -34,4 +34,8 @@ settings:
       - cache_context.user.roles
       - cache_context.user.roles
       - cache_context.user.roles
+      - cache_context.user.roles
+      - cache_context.user.roles
+      - cache_context.user.roles
+      - cache_context.user.roles
 visibility: {  }

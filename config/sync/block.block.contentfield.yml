@@ -1,0 +1,29 @@
+uuid: 69edff0c-f13b-42ff-be22-b95fe2d7f063
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image
+  module:
+    - fieldblock
+    - image
+  theme:
+    - alpaca
+id: contentfield
+theme: alpaca
+region: content
+weight: -7
+provider: null
+plugin: 'fieldblock:node'
+settings:
+  id: 'fieldblock:node'
+  label: 'Content field'
+  provider: fieldblock
+  label_display: '0'
+  label_from_field: 1
+  field_name: field_image
+  formatter_id: image
+  formatter_settings:
+    image_style: ''
+    image_link: content
+visibility: {  }
