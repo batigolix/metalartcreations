@@ -29,8 +29,8 @@
         "drupal/token": "~1.0",
         "drupal/config_devel": "~1.0",
         "drupal/config_readonly": "~1.0",
-      "drupal/redirect": "1.0-alpha1",
-      "drupal/fieldblock": "2.0-alpha1"
+        "drupal/redirect": "1.0-alpha1",
+        "drupal/fieldblock": "2.0-alpha1"
     },
     "require-dev": {
         "behat/mink": "~1.7",
@@ -74,6 +74,11 @@
             "web/profiles/contrib/{$name}": ["type:drupal-profile"],
             "web/themes/contrib/{$name}": ["type:drupal-theme"],
             "drush/contrib/{$name}": ["type:drupal-drush"]
+        },
+        "patches": {
+            "drupal/fieldblock": {
+            "PHP exception when placing block": "https://www.drupal.org/files/issues/fieldblock_get_complete_form_state_2810783_1.patch"
         }
+      }
     }
 }

@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "70f5200af79d30857a92101545fb1fe0",
-    "content-hash": "bb5419d54f161621491050353357f130",
+    "hash": "7a746f7b8509aee10330553e2e8c8e14",
+    "content-hash": "210e40c776b0df1becc7ec81be13a186",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1818,6 +1818,9 @@
                 "drupal": {
                     "version": "8.x-2.0-alpha1",
                     "datestamp": "1445862540"
+                },
+                "patches_applied": {
+                    "PHP exception when placing block": "https://www.drupal.org/files/issues/fieldblock_get_complete_form_state_2810783_1.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
