@@ -24,6 +24,6 @@ settings:
   field_name: field_image
   formatter_id: image
   formatter_settings:
-    image_style: ''
+    image_style: large_wide_783x290_
     image_link: content
 visibility: {  }

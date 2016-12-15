@@ -8,7 +8,7 @@ effects:
   becab680-725e-4f7e-b0c9-b5068784830e:
     uuid: becab680-725e-4f7e-b0c9-b5068784830e
     id: image_scale_and_crop
-    weight: 1
+    weight: -9
     data:
       width: 783
       height: 290
