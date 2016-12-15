@@ -8,7 +8,7 @@ dependencies:
     - alpaca
 id: metalartcreationstoolscontact
 theme: alpaca
-region: footer
+region: footer_col1
 weight: -8
 provider: null
 plugin: mac_tools_contact
@@ -21,6 +21,9 @@ settings:
   cache:
     max_age: 3600
     contexts:
+      - cache_context.user.roles
+      - cache_context.user.roles
+      - cache_context.user.roles
       - cache_context.user.roles
       - cache_context.user.roles
       - cache_context.user.roles

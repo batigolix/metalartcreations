@@ -243,7 +243,7 @@ hr {
   margin: 2em 0 2em 0; }
 
 p, ul, ol, dl, table {
-  margin-bottom: 2em; }
+  margin-bottom: 1em; }
 
 header {
   float: left;
@@ -297,8 +297,7 @@ header {
         background: #f3f3f3; }
       header nav > ul > li.menu-item--active-trail > a {
         background: #990000;
-        color: #fff !important;
-        font-weight: 700; }
+        color: #fff !important; }
 
 main {
   max-width: 1200px;
@@ -417,50 +416,49 @@ main {
     font-weight: 700; }
 
 .footer-wrapper {
-  background: #252122; }
-
-footer {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+  background: #252122;
   padding-top: 3em;
   color: #858484; }
-  footer::after {
-    clear: both;
-    content: "";
-    display: table; }
-  footer div {
-    float: left;
-    display: block;
-    margin-right: 2.5641%;
-    width: 100%; }
-    footer div:last-child {
-      margin-right: 0; }
-    footer div #block-metalartcreationscontact {
+  .footer-wrapper footer {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto; }
+    .footer-wrapper footer::after {
+      clear: both;
+      content: "";
+      display: table; }
+    .footer-wrapper footer .footer {
+      float: left;
+      display: block;
+      margin-right: 2.5641%;
+      width: 100%; }
+      .footer-wrapper footer .footer:last-child {
+        margin-right: 0; }
+    .footer-wrapper footer .footer-col1 {
       float: left;
       display: block;
       margin-right: 2.5641%;
       width: 38.46154%; }
-      footer div #block-metalartcreationscontact:last-child {
+      .footer-wrapper footer .footer-col1:last-child {
         margin-right: 0; }
-    footer div #block-feugiatconsequat-2 {
+    .footer-wrapper footer .footer-col2 {
       float: left;
       display: block;
       margin-right: 2.5641%;
       width: 28.20513%; }
-      footer div #block-feugiatconsequat-2:last-child {
+      .footer-wrapper footer .footer-col2:last-child {
         margin-right: 0; }
-    footer div #block-mainnavigation-2 {
+    .footer-wrapper footer .footer-col3 {
       float: left;
       display: block;
       margin-right: 2.5641%;
       width: 28.20513%; }
-      footer div #block-mainnavigation-2:last-child {
+      .footer-wrapper footer .footer-col3:last-child {
         margin-right: 0; }
-  footer h2 {
+  .footer-wrapper h2 {
     font-size: 1.75em;
-    margin: 0 0 3em 0; }
-  footer:before {
+    margin: 0 0 2em 0; }
+  .footer-wrapper:before {
     content: '';
     position: absolute;
     top: 0;
@@ -469,17 +467,41 @@ footer {
     background-size: 100% 100%;
     z-index: 0;
     opacity: 0.5; }
-  footer a {
+  .footer-wrapper a {
     color: #c5c4c4; }
-  footer h2, footer h3, footer h4, footer h5, footer h6, footer strong, footer b {
+  .footer-wrapper h2, .footer-wrapper h3, .footer-wrapper h4, .footer-wrapper h5, .footer-wrapper h6, .footer-wrapper strong, .footer-wrapper b {
     color: #fff; }
-    footer h2 a, footer h3 a, footer h4 a, footer h5 a, footer h6 a, footer strong a, footer b a {
+    .footer-wrapper h2 a, .footer-wrapper h3 a, .footer-wrapper h4 a, .footer-wrapper h5 a, .footer-wrapper h6 a, .footer-wrapper strong a, .footer-wrapper b a {
       color: inherit; }
-  footer ul.contact li, footer ul.dates li, footer ul.divided li {
+  .footer-wrapper ul.contact li, .footer-wrapper ul.dates li, .footer-wrapper ul.divided li {
     border-top-color: #353434;
     border-top-color: rgba(255, 255, 255, 0.05); }
+  .footer-wrapper ul.menu li {
+    border-top: solid 1px #ddd;
+    border-top-color: #353434;
+    border-top-color: rgba(255, 255, 255, 0.05);
+    padding: 0.5em 0 0.5em 0; }
+    .footer-wrapper ul.menu li:first-child {
+      border-top: 0;
+      padding-top: 0; }
 
 /* List */
+.node-content ul {
+  list-style: none;
+  padding: 0; }
+  .node-content ul li {
+    padding-left: 1.5em; }
+    .node-content ul li:before {
+      content: "\f054";
+      /* FontAwesome Unicode */
+      font-family: FontAwesome;
+      display: inline-block;
+      margin-left: -1.5em;
+      /* same as padding-left set on li */
+      width: 1.5em;
+      /* same as padding-left set on li */
+      font-size: 0.6em; }
+
 ul.default {
   list-style: disc;
   padding-left: 1em; }
@@ -528,7 +550,8 @@ ul.social {
   overflow: hidden;
   cursor: default; }
   ul.social li {
-    display: inline-block; }
+    display: inline-block;
+    margin-left: 0.75em; }
     ul.social li:first-child {
       margin-left: 0; }
     ul.social li a {

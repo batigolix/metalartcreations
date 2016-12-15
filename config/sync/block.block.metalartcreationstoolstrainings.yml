@@ -1,0 +1,29 @@
+uuid: 8b021734-17fc-48f1-b433-7b064fdc0be1
+langcode: nl
+status: true
+dependencies:
+  module:
+    - mac_tools
+  theme:
+    - alpaca
+id: metalartcreationstoolstrainings
+theme: alpaca
+region: footer_col3
+weight: -8
+provider: null
+plugin: mac_tools_trainings
+settings:
+  id: mac_tools_trainings
+  label: Trainings
+  provider: mac_tools
+  label_display: visible
+  trainings_markup_string: '<p>Cursussen <a href="workshops-cursussen/Cursussen-edelsmeden.html">Edelsmeden</a> te s''-Hertogenbosch. <br><a href="workshops-cursussen/creatieve-workshops.html">Workshops</a> speciale technieken zoals <a href="workshops-cursussen/workshop-Mokume-gane.htm">Mokume-gane</a>, <a href="workshops-cursussen/workshop-sieraden-vilten.html">Sieraden vilten</a>, <a href="workshops-cursussen/Workshop-sieraden-maken-van-Fimoklei.html">Fimoklei sieraden</a>, <a href="workshops-cursussen/workshop-zilvergieten.html">Zilver gieten</a>, etc. </p>'
+  cache:
+    max_age: 3600
+    contexts:
+      - cache_context.user.roles
+      - cache_context.user.roles
+      - cache_context.user.roles
+      - cache_context.user.roles
+      - cache_context.user.roles
+visibility: {  }

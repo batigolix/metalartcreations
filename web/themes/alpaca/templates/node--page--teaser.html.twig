@@ -1,0 +1,19 @@
+{% set classes = [
+'node--type-' ~ node.bundle|clean_class,
+] %}
+{{ attach_library('classy/node') }}
+
+
+<article{{ attributes.addClass(classes) }}>
+  {{ content.field_image }}
+  {{ title_prefix }}
+  <header>
+    <h2{{ title_attributes }}>
+      <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+    </h2>
+  </header>
+  {{ title_suffix }}
+  <div{{ content_attributes.addClass('node__content') }}>
+    {{ content|without('field_image') }}
+  </div>
+</article>

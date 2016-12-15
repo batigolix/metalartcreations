@@ -1,4 +1,4 @@
-uuid: 2eb8b798-3928-44f4-b53e-2936378244e5
+uuid: fa576846-99ca-4dab-b9bf-749f8de2f178
 langcode: nl
 status: true
 dependencies:
@@ -7,14 +7,14 @@ dependencies:
     - field.storage.node.body
     - field.storage.node.field_image
     - image.style.small_landscape_183x125_
-    - node.type.tutorial
+    - node.type.page
   module:
     - image
     - node
     - text
     - user
-id: tutorials
-label: Tutorials
+id: intro
+label: Intro
 module: views
 description: ''
 tag: ''
@@ -74,12 +74,12 @@ display:
       style:
         type: html_list
         options:
+          grouping: {  }
           row_class: ''
           default_row_class: false
-          uses_fields: false
           type: ul
           wrapper_class: ''
-          class: intro-list
+          class: trainings-list
       row:
         type: 'entity:node'
         options:
@@ -299,7 +299,7 @@ display:
           admin_label: ''
           operator: in
           value:
-            tutorial: tutorial
+            page: page
           group: 1
           exposed: false
           expose:
@@ -330,6 +330,44 @@ display:
           entity_type: node
           entity_field: type
           plugin_id: bundle
+        promote:
+          id: promote
+          table: node_field_data
+          field: promote
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value: '1'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+          entity_field: promote
+          plugin_id: boolean
       sorts:
         title:
           id: title
@@ -351,11 +389,7 @@ display:
       relationships: {  }
       arguments: {  }
       display_extenders: {  }
-      title: Lesmateriaal
-      filter_groups:
-        operator: AND
-        groups:
-          1: AND
+      title: Intro
     cache_metadata:
       max-age: -1
       contexts:
@@ -374,7 +408,7 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      block_description: 'Metalartcreations: lesmateriaal'
+      block_description: 'Metalartcreations: intro'
     cache_metadata:
       max-age: -1
       contexts:
