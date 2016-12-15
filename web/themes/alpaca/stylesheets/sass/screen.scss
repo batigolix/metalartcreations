@@ -14,6 +14,7 @@ body {
 
 }
 
+
 input, textarea, select {
   font-family: 'Crimson Text';
   font-weight: 300;
@@ -159,8 +160,6 @@ header {
 
 main {
   @include outer-container;
-  position: relative;
-
   &:before {
     content: '';
     position: absolute;
@@ -171,7 +170,6 @@ main {
     z-index: 0;
     opacity: 0.1;
   }
-
   margin-bottom: 2.5em;
   padding: 4em 0 4em 0;
 
