@@ -1,0 +1,26 @@
+uuid: fbff61da-cd06-4309-aa3e-7bf1bd59b201
+langcode: nl
+status: true
+dependencies:
+  module:
+    - mac_tools
+    - system
+  theme:
+    - alpaca
+id: metalartcreationstoolsleaflet
+theme: alpaca
+region: post_footer
+weight: -6
+provider: null
+plugin: leaflet
+settings:
+  id: leaflet
+  label: 'Metalartcreations tools: Leaflet'
+  provider: mac_tools
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: /locatie
+    negate: false
+    context_mapping: {  }

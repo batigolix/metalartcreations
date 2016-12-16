@@ -10,7 +10,7 @@ dependencies:
     - alpaca
 id: mainnavigation_2
 theme: alpaca
-region: footer_col2
+region: footer_col3
 weight: -8
 provider: null
 plugin: 'system_menu_block:main'

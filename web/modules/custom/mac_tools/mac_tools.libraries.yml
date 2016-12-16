@@ -36,3 +36,13 @@ ga:
   version: 1.x
   js:
     js/ga.js: {}
+leaflet:
+  version: 1.0.2
+  js:
+    //unpkg.com/leaflet@1.0.2/dist/leaflet.js: {external: true}
+    js/leaflet.js: {}
+  css:
+    theme:
+      //unpkg.com/leaflet@1.0.2/dist/leaflet.css: {external: true}
+    base:
+      stylesheets/leaflet.css: {}
