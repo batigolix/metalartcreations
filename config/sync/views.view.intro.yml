@@ -74,12 +74,12 @@ display:
       style:
         type: html_list
         options:
-          grouping: {  }
           row_class: ''
           default_row_class: false
+          uses_fields: false
           type: ul
           wrapper_class: ''
-          class: trainings-list
+          class: intro-list
       row:
         type: 'entity:node'
         options:
@@ -390,6 +390,7 @@ display:
       arguments: {  }
       display_extenders: {  }
       title: Intro
+      css_class: intro
     cache_metadata:
       max-age: -1
       contexts:

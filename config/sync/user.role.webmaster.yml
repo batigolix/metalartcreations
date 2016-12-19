@@ -51,3 +51,4 @@ permissions:
   43: 'access toolbar'
   44: 'view the administration theme'
   46: 'use text format advanced_html'
+  47: 'administer menu'

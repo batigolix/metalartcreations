@@ -4,6 +4,7 @@ status: true
 dependencies:
   module:
     - mac_tools
+    - system
   theme:
     - alpaca
 id: metalartcreationstoolsabout
@@ -43,4 +44,11 @@ settings:
       - cache_context.user.roles
       - cache_context.user.roles
       - cache_context.user.roles
-visibility: {  }
+      - cache_context.user.roles
+      - cache_context.user.roles
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: true
+    context_mapping: {  }
