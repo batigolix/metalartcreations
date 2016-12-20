@@ -82,8 +82,8 @@ p, ul, ol, dl, table {
   margin-bottom: 1em;
 }
 
-header {
-  @include span-columns(10);
+.header {
+  @include span-columns(12);
   font-size: 1.2em;
   @include media($tablet_wide) {
     font-size: 1.1em;
@@ -215,14 +215,29 @@ main {
   }
 }
 
-.layout-content {
-  @include span-columns(7);
+.homepage .layout-content {
+  @include span-columns(12);
+  @include media($tablet_wide) {
+    @include span-columns(6 of 9);
+  }
+  @include media($mobile) {
+    @include span-columns(4 of 4);
+  }
+}
+
+.not-homepage .layout-content {
+  @include span-columns(9);
   @include media($tablet_wide) {
     @include span-columns(6 of 8);
   }
   @include media($mobile) {
     @include span-columns(4 of 4);
   }
+
+}
+
+.layout-content {
+
   .featured-image {
     left: 1.75em;
     top: 1.75em;
@@ -255,6 +270,10 @@ main {
     font-weight: 700;
   }
 
+}
+
+.homepage .layout-content {
+  background: none;
 }
 
 .footer-wrapper {
@@ -327,25 +346,26 @@ main {
 
 .node-content {
   ul {
-//    list-style-type: square;
-//    padding-left: 1em;
+    //    list-style-type: square;
+    //    padding-left: 1em;
     list-style: none;
     padding: 0;
     li {
       padding-left: 1.5em;
-    &:before {
-      content: "\f054"; /* FontAwesome Unicode */
-      font-family: FontAwesome;
-      display: inline-block;
-      margin-left: -1.5em; /* same as padding-left set on li */
-      width: 1.5em; /* same as padding-left set on li */
-//      font-family: 'FontAwesome';
-//      content: '\f192'; //&#xf192;]
-//      margin: 0 5px 0 -15px;
-//      padding: 0 5px 0 -15px;
-      font-size: 0.6em;
-//      font-weight: normal;
-    }}
+      &:before {
+        content: "\f054"; /* FontAwesome Unicode */
+        font-family: FontAwesome;
+        display: inline-block;
+        margin-left: -1.5em; /* same as padding-left set on li */
+        width: 1.5em; /* same as padding-left set on li */
+        //      font-family: 'FontAwesome';
+        //      content: '\f192'; //&#xf192;]
+        //      margin: 0 5px 0 -15px;
+        //      padding: 0 5px 0 -15px;
+        font-size: 0.6em;
+        //      font-weight: normal;
+      }
+    }
   }
 }
 
@@ -588,21 +608,11 @@ ol {
   ul {
     margin: 0;
     li {
-      font-family: 'Raleway';
-      font-size: 0.8em;
       display: inline-block;
       margin: 0 0.35em 1em 0.35em;
-      border-radius: 5px;
-      color: #fff;
-      text-decoration: none;
-      padding: 0.4em 1em 0.4em 1em;
-      outline: 1px;
-      background-color: $dark-green;
       a {
-        color: #fff;
-        &:active, &:visited {
-          color: #fff;
-        }
+        @include mac-button();
+
       }
     }
   }
@@ -639,58 +649,36 @@ ol {
 }
 
 /* Intro */
-
-.block-mac-tools-intro {
-  overflow: hidden;
-
-  section {
-    margin: 3em 0;
-    padding: 2.5em 0;
-    @include span-columns(3);
-  }
-
-  h2 {
-    font-size: 1.75em;
-  }
-
-  p {
-    margin: 0;
-  }
-
-  .second {
-    position: relative;
-    z-index: 1;
-
-    &:before {
-      content: '';
-      width: 32px;
-      height: 100%;
-      position: absolute;
-      left: -24px;
-      top: 0;
-      display: block;
-      z-index: -1;
-      box-shadow: 32px 0 0 0 #fff, 0 -32px 0 0 #fff, 0 32px 0 0 #fff, 32px 32px 0 0 #fff, 32px -32px 0 0 #fff, 0 0 32px 0 rgba(0, 0, 0, 0.15);
+.intro {
+  .intro-list {
+    @include outer-container;
+    > li {
+      @include span-columns(4);
+      article {
+        border-bottom: solid 1px #ccc;
+        background: #fff;
+        padding: 2em;
+        .image-featured {
+          margin: -2em -2em 2em -2em;
+        }
+        header {
+          margin: 0 0 1.5em 0;
+          h2 {
+            font-size: 1.2em;
+          }
+        }
+        .node-content {
+          p {
+            margin: 0;
+          }
+        }
+        footer {
+          a {
+              @include mac-button-large();
+          }
+          margin: 0;
+        }
+      }
     }
-
-    &:after {
-      content: '';
-      width: 32px;
-      height: 100%;
-      position: absolute;
-      right: -24px;
-      top: 0;
-      display: block;
-      z-index: -1;
-      box-shadow: -32px 0 0 0 #fff, 0 -32px 0 0 #fff, 0 32px 0 0 #fff, -32px 32px 0 0 #fff, -32px -32px 0 0 #fff, 0 0 32px 0 rgba(0, 0, 0, 0.15);
-    }
-  }
-
-  .button {
-    min-width: 12em;
-  }
-
-  footer {
-    margin: 0;
   }
 }

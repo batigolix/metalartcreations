@@ -9,7 +9,6 @@ libraries:
   - alpaca/global-styling
 stylesheets-remove:
   - normalize.css
-
 regions:
   header: Header
   primary_menu: 'Primary menu'
@@ -23,30 +22,3 @@ regions:
   footer_col2: Footer column 2
   footer_col3: Footer column 3
   post_footer: 'Post footer'
-
-#  help: 'Help'
-#  highlighted: 'Highlighted'
-#  content: 'Content'
-#  content_top: 'Content top'
-#  sidebar_first: 'First sidebar'
-#  sidebar_second: 'Second sidebar'
-#  footer: 'Footer'
-#  page_top: 'Page top'
-#  header1: 'Header Right 1st Col'
-#  header2: 'Header Right 2nd Col'
-#  content_top: 'Content top'
-#  sidebar: 'Sidebar'
-
-#;;features[] = logo
-#;features[] = name
-#;features[] = slogan
-#;features[] = node_user_picture
-#features[] = comment_user_picture
-#features[] = search
-#features[] = favicon
-#features[] = main_menu
-#features[] = secondary_menu
-
-
-#scripts[] = js/scripts.js
-

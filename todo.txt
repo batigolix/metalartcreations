@@ -21,6 +21,13 @@
 - google analytics
 - google webmaster tools
 
+- transliterate files
+
+- afbeeldingen boven de paginas
+
+- P margin
+- bullets
+
 - afbeeldingen. resizen
 - site in NL
 - velden
@@ -34,11 +41,12 @@ x- kosten veld
 - 1 overzicht workshop. bp + view
 - 1 overzicht cursussen. bp + view
 
-- permissies webmaster voor menus
+x - permissies webmaster voor menus
 - status message
 
-
 - block cache
+
+- broken image after upload in node edit form
 
 birgit@metalartcreations.nl
 

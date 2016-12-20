@@ -17,20 +17,23 @@
  */
 #}
 {% if attributes -%}
-  <div{{ attributes }}>
-{% endif %}
+<div{{ attributes }}>
+  {% endif %}
   {% if title %}
     <h3>{{ title }}</h3>
   {% endif %}
-
   <{{ list.type }}{{ list.attributes }}>
-
-    {% for row in rows %}
-      <li{{ row.attributes }}>{{ row.content }}</li>
-    {% endfor %}
-
-  </{{ list.type }}>
-
+  {% for row in rows %}
+    {% if loop.index == 1 %}
+      {% set class = 'first' %}
+    {% elseif loop.index == 2 %}
+      {% set class = 'second' %}
+    {% elseif loop.index == 3 %}
+      {% set class = 'third' %}
+    {% endif %}
+    <li{{ row.attributes.addClass(class) }}>{{ row.content }}</li>
+  {% endfor %}
+</{{ list.type }}>
 {% if attributes -%}
   </div>
 {% endif %}

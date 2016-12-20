@@ -50,73 +50,78 @@
  * @ingroup themeable
  */
 #}
-<div class="layout-container">
 
-  <header role="banner">
-    {{ page.header }}
-  </header>
-
-  <main role="main">
-
-    {{ page.primary_menu }}
-    {{ page.secondary_menu }}
-
-    {{ page.help }}
-
-    <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
-
-    <div class="layout-content">
-      {{ page.content }}
-    </div>{# /.layout-content #}
-
-    {% if page.sidebar_first %}
-      <aside class="layout-sidebar-first" role="complementary">
-        {{ page.sidebar_first }}
-      </aside>
+{% if is_front %}
+<div class="layout-container homepage">
+  {% else %}
+  <div class="layout-container not-homepage">
     {% endif %}
 
-    {% if page.sidebar_second %}
-      <aside class="layout-sidebar-second" role="complementary">
-        {{ page.sidebar_second }}
-      </aside>
-    {% endif %}
+    <header role="banner" class="header">
+      {{ page.header }}
+    </header>
 
-  </main>
+    <main role="main">
 
-  {% if page.footer or page.post_footer or page.footer_col1 or page.footer_col2 or page.footer_col3 %}
-    <div class="footer-wrapper">
-      <footer role="contentinfo">
-        {% if page.footer %}
-          <div class="footer">
-            {{ page.footer }}
-          </div>
-        {% endif %}
-        {% if page.footer_col1 or page.footer_col2 or page.footer_col3 %}
-          <div class="footer-cols">
-            {% if page.footer_col1 %}
-              <div class="footer-col1">
-                {{ page.footer_col1 }}
-              </div>
-            {% endif %}
-            {% if page.footer_col1 %}
-              <div class="footer-col2">
-                {{ page.footer_col2 }}
-              </div>
-            {% endif %}
-            {% if page.footer_col1 %}
-              <div class="footer-col3">
-                {{ page.footer_col3 }}
-              </div>
-            {% endif %}
-          </div>
-        {% endif %}
-      </footer>
-      {% if page.post_footer %}
-      <div class="post-footer">
-        {{ page.post_footer }}
-      </div>
+      {{ page.primary_menu }}
+      {{ page.secondary_menu }}
+
+      {{ page.help }}
+
+      <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
+
+      <div class="layout-content">
+        {{ page.content }}
+      </div>{# /.layout-content #}
+
+      {% if page.sidebar_first %}
+        <aside class="layout-sidebar-first" role="complementary">
+          {{ page.sidebar_first }}
+        </aside>
       {% endif %}
-    </div>
-  {% endif %}
 
-</div>{# /.layout-container #}
+      {% if page.sidebar_second %}
+        <aside class="layout-sidebar-second" role="complementary">
+          {{ page.sidebar_second }}
+        </aside>
+      {% endif %}
+
+    </main>
+
+    {% if page.footer or page.post_footer or page.footer_col1 or page.footer_col2 or page.footer_col3 %}
+      <div class="footer-wrapper">
+        <footer role="contentinfo">
+          {% if page.footer %}
+            <div class="footer">
+              {{ page.footer }}
+            </div>
+          {% endif %}
+          {% if page.footer_col1 or page.footer_col2 or page.footer_col3 %}
+            <div class="footer-cols">
+              {% if page.footer_col1 %}
+                <div class="footer-col1">
+                  {{ page.footer_col1 }}
+                </div>
+              {% endif %}
+              {% if page.footer_col1 %}
+                <div class="footer-col2">
+                  {{ page.footer_col2 }}
+                </div>
+              {% endif %}
+              {% if page.footer_col1 %}
+                <div class="footer-col3">
+                  {{ page.footer_col3 }}
+                </div>
+              {% endif %}
+            </div>
+          {% endif %}
+        </footer>
+        {% if page.post_footer %}
+          <div class="post-footer">
+            {{ page.post_footer }}
+          </div>
+        {% endif %}
+      </div>
+    {% endif %}
+
+  </div>{# /.layout-container #}

@@ -1,75 +1,45 @@
 $dark_green: DarkGreen;
 $dark_red: #990000;
 
-@mixin font($weight: 700) {
-  font-family: "Belgrano", Georgia, serif, cursive;
-  font-weight: bold;
-  font-weight: $weight;
-}
-
-@mixin a-button() {
-  font: bold 1.2em;
+@mixin mac-button() {
+  padding: 0.4em 1em 0.4em 1em;
+  font-family: 'Raleway';
+  font-size: 0.8em;
+  -webkit-appearance: none;
+  display: inline-block;
   text-decoration: none;
-  background-color: $light_yellow;
-  color: black;
-  padding: 3px 7px 3px 7px;
-  @include border-top-radius(5px);
-  @include border-bottom-radius(5px);
-  border-top: 1px solid $light_grey;
-  border-right: 1px solid $dark_grey;
-  border-bottom: 1px solid $dark_grey;
-  border-left: 1px solid $light_grey;
+  cursor: pointer;
+  border: 0;
+  border-radius: 5px;
+  background: $dark-green;
+  color: #fff !important;
+  font-weight: 700;
+  outline: 0;
+  //  @include vendor('transition', 'background-color .25s ease-in-out');
+  &:active {
+    color: #fff;
+  }
+  &:hover {
+    background: #e53359;
+    color: #fff;
+  }
+  &:active {
+    background: #c51349;
+    color: #fff;
+  }
+  &.alt {
+    background: #252122;
+    &:hover {
+      background: #353132;
+    }
+    &:active {
+      background: #151112;
+    }
+  }
 }
 
-@mixin a2-button() {
-	height:2em;
-	padding:2px 20px;
-	margin:4px 4px;
-	cursor:pointer;
-	display:inline-block;
-	color:#FFF;
-	font-size:1em;
-	border:1px solid #eee;
-	background:#eee;
-	border-radius:4px;
-	line-height:2em;
-	border:1px solid #aaa;
-	text-decoration:none;
-
-	-webkit-transition: all 0.3s linear;
-     -khtml-transition: all 0.3s linear;
-       -moz-transition: all 0.3s linear;
-         -o-transition: all 0.3s linear;
-            transition: all 0.3s linear;
-
-
-
+@mixin mac-button-large() {
+  @include mac-button();
+  padding: 0.65em 1.5em 0.65em 1.5em;
+  font-size: 1em;
 }
-
-
-/***********************************************************************
- * 	Yellow Background
- **********************************************************************/
-@mixin yellow-bg{
-	background: #ffd65e; /* Old browsers */
-	background: -moz-linear-gradient(top, #ffd65e 0%, #febf04 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffd65e), color-stop(100%,#febf04)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top, #ffd65e 0%,#febf04 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top, #ffd65e 0%,#febf04 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top, #ffd65e 0%,#febf04 100%); /* IE10+ */
-	background: linear-gradient(top, #ffd65e 0%,#febf04 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd65e', endColorstr='#febf04',GradientType=0 ); /* IE6-9 */
-}
-
-@mixin box-shadow($shadow) {
--webkit-box-shadow: $shadow;
--moz-box-shadow: $shadow;
-box-shadow: $shadow;
-}
-
-
-@mixin text-shadow($color: rgba(0,0,0,.4), $x: 2px, $y: 2px, $blur: 5px) {
-    text-shadow: $x $y $blur $color;
-//text-shadow: 5px 5px 5px black;
-}
-
