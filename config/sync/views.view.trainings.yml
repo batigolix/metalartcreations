@@ -3,6 +3,7 @@ langcode: nl
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.teaser
     - field.storage.node.body
     - field.storage.node.field_image
     - image.style.small_landscape_183x125_
@@ -81,12 +82,10 @@ display:
           wrapper_class: ''
           class: trainings-list
       row:
-        type: fields
+        type: 'entity:node'
         options:
-          default_field_elements: false
-          inline: {  }
-          separator: ''
-          hide_empty: false
+          relationship: none
+          view_mode: teaser
       fields:
         field_image:
           id: field_image

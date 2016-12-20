@@ -8,8 +8,10 @@ dependencies:
     - field.field.node.training.field_costs
     - field.field.node.training.field_image
     - field.field.node.training.field_training_type
+    - image.style.small_landscape_183x125_
     - node.type.training
   module:
+    - image
     - text
     - user
 id: node.training.teaser
@@ -24,12 +26,19 @@ content:
     settings:
       trim_length: 140
     third_party_settings: {  }
+  field_image:
+    type: image
+    weight: 0
+    label: hidden
+    settings:
+      image_style: small_landscape_183x125_
+      image_link: content
+    third_party_settings: {  }
   links:
     weight: 2
     settings: {  }
     third_party_settings: {  }
 hidden:
   field_costs: true
-  field_image: true
   field_training_type: true
   langcode: true
