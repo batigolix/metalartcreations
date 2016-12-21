@@ -12,7 +12,7 @@ dependencies:
 id: contentfield
 theme: alpaca
 region: content
-weight: -7
+weight: -8
 provider: null
 plugin: 'fieldblock:node'
 settings:

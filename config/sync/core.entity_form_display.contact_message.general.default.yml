@@ -4,27 +4,30 @@ status: true
 dependencies:
   config:
     - contact.form.general
+    - field.field.contact_message.general.field_telephone
 id: contact_message.general.default
 targetEntityType: contact_message
 bundle: general
 mode: default
 content:
   copy:
-    weight: 4
-    settings: {  }
-    third_party_settings: {  }
-  langcode:
-    type: language_select
     weight: 5
     settings: {  }
     third_party_settings: {  }
+  field_telephone:
+    weight: 2
+    settings:
+      size: 40
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
   mail:
     weight: 1
     settings: {  }
     third_party_settings: {  }
   message:
     type: string_textarea
-    weight: 3
+    weight: 4
     settings:
       rows: 12
       placeholder: ''
@@ -35,9 +38,10 @@ content:
     third_party_settings: {  }
   subject:
     type: string_textfield
-    weight: 2
+    weight: 3
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  langcode: true
