@@ -53,3 +53,4 @@ permissions:
   46: 'use text format advanced_html'
   47: 'administer menu'
   48: 'administer nodes'
+  49: 'administer contact forms'
