@@ -54,3 +54,6 @@ permissions:
   47: 'administer menu'
   48: 'administer nodes'
   49: 'administer contact forms'
+  50: 'administer pathauto'
+  51: 'notify of path changes'
+  52: 'administer redirects'
