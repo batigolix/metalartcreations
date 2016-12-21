@@ -57,3 +57,4 @@ permissions:
   50: 'administer pathauto'
   51: 'notify of path changes'
   52: 'administer redirects'
+  53: 'administer url aliases'
