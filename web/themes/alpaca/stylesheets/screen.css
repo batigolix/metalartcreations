@@ -320,7 +320,7 @@ main {
   float: left;
   display: block;
   margin-right: 2.12766%;
-  width: 23.40426%; }
+  width: 31.91489%; }
   .layout-sidebar-first:last-child {
     margin-right: 0; }
   @media screen and (max-width: 1200px) {
@@ -395,7 +395,7 @@ main {
   float: left;
   display: block;
   margin-right: 2.12766%;
-  width: 74.46809%; }
+  width: 65.95745%; }
   .not-homepage .layout-content:last-child {
     margin-right: 0; }
   @media screen and (max-width: 1200px) {
@@ -457,7 +457,7 @@ main {
       float: left;
       display: block;
       margin-right: 2.12766%;
-      width: 82.97872%; }
+      width: 100%; }
       .footer-wrapper footer .footer:last-child {
         margin-right: 0; }
     .footer-wrapper footer .footer-col1 {
@@ -471,14 +471,14 @@ main {
       float: left;
       display: block;
       margin-right: 2.12766%;
-      width: 23.40426%; }
+      width: 31.91489%; }
       .footer-wrapper footer .footer-col2:last-child {
         margin-right: 0; }
     .footer-wrapper footer .footer-col3 {
       float: left;
       display: block;
       margin-right: 2.12766%;
-      width: 23.40426%; }
+      width: 31.91489%; }
       .footer-wrapper footer .footer-col3:last-child {
         margin-right: 0; }
   .footer-wrapper h2 {

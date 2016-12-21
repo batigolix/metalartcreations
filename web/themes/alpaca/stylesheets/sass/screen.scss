@@ -173,7 +173,7 @@ main {
 }
 
 .layout-sidebar-first {
-  @include span-columns(3);
+  @include span-columns(4);
   @include media($tablet_wide) {
     @include span-columns(2 of 8);
   }
@@ -226,7 +226,7 @@ main {
 }
 
 .not-homepage .layout-content {
-  @include span-columns(9);
+  @include span-columns(8);
   @include media($tablet_wide) {
     @include span-columns(6 of 8);
   }
@@ -281,16 +281,16 @@ main {
   footer {
     @include outer-container;
     .footer {
-      @include span-columns(10);
+      @include span-columns(12);
     }
     .footer-col1 {
       @include span-columns(4);
     }
     .footer-col2 {
-      @include span-columns(3);
+      @include span-columns(4);
     }
     .footer-col3 {
-      @include span-columns(3);
+      @include span-columns(4);
     }
   }
   padding-top: 3em;
