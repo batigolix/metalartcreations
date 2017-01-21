@@ -24,5 +24,5 @@ function mac_tools_entity_presave(Drupal\Core\Entity\EntityInterface $entity) {
 function mac_tools_form_contact_message_general_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
 
   // Removes the preview button from the form.
-  unset($form['actions']['preview']);
+  $form['actions']['preview']['#access'] = FALSE;
 }
