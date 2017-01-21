@@ -28,6 +28,7 @@ settings:
       - cache_context.user.roles
       - cache_context.user.roles
       - cache_context.user.roles
+      - cache_context.user.roles
 visibility:
   request_path:
     id: request_path

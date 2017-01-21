@@ -1,0 +1,24 @@
+{% set classes = [
+'node--type-' ~ node.bundle|clean_class,
+] %}
+{{ attach_library('classy/node') }}
+<article{{ attributes.addClass(classes) }}>
+  {{ title_prefix }}
+  {% if content.field_image['#items'] %}
+    <div class="image-featured">{{ content.field_image }}</div>
+  {% endif %}
+  <header>
+    <h2{{ title_attributes }}>
+      <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+    </h2>
+  </header>
+  {{ title_suffix }}
+  <div{{ content_attributes.addClass('node__content') }}>
+    {{ content|without('field_image')|without('links') }}
+  </div>
+  <footer>
+    <a href="{{ url }}" class="button alt">
+      {% trans %}Read more{% endtrans %}
+    </a>
+  </footer>
+</article>

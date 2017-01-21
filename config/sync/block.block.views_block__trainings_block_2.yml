@@ -1,22 +1,22 @@
-uuid: 3552695c-5e62-46d8-b100-bfee4157326f
+uuid: 382e07c7-95b9-4e9a-aea3-b97604076b9c
 langcode: nl
 status: true
 dependencies:
   config:
-    - views.view.tutorials
+    - views.view.trainings
   module:
     - system
     - views
   theme:
     - alpaca
-id: views_block__tutorials_block_1
+id: views_block__trainings_block_2
 theme: alpaca
 region: content
-weight: 1
+weight: -1
 provider: null
-plugin: 'views_block:tutorials-block_1'
+plugin: 'views_block:trainings-block_2'
 settings:
-  id: 'views_block:tutorials-block_1'
+  id: 'views_block:trainings-block_2'
   label: ''
   provider: views
   label_display: visible
@@ -25,6 +25,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: /lesmateriaal
+    pages: /cursussen-edelsmeden
     negate: false
     context_mapping: {  }
