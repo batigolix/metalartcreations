@@ -641,13 +641,6 @@ ol {
   }
 }
 
-.block-views {
-  .views-row {
-    @include span-columns(3);
-
-  }
-}
-
 /* Intro */
 .intro {
   .intro-list {
@@ -681,4 +674,21 @@ ol {
       }
     }
   }
+}
+
+/**
+ * @file
+ * Visual styles for pager.
+ */
+
+.pager__items {
+  clear: both;
+  text-align: center;
+}
+.pager__item {
+  display: inline;
+  padding: 0.5em;
+}
+.pager__item.is-active {
+  font-weight: bold;
 }

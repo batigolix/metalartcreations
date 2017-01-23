@@ -727,14 +727,6 @@ ol.default {
       .post-footer .links a:active, .post-footer .links a:visited {
         color: #bbb; }
 
-.block-views .views-row {
-  float: left;
-  display: block;
-  margin-right: 2.12766%;
-  width: 23.40426%; }
-  .block-views .views-row:last-child {
-    margin-right: 0; }
-
 /* Intro */
 .intro .intro-list {
   max-width: 1200px;
@@ -795,5 +787,20 @@ ol.default {
               background: #353132; }
             .intro .intro-list > li article footer a.alt:active {
               background: #151112; }
+
+/**
+ * @file
+ * Visual styles for pager.
+ */
+.pager__items {
+  clear: both;
+  text-align: center; }
+
+.pager__item {
+  display: inline;
+  padding: 0.5em; }
+
+.pager__item.is-active {
+  font-weight: bold; }
 
 /*# sourceMappingURL=screen.css.map */
