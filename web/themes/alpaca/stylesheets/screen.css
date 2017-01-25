@@ -549,22 +549,22 @@ ul.contact li {
     border-top: 0; }
     ul.contact li:first-child h3 {
       top: 0; }
-ul.trainings-list li {
+ul.trainings-list li, ul.tutorials-list li {
   position: relative;
   border-top: solid 1px #ddd;
   padding: 1.3em 0 1.3em 0em;
   overflow: auto; }
-ul.trainings-list img {
+ul.trainings-list img, ul.tutorials-list img {
   float: left;
   margin-right: 1em; }
-ul.trainings-list h3 {
+ul.trainings-list h3, ul.tutorials-list h3 {
   font-size: 1.1em; }
-ul.trainings-list p {
+ul.trainings-list p, ul.tutorials-list p {
   margin: 0; }
-ul.trainings-list li:first-child {
+ul.trainings-list li:first-child, ul.tutorials-list li:first-child {
   border-top: 0;
   padding-top: 0; }
-  ul.trainings-list li:first-child .date {
+  ul.trainings-list li:first-child .date, ul.tutorials-list li:first-child .date {
     top: 0; }
 ul.divided li {
   border-top: solid 1px #ddd;

@@ -407,7 +407,7 @@ ul {
     }
   }
 
-  &.trainings-list {
+  &.trainings-list, &.tutorials-list {
     li {
       position: relative;
       border-top: solid 1px #ddd;
@@ -667,7 +667,7 @@ ol {
         }
         footer {
           a {
-              @include mac-button-large();
+            @include mac-button-large();
           }
           margin: 0;
         }
@@ -685,10 +685,12 @@ ol {
   clear: both;
   text-align: center;
 }
+
 .pager__item {
   display: inline;
   padding: 0.5em;
 }
+
 .pager__item.is-active {
   font-weight: bold;
 }
