@@ -803,23 +803,23 @@ ol.default {
 .pager__item.is-active {
   font-weight: bold; }
 
-#banner {
+.jumbo-banner {
   background: #CCE8F4 url(../images/banner.jpg);
   background-position: center center;
   background-size: auto 100%;
   background-repeat: no-repeat;
   text-align: center; }
-  #banner header {
+  .jumbo-banner header {
     margin: 4em;
     display: inline-block;
     padding: 2.5em 5em;
     border-radius: 5px;
     background-color: rgba(34, 30, 31, 0.98); }
-    #banner header h2 {
+    .jumbo-banner header h2 {
       color: #fff;
       font-weight: 700;
       font-size: 1.5em; }
-    #banner header p {
+    .jumbo-banner header p {
       color: #d52349;
       padding: 0;
       font-style: normal;
