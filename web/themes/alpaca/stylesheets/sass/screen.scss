@@ -694,3 +694,30 @@ ol {
 .pager__item.is-active {
   font-weight: bold;
 }
+
+#banner {
+  background: #CCE8F4 url(../images/banner.jpg);
+  background-position: center center;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  text-align: center;
+  header {
+    margin: 4em;
+    display: inline-block;
+    padding: 2.5em 5em;
+    border-radius: 5px;
+    background-color: rgba(34, 30, 31, 0.98);
+    h2 {
+      color: #fff;
+      font-weight: 700;
+      font-size: 1.5em;
+    }
+    p {
+      color: #d52349;
+      padding: 0;
+      font-style: normal;
+      margin: 0;
+    }
+  }
+}
+
