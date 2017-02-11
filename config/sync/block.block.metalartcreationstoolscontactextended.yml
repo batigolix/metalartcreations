@@ -10,7 +10,7 @@ dependencies:
 id: metalartcreationstoolscontactextended
 theme: alpaca
 region: content
-weight: -5
+weight: -6
 provider: null
 plugin: mac_tools_contact_extended
 settings:
@@ -22,6 +22,9 @@ settings:
   cache:
     max_age: 3600
     contexts:
+      - cache_context.user.roles
+      - cache_context.user.roles
+      - cache_context.user.roles
       - cache_context.user.roles
       - cache_context.user.roles
       - cache_context.user.roles

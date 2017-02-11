@@ -1,0 +1,36 @@
+uuid: b600e406-fb2c-4b80-83c6-b0b4788e2234
+langcode: nl
+status: true
+dependencies:
+  module:
+    - mac_tools
+    - system
+  theme:
+    - alpaca
+id: metalartcreationstoolsbanner
+theme: alpaca
+region: pre_main
+weight: -4
+provider: null
+plugin: mac_tools_banner
+settings:
+  id: mac_tools_banner
+  label: Banner
+  provider: mac_tools
+  label_display: '0'
+  banner_markup_string: ' <section id="banner"><header><h2>Howdy. This is Dopetrope.</h2><p>A responsive template by HTML5 UP</p></header></section>'
+  cache:
+    max_age: 3600
+    contexts:
+      - cache_context.user.roles
+      - cache_context.user.roles
+      - cache_context.user.roles
+      - cache_context.user.roles
+      - cache_context.user.roles
+      - cache_context.user.roles
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

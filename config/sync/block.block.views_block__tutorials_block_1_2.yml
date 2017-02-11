@@ -12,7 +12,7 @@ dependencies:
 id: views_block__tutorials_block_1_2
 theme: alpaca
 region: content
-weight: 0
+weight: 1
 provider: null
 plugin: 'views_block:tutorials-block_1'
 settings:
