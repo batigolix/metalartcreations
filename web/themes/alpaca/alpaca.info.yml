@@ -7,6 +7,7 @@ core: 8.x
 libraries:
   - alpaca/font-awesome
   - alpaca/global-styling
+  - alpaca/responsive-menu
 stylesheets-remove:
   - normalize.css
 regions:
