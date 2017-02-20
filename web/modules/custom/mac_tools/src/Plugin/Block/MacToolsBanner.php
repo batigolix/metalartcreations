@@ -21,7 +21,7 @@ use Drupal\Core\Form\FormStateInterface;
  */
 class MacToolsBanner extends BlockBase {
 
-  protected $default_markup = ' <section id="banner"><header><h2>Cursussen en workshops edelsmeden</h2><p>Voor individuen en groepen</p></header></section>';
+  protected $defaultMarkup = ' <section id="banner"><header><h2>Cursussen en workshops edelsmeden</h2><p>Voor individuen en groepen</p></header></section>';
 
   /**
    * {@inheritdoc}
@@ -29,7 +29,7 @@ class MacToolsBanner extends BlockBase {
   public function defaultConfiguration() {
     return array(
       'label' => t("Banner"),
-      'banner_markup_string' => $this->default_markup,
+      'banner_markup_string' => $this->defaultMarkup,
       'cache' => array(
         'max_age' => 3600,
         'contexts' => array(

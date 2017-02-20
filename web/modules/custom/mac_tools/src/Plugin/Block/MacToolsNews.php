@@ -82,31 +82,13 @@ class MacToolsNews extends BlockBase {
 
     $items = array();
     foreach ($nids as $nid) {
-      $node = entity_load('node', $nid);
-
-// @todo figure out fetchign values from node object 
-//kint($node);
-//      $node_view = entity_view($node, 'hero_teaser');
-//      kint($node_view);
-
       $items[] = array(
-//        '#markup' => drupal_render($node_view),
         '#markup' => 'sfdsdf',
         '#wrapper_attributes' => array('class' => array('slide')),
       );
     }
 
-    $elements = array();
-//    if ($node_title_list = node_title_list($result)) {
-//      $elements['forum_list'] = $node_title_list;
-////      $elements['forum_more'] = array(
-////        '#type' => 'more_link',
-////        '#url' => Url::fromRoute('forum.index'),
-////        '#attributes' => array('title' => $this->t('Read the latest forum topics.')),
-////      );
-//    }
     $build = array();
-//    $build['elements']['#markup'] = $elements;
     $build['items']['#markup'] = $nr_items;
     $build['elements']['#markup'] = 'placeholder';
     return $build;

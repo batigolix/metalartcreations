@@ -21,7 +21,7 @@ use Drupal\Core\Form\FormStateInterface;
  */
 class MacToolsAbout extends BlockBase {
 
-  protected $default_markup = '<p>Birgit Doesborg is meestergoudsmid en parttime docent metaaltechniek. De mogelijkheid bestaat om haar als gastdocent uit te nodigen bij kunst educatieve centra\'s en/of scholen.<br> Zie<a href="workshops-cursussen/Priveles.html"> privé workshops.</a> <br>Zelf ontwerpt zij haar eigen stijl, handgemaakte sieraden en objecten met als specialiteit Mokume-gane die te bezichtigen zijn op <a href="http://www.doesdesign.nl/">Doesdesign.nl</a>';
+  protected $defaultMarkup = '<p>Birgit Doesborg is meestergoudsmid en parttime docent metaaltechniek. De mogelijkheid bestaat om haar als gastdocent uit te nodigen bij kunst educatieve centra\'s en/of scholen.<br> Zie<a href="workshops-cursussen/Priveles.html"> privé workshops.</a> <br>Zelf ontwerpt zij haar eigen stijl, handgemaakte sieraden en objecten met als specialiteit Mokume-gane die te bezichtigen zijn op <a href="http://www.doesdesign.nl/">Doesdesign.nl</a>';
 
   /**
    * {@inheritdoc}
@@ -29,7 +29,7 @@ class MacToolsAbout extends BlockBase {
   public function defaultConfiguration() {
     return array(
       'label' => t("About"),
-      'about_markup_string' => $this->default_markup,
+      'about_markup_string' => $this->defaultMarkup,
       'cache' => array(
         'max_age' => 3600,
         'contexts' => array(

@@ -21,7 +21,7 @@ use Drupal\Core\Form\FormStateInterface;
  */
 class MacToolsCredits extends BlockBase {
 
-  protected $default_markup = '<ul class="links"><li>© Birgit Doesborg. All rights reserved.</li><li>Design: Dope trope theme by <a href="http://html5up.net">HTML5 UP</a></li><li>Gemaakt met <a href="http://drupal.org">Drupal</a></li></ul>';
+  protected $defaultMarkup = '<ul class="links"><li>© Birgit Doesborg. All rights reserved.</li><li>Design: Dope trope theme by <a href="http://html5up.net">HTML5 UP</a></li><li>Gemaakt met <a href="http://drupal.org">Drupal</a></li></ul>';
 
   /**
    * {@inheritdoc}
@@ -29,7 +29,7 @@ class MacToolsCredits extends BlockBase {
   public function defaultConfiguration() {
     return array(
       'label' => t("Credits"),
-      'credits_markup_string' => $this->default_markup,
+      'credits_markup_string' => $this->defaultMarkup,
       'cache' => array(
         'max_age' => 3600,
         'contexts' => array(

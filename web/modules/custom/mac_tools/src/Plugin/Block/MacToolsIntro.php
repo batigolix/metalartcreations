@@ -27,50 +27,37 @@ class MacToolsIntro extends BlockBase {
   public function build() {
 
     $path = drupal_get_path('module', 'mac_tools');
-//    $image = theme('image', 'medium', array('uri'=>$path.'/images/Ponzen.jpg'));
-//    ksm($image);
-
     $items = array(
       'first' => array(
-        'img' => $path.'/images/Does-smeed.png',
-        'title'=> 'Workshops',
-        'text'=> 'Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus',
+        'img' => $path . '/images/Does-smeed.png',
+        'title' => 'Workshops',
+        'text' => 'Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus',
       ),
       'second' => array(
-        'img' => $path.'/images/Ponzen.png',
-        'title'=> 'Cursussen',
-        'text'=> 'Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus',
+        'img' => $path . '/images/Ponzen.png',
+        'title' => 'Cursussen',
+        'text' => 'Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus',
       ),
       'third' => array(
-        'img' => $path.'/images/Polijsten.png',
-        'title'=> 'Lesmateriaal',
-        'text'=> 'Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus',
+        'img' => $path . '/images/Polijsten.png',
+        'title' => 'Lesmateriaal',
+        'text' => 'Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus',
       ),
     );
 
-
-    foreach($items as $key=>$item) {
+    foreach ($items as $key => $item) {
       $build[$key] = array(
         '#type' => 'markup',
-        '#markup' => '<section class="'.$key.'">
-
-											<img src="/' . $item['img'] . '">
-											<header>
-												<h2>'.$item['title'].'</h2>
-											</header>
-											<p>'.$item['text'].'</p>
-										</section>
-',);
+        '#markup' => '<section class="' . $key . '">
+                      <img src="/' . $item['img'] . '">
+                      <header>
+                        <h2>' . $item['title'] . '</h2>
+                      </header>
+                      <p>' . $item['text'] . '</p>
+                    </section>',
+      );
     }
-
-
-
-//    return array(
-//      '#type' => 'markup',
-//      '#markup' => $markup,
-//    );
-
-return $build;
+    return $build;
   }
 
 }

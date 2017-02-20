@@ -1,8 +1,15 @@
 <?php
 
+/**
+ * @file
+ * Provides hooks and helper functions for the mac_tools module.
+ */
+
+/**
+ * Replaces old images folder in HTML source.
+ */
 function mac_tools_entity_presave(Drupal\Core\Entity\EntityInterface $entity) {
 
-  // Replaces old images folder in HTML source.
   $from = array(
     'src="../fotos/',
     'src="fotos/',

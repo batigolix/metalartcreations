@@ -1,4 +1,6 @@
+/**
+ * @file
+ * Test JS;.
+ */
 
-// salert('Doh');
-
-console.log('Dah');
+// Can be used for test.

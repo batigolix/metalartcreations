@@ -28,4 +28,5 @@ class MacToolsGa extends BlockBase {
     $build['#attached']['library'][] = 'mac_tools/ga';
     return $build;
   }
+
 }

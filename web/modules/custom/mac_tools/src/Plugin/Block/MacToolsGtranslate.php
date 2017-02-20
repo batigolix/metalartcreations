@@ -30,4 +30,5 @@ class MacToolsGtranslate extends BlockBase {
     $build['#attached']['library'][] = 'mac_tools/gtranslate_external';
     return $build;
   }
+
 }

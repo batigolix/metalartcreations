@@ -1,11 +1,11 @@
 * {
   margin: 0;
   padding: 0;
-  }
+}
 
 html {
   background: #fff;
-  }
+}
 
 body {
   color: #333;
@@ -16,39 +16,39 @@ body {
   padding: 0 30px;
   text-align: center;
   -webkit-font-smoothing: antialiased;
-  }
+}
 
 #wrapper {
   float: left;
   width: 100%;
   margin-bottom: 50px;
-  }
+}
 
 h1 {
   font: 600 28px/36px sans-serif;
   margin: 50px 0;
-  }
+}
 
 h3 {
   font: 600 18px/24px sans-serif;
   color: #999;
   margin: 0 0 20px;
-  }
+}
 
 a {
   color: #222;
-  }
+}
 
 .rslides {
   margin: 0 auto;
-  }
+}
 
 .rslides_container {
   margin-bottom: 50px;
   position: relative;
   float: left;
   width: 100%;
-  }
+}
 
 .centered-btns_nav {
   z-index: 3;
@@ -64,17 +64,17 @@ a {
   width: 38px;
   background: transparent url("themes.gif") no-repeat left top;
   margin-top: -45px;
-  }
+}
 
 .centered-btns_nav:active {
   opacity: 1.0;
-  }
+}
 
 .centered-btns_nav.next {
   left: auto;
   background-position: right top;
   right: 0;
-  }
+}
 
 .transparent-btns_nav {
   z-index: 3;
@@ -90,12 +90,12 @@ a {
   text-indent: -9999px;
   overflow: hidden;
   height: 91%;
-  }
+}
 
 .transparent-btns_nav.next {
   left: auto;
   right: 0;
-  }
+}
 
 .large-btns_nav {
   z-index: 3;
@@ -109,30 +109,30 @@ a {
   left: 0;
   background: #000 url("themes.gif") no-repeat left 50%;
   width: 38px;
-  }
+}
 
 .large-btns_nav:active {
   opacity: 1.0;
-  }
+}
 
 .large-btns_nav.next {
   left: auto;
   background-position: right 50%;
   right: 0;
-  }
+}
 
 .centered-btns_nav:focus,
 .transparent-btns_nav:focus,
 .large-btns_nav:focus {
   outline: none;
-  }
+}
 
 .centered-btns_tabs,
 .transparent-btns_tabs,
 .large-btns_tabs {
   margin-top: 10px;
   text-align: center;
-  }
+}
 
 .centered-btns_tabs li,
 .transparent-btns_tabs li,
@@ -142,7 +142,7 @@ a {
   _float: left;
   *float: left;
   margin-right: 5px;
-  }
+}
 
 .centered-btns_tabs a,
 .transparent-btns_tabs a,
@@ -162,11 +162,11 @@ a {
   box-shadow: inset 0 0 2px 0 rgba(0,0,0,.3);
   width: 9px;
   height: 9px;
-  }
+}
 
 .centered-btns_here a,
 .transparent-btns_here a,
 .large-btns_here a {
   background: #222;
   background: rgba(0,0,0, .8);
-  }
+}

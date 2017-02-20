@@ -1,3 +1,7 @@
+/**
+ * @file
+ */
+
 jQuery(function () {
   jQuery(".rslides").responsiveSlides({
     auto: true,
