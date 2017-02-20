@@ -286,9 +286,7 @@ p, ul, ol, dl, table {
       font-style: italic;
       margin: 1.35em 0.35em 0 0.35em; }
       .header nav > ul > li.icon {
-        font-style: normal; }
-        .header nav > ul > li.icon a {
-          border: 1px solid slategrey; }
+        display: none; }
       .header nav > ul > li > ul {
         display: none; }
       .header nav > ul > li > a {
@@ -310,7 +308,10 @@ p, ul, ol, dl, table {
     nav ul.topnav li.icon {
       float: left;
       display: inline-block;
-      margin-top: -3em; }
+      margin-top: -3em;
+      font-style: normal; }
+      nav ul.topnav li.icon a {
+        border: 1px solid slategrey; }
   nav ul.topnav.responsive {
     position: relative; }
     nav ul.topnav.responsive li {

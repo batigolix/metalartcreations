@@ -129,24 +129,16 @@ p, ul, ol, dl, table {
   nav {
     > ul {
       margin: 0;
-
       > li {
         display: inline-block;
         font-style: italic;
         margin: 1.35em 0.35em 0 0.35em;
-
         &.icon {
-          font-style: normal;
-          a {
-            border: 1px solid slategrey;
-
-          }
+          display: none;
         }
-
         > ul {
           display: none;
         }
-
         > a {
           border-radius: 5px;
           color: #5d5d5d;
@@ -154,13 +146,11 @@ p, ul, ol, dl, table {
           padding: 0.6em 1.2em 0.6em 1.2em;
           outline: 0;
         }
-
         &:hover {
           > a {
             background: #f3f3f3;
           }
         }
-
         &.menu-item--active-trail {
           > a {
             background: $dark_red;
@@ -170,7 +160,6 @@ p, ul, ol, dl, table {
       }
     }
   }
-
 }
 
 /* Mobile view of the responsive menu */
@@ -184,6 +173,10 @@ p, ul, ol, dl, table {
             float: left;
             display: inline-block;
             margin-top: -3em;
+            font-style: normal;
+            a {
+              border: 1px solid slategrey;
+            }
           }
         }
       }
