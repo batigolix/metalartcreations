@@ -168,7 +168,7 @@ p, ul, ol, dl, table {
     ul {
       &.topnav {
         li {
-            display: none;
+          display: none;
           &.icon {
             float: left;
             display: inline-block;
@@ -219,8 +219,6 @@ p, ul, ol, dl, table {
   }
 }
 
-
-
 main {
   @include outer-container;
   &:before {
@@ -235,6 +233,9 @@ main {
   }
   margin-bottom: 2.5em;
   padding: 2em 0 4em 0;
+  @include media($tablet_narrow) {
+    padding: 0;
+  }
 }
 
 .layout-sidebar-first {
@@ -283,10 +284,10 @@ main {
 .homepage .layout-content {
   @include span-columns(12);
   @include media($tablet_wide) {
-    @include span-columns(6 of 9);
+    @include span-columns(9 of 9);
   }
   @include media($mobile) {
-    @include span-columns(4 of 4);
+    @include span-columns(3 of 3);
   }
 }
 
@@ -318,6 +319,9 @@ main {
   background: #ffffff;
   border-bottom: solid 1px #ccc;
   padding: 2.75em 1.75em 2.75em 1.75em;
+  @include media($tablet_narrow) {
+    padding: 1em 0;
+  }
 
   margin-bottom: 2.5em;
 
@@ -356,9 +360,9 @@ main {
     .footer-col2,
     .footer-col3 {
       @include span-columns(4);
-          @include media($tablet_wide) {
-            padding: 0 2em;
-          }
+      @include media($tablet_wide) {
+        padding: 0 2em;
+      }
       @include media($tablet_narrow) {
         @include span-columns(12 of 12);
         padding: 0 2em;
@@ -709,9 +713,18 @@ ol {
 /* Intro */
 .intro {
   .intro-list {
-    @include outer-container;
     > li {
       @include span-columns(4);
+      @include media($tablet_wide) {
+//        padding: 0 2em;
+      }
+      @include media($tablet_narrow) {
+        .image-featured {
+          display: none;
+        }
+        @include span-columns(3 of 3);
+        padding: 0 2em;
+      }
       article {
         border-bottom: solid 1px #ccc;
         background: #fff;
