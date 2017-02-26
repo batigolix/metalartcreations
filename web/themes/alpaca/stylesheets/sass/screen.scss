@@ -5,7 +5,7 @@
 @import "neat/neat";
 
 body {
-  background: #f7f7f7;
+  background: $mac_green;
   font-family: 'Crimson Text';
   font-weight: normal;
   color: #5d5d5d;
@@ -231,8 +231,7 @@ main {
     z-index: 0;
     opacity: 0.1;
   }
-  margin-bottom: 2.5em;
-  padding: 2em 0 4em 0;
+  padding: 2em 0 2em 0;
   @include media($tablet_narrow) {
     padding: 0;
   }
@@ -317,7 +316,6 @@ main {
   }
 
   background: #ffffff;
-  border-bottom: solid 1px #ccc;
   padding: 2.75em 1.75em 2.75em 1.75em;
   @include media($tablet_narrow) {
     padding: 1em 0;
@@ -351,6 +349,7 @@ main {
 
 .footer-wrapper {
   background: #252122;
+  border-top: solid 1px #ccc;
   footer {
     @include outer-container;
     .footer {
@@ -691,20 +690,20 @@ ol {
   text-align: center;
   margin: 3em 0 2em 0;
   margin: 0;
+  color: #bbb;
 
   .links {
     font-family: Raleway;
     font-size: 0.9em;
     padding: 0.85em 2.25em 0.85em 2.25em;
     display: inline-block;
-    background: #2C2929;
-    background: rgba(255, 255, 255, 0.05);
+    background: $mac_green;
     border-radius: 5px;
     margin: 0 0 3em 0;
     a {
-      color: #bbb;
+      color: #fff;
       &:active, &:visited {
-        color: #bbb;
+        color: #fff;
       }
     }
   }
@@ -726,7 +725,7 @@ ol {
         padding: 0 2em;
       }
       article {
-        border-bottom: solid 1px #ccc;
+        border: double 4px $mac_green;
         background: #fff;
         padding: 2em;
         .image-featured {
