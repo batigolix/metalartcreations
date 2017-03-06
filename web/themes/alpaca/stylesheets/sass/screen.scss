@@ -83,8 +83,6 @@ p, ul, ol, dl, table {
 }
 
 .header {
-  @include span-columns(12);
-
   padding: 1.5em 0 2em 0;
   position: relative;
   background: #ffffff;
@@ -103,7 +101,6 @@ p, ul, ol, dl, table {
     font-size: 1.7em;
     letter-spacing: 0.15em;
     margin: 0em 0 1em 0;
-
   }
   @include media($tablet_wide) {
     .site-name {
@@ -132,7 +129,7 @@ p, ul, ol, dl, table {
       > li {
         display: inline-block;
         font-style: italic;
-        margin: 1.35em 0.35em 0 0.35em;
+        margin: 0.35em 0.35em 0 0.35em;
         &.icon {
           display: none;
         }
@@ -345,6 +342,7 @@ main {
 
 .homepage .layout-content {
   background: none;
+  padding-top: 0;
 }
 
 .footer-wrapper {
@@ -775,7 +773,7 @@ ol {
 .jumbo-banner {
   background: #CCE8F4 url(../images/banner.jpg);
   background-position: center center;
-  background-size: auto 100%;
+  background-size: auto 165%;
   background-repeat: no-repeat;
   text-align: center;
   header {
@@ -783,9 +781,9 @@ ol {
     background-color: rgba(34, 30, 31, 0.98);
     font-size: 1.5em;
     border-radius: 5px;
-    margin: 4em;
-    padding: 2.5em 5em;
-
+    margin: 1.7em;
+    padding: 2.5em 3em;
+    opacity: 0.8;
     h2 {
       color: #fff;
       font-weight: 700;
@@ -800,12 +798,14 @@ ol {
     }
   }
   @include media($tablet_wide) {
+    background-size: auto 130%;
     header {
       h2 {
       }
     }
   }
   @include media($tablet_narrow) {
+    background-size: auto 100%;
     header {
       margin: 2em 0;
       padding: 2em;
@@ -814,6 +814,7 @@ ol {
     }
   }
   @include media($mobile) {
+    background-size: auto 140%;
     header {
       margin: 1em 0;
       padding: 1em;
