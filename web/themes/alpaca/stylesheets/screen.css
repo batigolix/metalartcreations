@@ -861,21 +861,20 @@ ol.default {
 .jumbo-banner {
   background: #CCE8F4 url(../images/banner.jpg);
   background-position: center center;
-  background-size: auto 165%;
+  background-size: auto 180%;
   background-repeat: no-repeat;
   text-align: center; }
   .jumbo-banner header {
     display: inline-block;
-    background-color: rgba(34, 30, 31, 0.98);
     font-size: 1.5em;
     border-radius: 5px;
-    margin: 1.7em;
-    padding: 2.5em 3em;
-    opacity: 0.8; }
+    margin: 3em;
+    opacity: 0.8;
+    text-shadow: 2px 2px 4px #000000; }
     .jumbo-banner header h2 {
       color: #fff;
       font-weight: 700;
-      font-size: 0.9em; }
+      font-size: 1.5em; }
     .jumbo-banner header p {
       color: #d52349;
       padding: 0;
@@ -883,7 +882,7 @@ ol.default {
       margin: 0; }
   @media screen and (max-width: 1200px) {
     .jumbo-banner {
-      background-size: auto 130%; } }
+      background-size: auto 150%; } }
   @media screen and (max-width: 846px) {
     .jumbo-banner {
       background-size: auto 100%; }
@@ -892,7 +891,7 @@ ol.default {
         padding: 2em; } }
   @media screen and (max-width: 746px) {
     .jumbo-banner {
-      background-size: auto 140%; }
+      background-size: auto 150%; }
       .jumbo-banner header {
         margin: 1em 0;
         padding: 1em;

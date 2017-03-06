@@ -773,22 +773,20 @@ ol {
 .jumbo-banner {
   background: #CCE8F4 url(../images/banner.jpg);
   background-position: center center;
-  background-size: auto 165%;
+  background-size: auto 180%;
   background-repeat: no-repeat;
   text-align: center;
   header {
     display: inline-block;
-    background-color: rgba(34, 30, 31, 0.98);
     font-size: 1.5em;
     border-radius: 5px;
-    margin: 1.7em;
-    padding: 2.5em 3em;
+    margin: 3em;
     opacity: 0.8;
+    text-shadow: 2px 2px 4px #000000;
     h2 {
       color: #fff;
       font-weight: 700;
-      font-size: 0.9em;
-
+      font-size: 1.5em;
     }
     p {
       color: #d52349;
@@ -798,7 +796,7 @@ ol {
     }
   }
   @include media($tablet_wide) {
-    background-size: auto 130%;
+    background-size: auto 150%;
     header {
       h2 {
       }
@@ -814,7 +812,7 @@ ol {
     }
   }
   @include media($mobile) {
-    background-size: auto 140%;
+    background-size: auto 150%;
     header {
       margin: 1em 0;
       padding: 1em;
