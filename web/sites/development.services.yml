@@ -10,3 +10,4 @@ parameters:
     debug: true
     auto_reload: true
     cache: false
+  http.response.debug_cacheability_headers: true
