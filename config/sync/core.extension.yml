@@ -12,8 +12,6 @@ module:
   ctools: 0
   datetime: 0
   dblog: 0
-  devel: 0
-  devel_generate: 0
   dynamic_page_cache: 0
   editor: 0
   environment_indicator: 0
@@ -24,7 +22,6 @@ module:
   filter: 0
   history: 0
   image: 0
-  kint: 0
   language: 0
   link: 0
   locale: 0
