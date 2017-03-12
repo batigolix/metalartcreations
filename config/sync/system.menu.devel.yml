@@ -5,6 +5,7 @@ dependencies:
   enforced:
     module:
       - devel
+      - devel
 _core:
   default_config_hash: Oe-hUZWKhrDlkhNaPdZx5srE63OeNZBa2YgAW0IctCg
 id: devel
