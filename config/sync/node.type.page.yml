@@ -11,7 +11,7 @@ third_party_settings:
     parent: 'main:'
 _core:
   default_config_hash: zhtPXoRcC6REiepM0k16zw__FDW5YOXDR6U2WlldTrs
-name: 'Basic page'
+name: 'Eenvoudige pagina'
 type: page
 description: 'Gebruik <em>basic pages</em> voor algemene pagina''s zoals ''About us'' of ''Routebeschrijving'''
 help: ''
