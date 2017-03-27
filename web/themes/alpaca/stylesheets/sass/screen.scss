@@ -531,16 +531,16 @@ ul {
 
       a {
         display: inline-block;
-        width: 3em;
-        height: 3em;
+        width: 2.2em;
+        height: 2.2em;
         text-align: center;
         border-radius: 5px;
         background: #888;
 
         &:before {
           color: #fff;
-          font-size: 2em;
-          line-height: 1.5em;
+          font-size: 1.2em;
+          line-height: 1.7em;
         }
 
         &.fa-facebook {
@@ -581,6 +581,14 @@ ul {
           &:hover {
             background: #3b5671;
           }
+        }
+
+        &.fa-instagram {
+          background: #4E433C;
+
+        }
+        &.fa-youtube {
+          background: #c4302b;
         }
 
         &.fa-google-plus {
@@ -713,7 +721,7 @@ ol {
     > li {
       @include span-columns(4);
       @include media($tablet_wide) {
-//        padding: 0 2em;
+        //        padding: 0 2em;
       }
       @include media($tablet_narrow) {
         .image-featured {

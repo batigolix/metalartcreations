@@ -634,15 +634,15 @@ ul.social {
       margin-left: 0; }
     ul.social li a {
       display: inline-block;
-      width: 3em;
-      height: 3em;
+      width: 2.2em;
+      height: 2.2em;
       text-align: center;
       border-radius: 5px;
       background: #888; }
       ul.social li a:before {
         color: #fff;
-        font-size: 2em;
-        line-height: 1.5em; }
+        font-size: 1.2em;
+        line-height: 1.7em; }
       ul.social li a.fa-facebook {
         background: #3c5a98; }
         ul.social li a.fa-facebook:hover {
@@ -663,6 +663,10 @@ ul.social {
         background: #2b4661; }
         ul.social li a.fa-tumblr:hover {
           background: #3b5671; }
+      ul.social li a.fa-instagram {
+        background: #4E433C; }
+      ul.social li a.fa-youtube {
+        background: #c4302b; }
       ul.social li a.fa-google-plus {
         background: #da2713; }
         ul.social li a.fa-google-plus:hover {
