@@ -59,3 +59,4 @@ permissions:
   52: 'administer redirects'
   53: 'administer url aliases'
   54: 'access site reports'
+  55: 'translate interface'
