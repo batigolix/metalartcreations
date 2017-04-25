@@ -24,3 +24,4 @@ web/themes/*/.sass-cache
 *.css.map
 
 */.DS_Store
+.DS_Store
