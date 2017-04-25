@@ -22,3 +22,5 @@ web/sites/*/settings.local.php
 # sass fall out
 web/themes/*/.sass-cache
 *.css.map
+
+*/.DS_Store
