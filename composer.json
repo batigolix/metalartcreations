@@ -30,7 +30,7 @@
         "drupal/config_devel": "~1.0",
         "drupal/config_readonly": "~1.0",
         "drupal/redirect": "~1.0",
-        "drupal/fieldblock": "2.0-alpha1",
+        "drupal/fieldblock": "~2.0",
         "drupal/coder": "8.2.5",
         "drupal/drupal-extension": "~3.0",
         "guzzlehttp/guzzle" : "^6.0@dev"
@@ -88,6 +88,7 @@
     "bin-dir": "bin/",
       "platform":{
           "php":"5.6.34"
-      }
+      },
+        "sort-packages": true
   }
 }

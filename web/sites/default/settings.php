@@ -309,6 +309,7 @@ $settings['hash_salt'] = 'wMW-W99IFg_aR8hs5_Al5IdZB3GHPJgMzpNj7B0JVz3rEtgbjkYYtE
  * TRUE back to a FALSE!
  */
 $settings['update_free_access'] = FALSE;
+$settings['rebuild_access'] = FALSE;
 
 /**
  * External access proxy settings:
@@ -749,19 +750,21 @@ $settings['file_scan_ignore_directories'] = [
  *
  * Keep this code block at the end of this file to take full effect.
  */
+//http://metalartcreations.nl
+$settings['trusted_host_patterns'] = array(
+        '^www\.metalartcreations\.nl',
+        '^.+\.metalartcreations\.nl$',
+        '^\.metalartcreations\.nl',
+        '^mac\.doesb\.org$',
+        '^mac\.acc\.doesb\.org$',
+        '^mac\.drupalvm\.test$',
+        '^mac-build\.drupalvm\.test$',
+        '^mac\.kem$',
+);
+
 if (file_exists(__DIR__ . '/settings.local.php')) {
   include __DIR__ . '/settings.local.php';
 }
 
-//$databases['default']['default'] = array (
-//  'database' => 'mac',
-//  'username' => 'root',
-//  'password' => 'root',
-//  'prefix' => '',
-//  'host' => 'localhost',
-//  'port' => '',
-//  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
-//  'driver' => 'mysql',
-//);
 $settings['install_profile'] = 'standard';
 //$config_directories['sync'] = 'sites/default/files/config_OmpzcnhSHzIY-lcb9ZqAVpp-hixEVZCB5n8VKVh0KnK5ir6jBge4cLcUs3Mw0Sgiv09-BcGBPw/sync';
