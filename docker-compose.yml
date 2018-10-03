@@ -1,0 +1,49 @@
+version: "2"
+# Access site at http://${NAME}.test
+services:
+  php:
+    container_name: ${NAME}-php
+    image: wodby/drupal-php:${PHP_WODBY_TAG}
+    environment:
+      PHP_DOCROOT: ${DOCROOT} # Relative path inside the /var/www/html/ directory.
+      PHP_SENDMAIL_PATH: /usr/sbin/sendmail -t -i -S mailhog.test:1025
+      PHP_XDEBUG_ENABLED: 1
+      PHP_XDEBUG_REMOTE_ENABLE: 1
+      PHP_XDEBUG_REMOTE_AUTOSTART: 1
+      PHP_XDEBUG_REMOTE_CONNECT_BACK: 0
+      PHP_XDEBUG_REMOTE_HOST: 172.17.0.1
+      PHP_MAX_INPUT_VARS: 15000
+      PHP_MEMORY_LIMIT: 2048M
+      PHP_MAX_EXECUTION_TIME: 360
+    volumes:
+    - ./:/var/www/html
+    networks:
+    - default
+    - common-apps_default
+    dns:
+    - 172.17.0.1
+  nginx:
+    container_name: ${NAME}-nginx
+    image: wodby/drupal-nginx:${DRUPAL_VERSION}-${NGINX_VERSION}
+    environment:
+      NGINX_SERVER_NAME: ${NAME}.test
+      NGINX_SERVER_ROOT: /var/www/html/${DOCROOT}
+      NGINX_STATIC_CONTENT_OPEN_FILE_CACHE: "off"
+      NGINX_ERROR_LOG_LEVEL: debug
+      NGINX_BACKEND_HOST: php
+      NGINX_DOCROOT: ${DOCROOT} # Relative path inside the /var/www/html/ directory.
+    labels:
+    - traefik.backend=${NAME}-nginx
+    - traefik.frontend.rule=Host:${NAME}.test
+    - traefik.port=80
+    - traefik.docker.network=common-apps_default
+    volumes:
+    - ./:/var/www/html
+    links:
+    - php
+    networks:
+    - default
+    - common-apps_default
+networks:
+  common-apps_default:
+    external: true
