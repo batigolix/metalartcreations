@@ -759,6 +759,8 @@ $settings['trusted_host_patterns'] = array(
         '^mac\.acc\.doesb\.org$',
         '^mac\.drupalvm\.test$',
         '^mac-build\.drupalvm\.test$',
+        '^mac\.test$',
+        '^mac-build\.test$',
         '^mac\.kem$',
 );
 
