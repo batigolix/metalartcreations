@@ -6,7 +6,7 @@ $aliases['dev'] = array(
 );
 
 $aliases['test'] = array(
-  'uri' => 'mac-build.test',
+  'uri' => 'metalartcreations-build.test',
   'root' => '/var/www/html/web',
 );
 

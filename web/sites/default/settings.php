@@ -762,6 +762,7 @@ $settings['trusted_host_patterns'] = array(
         '^mac\.test$',
         '^mac-build\.test$',
         '^mac\.kem$',
+        '^metalartcreations-build\.test$'
 );
 
 if (file_exists(__DIR__ . '/settings.local.php')) {
