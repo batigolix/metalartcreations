@@ -72,6 +72,11 @@
         ]
     },
     "extra": {
+        "drupal-scaffold": {
+            "excludes": [
+                "sites/development.services.yml"
+            ]
+        },
         "installer-paths": {
             "web/core": ["type:drupal-core"],
             "web/libraries/{$name}": ["type:drupal-library"],
