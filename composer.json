@@ -19,16 +19,12 @@
         "composer/installers": "^1.2",
         "cweagans/composer-patches": "~1.0",
         "drupal-composer/drupal-scaffold": "^2.2",
-        "drupal/admin_toolbar": "^1.24",
-        "drupal/coder": "8.2.5",
-        "drupal/config_devel": "~1.0",
+        "drupal/admin_toolbar": "~1.0",
         "drupal/config_readonly": "~1.0",
-        "drupal/console": "~1.0",
+        "drupal/config_split": "^1.4",
         "drupal/contact_storage": "^1.0@beta",
-        "drupal/core": "^8.6",
+        "drupal/core": "^8.0",
         "drupal/ctools": "~3.0",
-        "drupal/devel": "~1.0",
-        "drupal/drupal-extension": "~3.0",
         "drupal/environment_indicator": "~3.0",
         "drupal/fieldblock": "~2.0",
         "drupal/pathauto": "~1.0",
@@ -40,6 +36,10 @@
     "require-dev": {
         "behat/mink": "~1.7",
         "behat/mink-goutte-driver": "~1.2",
+        "drupal/coder": "~8.0",
+        "drupal/config_devel": "~1.0",
+        "drupal/devel": "^1.2",
+        "drupal/drupal-extension": "^3.4",
         "jcalderonzumba/gastonjs": "~1.0.2",
         "jcalderonzumba/mink-phantomjs-driver": "~0.3.1",
         "mikey179/vfsStream": "~1.2",
@@ -89,7 +89,7 @@
   "config": {
     "bin-dir": "bin/",
       "platform":{
-          "php":"5.6.34"
+          "php":"7.1"
       },
         "sort-packages": true
   }
