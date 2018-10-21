@@ -750,19 +750,13 @@ $settings['file_scan_ignore_directories'] = [
  *
  * Keep this code block at the end of this file to take full effect.
  */
-//http://metalartcreations.nl
 $settings['trusted_host_patterns'] = array(
-        '^www\.metalartcreations\.nl',
-        '^.+\.metalartcreations\.nl$',
-        '^\.metalartcreations\.nl',
-        '^mac\.doesb\.org$',
-        '^mac\.acc\.doesb\.org$',
-        '^mac\.drupalvm\.test$',
-        '^mac-build\.drupalvm\.test$',
-        '^mac\.test$',
-        '^mac-build\.test$',
-        '^mac\.kem$',
-        '^metalartcreations-build\.test$'
+  '^www\.metalartcreations\.nl',
+  '^.+\.metalartcreations\.nl$',
+  '^\.metalartcreations\.nl',
+  '^metalartcreations\.test$',
+  '^metalartcreations-build\.test$',
+  '^metalartcreations-stage\.doesb\.org',
 );
 
 if (file_exists(__DIR__ . '/settings.local.php')) {
