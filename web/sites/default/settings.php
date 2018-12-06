@@ -763,6 +763,6 @@ if (file_exists(__DIR__ . '/settings.local.php')) {
   include __DIR__ . '/settings.local.php';
 }
 
-$settings['install_profile'] = 'standard';
+#$settings['install_profile'] = 'standard';
 //$config_directories['sync'] = 'sites/default/files/config_OmpzcnhSHzIY-lcb9ZqAVpp-hixEVZCB5n8VKVh0KnK5ir6jBge4cLcUs3Mw0Sgiv09-BcGBPw/sync';
 $config_directories['sync'] = '../config/sync';

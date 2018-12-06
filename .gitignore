@@ -29,3 +29,4 @@ web/themes/*/.sass-cache
 .DS_Store
 
 .env
+old/*
