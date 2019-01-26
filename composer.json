@@ -23,7 +23,7 @@
         "drupal/config_readonly": "~1.0",
         "drupal/config_split": "^1.4",
         "drupal/contact_storage": "^1.0@beta",
-        "drupal/core": "^8.0",
+        "drupal/core": "^8.6",
         "drupal/ctools": "~3.0",
         "drupal/environment_indicator": "~3.0",
         "drupal/fieldblock": "~2.0",
