@@ -1,5 +1,5 @@
 check:
-  disabled_extensions: true
+  disabled_extensions: false
   interval_days: 1
 fetch:
   url: ''
@@ -8,7 +8,7 @@ fetch:
 notification:
   emails:
     - bdoesborg@gmail.com
-  threshold: all
+  threshold: security
 _core:
   default_config_hash: 2QzULf0zovJQx3J06Y9rufzzfi-CY2CTTlEfJJh2Qyw
 langcode: nl
