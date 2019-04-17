@@ -25,6 +25,7 @@ content:
     settings:
       trim_length: 140
     third_party_settings: {  }
+    region: content
   field_image:
     type: image
     weight: 0
@@ -33,10 +34,12 @@ content:
       image_style: small_landscape_183x125_
       image_link: content
     third_party_settings: {  }
+    region: content
   links:
     weight: 2
     settings: {  }
     third_party_settings: {  }
+    region: content
 hidden:
   field_tutorial_type: true
   langcode: true

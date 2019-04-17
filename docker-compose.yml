@@ -17,6 +17,8 @@ services:
       PHP_MAX_EXECUTION_TIME: 360
     volumes:
     - ./:/var/www/html
+    - ~/.ssh:/home/wodby/.ssh
+    - ~/.drush:/home/wodby/.drush
     networks:
     - default
     - common-apps_default
