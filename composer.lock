@@ -1651,16 +1651,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "8.6.14",
+            "version": "8.6.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "7f5f0369ffe08478aa0f26bd48dc95bcc9cde4b5"
+                "reference": "936456cdeac25c6bbd2f55b0d587239c6a81ba86"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/7f5f0369ffe08478aa0f26bd48dc95bcc9cde4b5",
-                "reference": "7f5f0369ffe08478aa0f26bd48dc95bcc9cde4b5",
+                "url": "https://api.github.com/repos/drupal/core/zipball/936456cdeac25c6bbd2f55b0d587239c6a81ba86",
+                "reference": "936456cdeac25c6bbd2f55b0d587239c6a81ba86",
                 "shasum": ""
             },
             "require": {
@@ -1691,9 +1691,9 @@
                 "symfony-cmf/routing": "^1.4",
                 "symfony/class-loader": "~3.4.0",
                 "symfony/console": "~3.4.0",
-                "symfony/dependency-injection": "~3.4.0",
+                "symfony/dependency-injection": "~3.4.26",
                 "symfony/event-dispatcher": "~3.4.0",
-                "symfony/http-foundation": "~3.4.14",
+                "symfony/http-foundation": "~3.4.26",
                 "symfony/http-kernel": "~3.4.14",
                 "symfony/polyfill-iconv": "^1.0",
                 "symfony/process": "~3.4.0",
@@ -1886,7 +1886,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
-            "time": "2019-04-08T01:37:34+00:00"
+            "time": "2019-04-17T20:00:11+00:00"
         },
         {
             "name": "drupal/ctools",
@@ -5716,7 +5716,7 @@
             "version": "1.2.0",
             "source": {
                 "type": "git",
-                "url": "https://git.drupal.org/project/config_devel",
+                "url": "https://git.drupalcode.org/project/config_devel.git",
                 "reference": "8.x-1.2"
             },
             "dist": {
@@ -5787,7 +5787,7 @@
             "version": "1.2.0",
             "source": {
                 "type": "git",
-                "url": "https://git.drupal.org/project/devel",
+                "url": "https://git.drupalcode.org/project/devel.git",
                 "reference": "8.x-1.2"
             },
             "dist": {
