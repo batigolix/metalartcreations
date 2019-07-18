@@ -1,0 +1,73 @@
+{
+  "id": "backstop_default",
+  "cookiePath": "backstop_data/engine_scripts/cookies.json",
+  "readyEvent": "",
+  "readySelector": "",
+  "delay": 0,
+  "hideSelectors": [],
+  "removeSelectors": [],
+  "hoverSelector": "",
+  "clickSelector": "",
+  "postInteractionWait": 0,
+  "selectors": [],
+  "selectorExpansion": true,
+  "expect": 0,
+  "misMatchThreshold" : 0.1,
+  "requireSameDimensions": true,
+  "cookiePath": "backstop_data/engine_scripts/cookies.json",
+  "readyEvent": "",
+  "readySelector": "",
+  "delay": 0,
+  "hideSelectors": [],
+  "removeSelectors": [],
+  "hoverSelector": "",
+  "clickSelector": "",
+  "postInteractionWait": 0,
+  "selectors": [],
+  "selectorExpansion": true,
+  "expect": 0,
+  "misMatchThreshold" : 0.1,
+  "requireSameDimensions": true,
+  "viewports": [
+    {
+      "label": "narrow",
+      "width": 500,
+      "height": 1000
+    },
+    {
+      "label": "wide",
+      "width": 900,
+      "height": 1800
+    }
+  ],
+  "onBeforeScript": "puppet/onBefore.js",
+  "onReadyScript": "puppet/onReady.js",
+  "scenarios": [
+    {"label": "Homepage", "url": "http://metalartcreations:metalartcreations@metalartcreations-stage.doesb.org"},
+    {"label": "Cursussen", "url": "http://metalartcreations:metalartcreations@metalartcreations-stage.doesb.org/cursussen-edelsmeden"},
+    {"label": "Workshops", "url": "http://metalartcreations:metalartcreations@metalartcreations-stage.doesb.org/workshops"},
+    {"label": "Over Birgit", "url": "http://metalartcreations:metalartcreations@metalartcreations-stage.doesb.org/node/4"},
+    {"label": "Locatie", "url": "http://metalartcreations:metalartcreations@metalartcreations-stage.doesb.org/locatie"},
+    {"label": "Contact", "url": "http://metalartcreations:metalartcreations@metalartcreations-stage.doesb.org/contact"},
+    {"label": "Theorie", "url": "http://metalartcreations:metalartcreations@metalartcreations-stage.doesb.org/lesmateriaal/vaktheorie-edelsmeden"},
+    {"label": "Workshop Mokume", "url": "http://metalartcreations:metalartcreations@metalartcreations-stage.doesb.org/workshops-cursussen/workshop-mokume-gane"},
+    {"label": "Workshop handgraveren", "url": "http://metalartcreations:metalartcreations@metalartcreations-stage.doesb.org/workshops-cursussen/workshop-handgraveren"},
+    {"label": "Nieuws & agenda", "url": "http://metalartcreations:metalartcreations@metalartcreations-stage.doesb.org/workshops-cursussen/nieuws-agenda"}
+  ],
+  "paths": {
+    "bitmaps_reference": "backstop_data/bitmaps_reference",
+    "bitmaps_test": "backstop_data/bitmaps_test",
+    "engine_scripts": "backstop_data/engine_scripts",
+    "html_report": "backstop_data/html_report",
+    "ci_report": "backstop_data/ci_report"
+  },
+  "report": ["browser"],
+  "engine": "puppeteer",
+  "engineOptions": {
+    "args": ["--no-sandbox"]
+  },
+  "asyncCaptureLimit": 5,
+  "asyncCompareLimit": 50,
+  "debug": false,
+  "debugWindow": false
+}

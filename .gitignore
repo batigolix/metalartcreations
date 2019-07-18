@@ -30,3 +30,5 @@ web/themes/*/.sass-cache
 
 .env
 old/*
+
+tests/backstop/backstop_data
