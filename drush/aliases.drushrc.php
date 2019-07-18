@@ -1,6 +1,8 @@
 <?php
 
 $aliases['dev'] = array(
-  'uri' => 'metalartcreations.test',
-  'root' => '/var/www/html/web',
+  'uri' => 'metalartcreations.docksal',
+  'root' => '/var/www/web',
 );
+
+$aliases['dxdev'] = [] + $aliases['dev'];

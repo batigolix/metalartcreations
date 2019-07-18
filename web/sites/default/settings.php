@@ -754,7 +754,8 @@ $settings['trusted_host_patterns'] = array(
   '^www\.metalartcreations\.nl',
   '^.+\.metalartcreations\.nl$',
   '^\.metalartcreations\.nl',
-  '^metalartcreations\.test$',
+    '^metalartcreations\.test$',
+    '^metalartcreations\.docksal$',
   '^metalartcreations-build\.test$',
   '^metalartcreations-stage\.doesb\.org',
 );
