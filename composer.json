@@ -35,6 +35,7 @@
         "cweagans/composer-patches": "~1.0",
         "drupal-composer/drupal-scaffold": "^2.2",
         "drupal/admin_toolbar": "^1.26",
+        "drupal/chosen": "^2.7",
         "drupal/config_ignore": "^2.1",
         "drupal/config_readonly": "~1.0",
         "drupal/config_split": "^1.4",
