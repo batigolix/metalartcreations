@@ -88,3 +88,12 @@ select {
   max-width: 100%;
   width: auto;
 }
+
+.messages--error {
+  border: 2px solid red;
+  color: #a51b00;
+  background-color: #fcf4f2;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+}
+

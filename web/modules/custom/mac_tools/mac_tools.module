@@ -32,4 +32,37 @@ function mac_tools_form_contact_message_general_form_alter(&$form, \Drupal\Core\
 
   // Removes the preview button from the form.
   $form['actions']['preview']['#access'] = FALSE;
+
+  // Adds an image field that is used to do a simple spammer check.
+  $image_variables = [
+    '#theme' => 'image',
+    '#uri' => $path = drupal_get_path('module', 'mac_tools') . '/images/Gereedschap.jpg',
+    '#alt' => 'asdsadsa',
+    '#title' => 'sadsadsda',
+    '#width' => '350',
+  ];
+//  $thumb =
+  $form['image'] = [
+    '#markup' => \Drupal::service('renderer')->render($image_variables),
+    '#weight' => 10,
+  ];
+
+  $form['tools'] = [
+    '#type' => 'textfield',
+    '#weight' => 12,
+    '#title'=> t('Welk gereedschap ziet u op de foto hierboven?'),
+    '#size'=> 24,
+    '#description' => t('Ik stel deze vraag om te controleren dat dit formulier niet door een robot wordt ingevuld'),
+    '#element_validate' => ['validate_tools'],
+  ];
+}
+
+/**
+ * Validates the Tools field.
+ */
+function validate_tools($element, $form_state) {
+  $tools_string = strtolower($form_state->getValue('tools'));
+  if (strpos($tools_string, 'tang') === false) {
+    $form_state->setError($element, t('Het antwoord op de vraag over welk gereedschap u ziet, is niet juist. Vul de naam in van het gereedschap op de foto. Als het niet lukt, stuur dan een email naar birgit@metalartcreations.nl'));
+  }
 }
