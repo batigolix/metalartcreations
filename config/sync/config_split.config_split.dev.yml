@@ -1,0 +1,17 @@
+uuid: 27d8a571-1c03-43e2-8f5f-a197b644a8d4
+langcode: nl
+status: true
+dependencies: {  }
+id: dev
+label: 'Dev config'
+description: ''
+folder: ../config/dev
+module:
+  devel: 0
+  devel_generate: 0
+theme: {  }
+blacklist: {  }
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true
+weight: 0
