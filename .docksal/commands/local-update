@@ -6,8 +6,8 @@
 DRUSH="fin drush"
 COMPOSER="fin composer"
 
-echo "Pulling latests code"
-git pull origin master
+#echo "Pulling latests code"
+#git pull origin master
 
 echo "Installing packages"
 $COMPOSER install
