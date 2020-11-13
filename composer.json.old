@@ -1,0 +1,122 @@
+{
+    "name": "drupal-composer/drupal-project",
+    "description": "Project template for Drupal 8 projects with composer",
+    "type": "project",
+    "license": "GPL-2.0+",
+    "authors": [
+        {
+            "name": "",
+            "role": ""
+        }
+    ],
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "harvesthq/chosen",
+                "version": "1.8.2",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://github.com/harvesthq/chosen/releases/download/v1.8.2/chosen_v1.8.2.zip",
+                    "type": "zip"
+                },
+                "require": {
+                    "composer/installers": "^1.2.0"
+                }
+            }
+        }
+    ],
+    "require": {
+        "composer/installers": "^1.2",
+        "cweagans/composer-patches": "~1.0",
+        "drupal-composer/drupal-scaffold": "^2.2",
+        "drupal/admin_toolbar": "^2.0",
+        "drupal/chosen": "^2.7",
+        "drupal/config_ignore": "^2.1",
+        "drupal/config_readonly": "~1.0",
+        "drupal/config_split": "^1.4",
+        "drupal/contact_storage": "^1.0@beta",
+        "drupal/core": "^8.9",
+        "drupal/ctools": "^3.1",
+        "drupal/devel": "^2.1",
+        "drupal/devel_entity_updates": "^3.0",
+        "drupal/environment_indicator": "^4.0",
+        "drupal/fieldblock": "~2.0",
+        "drupal/honeypot": "^1.29",
+        "drupal/pathauto": "~1.0",
+        "drupal/redirect": "~1.0",
+        "drupal/token": "~1.0",
+        "guzzlehttp/guzzle": "^6.0@dev",
+        "harvesthq/chosen": "^1.8",
+        "symfony/var-dumper": "^3.4"
+    },
+    "require-dev": {
+        "behat/mink": "~1.7",
+        "behat/mink-goutte-driver": "~1.2",
+        "drupal/coder": "~8.0",
+        "drupal/config_devel": "~1.0",
+        "drupal/drupal-extension": "^3.4",
+        "drush/drush": "^9.7",
+        "jcalderonzumba/gastonjs": "~1.0.2",
+        "jcalderonzumba/mink-phantomjs-driver": "~0.3.1",
+        "mikey179/vfsstream": "~1.2",
+        "phpunit/phpunit": "~4.8",
+        "symfony/css-selector": "~2.8"
+    },
+    "conflict": {
+        "drupal/drupal": "*"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "classmap": [
+            "scripts/composer/ScriptHandler.php"
+        ]
+    },
+    "scripts": {
+        "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
+        "pre-install-cmd": [
+            "DrupalProject\\composer\\ScriptHandler::checkComposerVersion"
+        ],
+        "pre-update-cmd": [
+            "DrupalProject\\composer\\ScriptHandler::checkComposerVersion"
+        ],
+        "post-install-cmd": [
+            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
+        ],
+        "post-update-cmd": [
+            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
+        ]
+    },
+    "extra": {
+        "drupal-scaffold": {
+            "excludes": [
+                "sites/development.services.yml"
+            ]
+        },
+        "installer-paths": {
+            "web/core": ["type:drupal-core"],
+            "web/libraries/{$name}": ["type:drupal-library"],
+            "web/modules/contrib/{$name}": ["type:drupal-module"],
+            "web/profiles/contrib/{$name}": ["type:drupal-profile"],
+            "web/themes/contrib/{$name}": ["type:drupal-theme"],
+            "drush/contrib/{$name}": ["type:drupal-drush"]
+        },
+        "patches": {
+            "drupal/fieldblock": {
+            "PHP exception when placing block": "https://www.drupal.org/files/issues/fieldblock_get_complete_form_state_2810783_1.patch"
+        }
+      }
+    },
+  "config": {
+    "bin-dir": "bin/",
+      "platform":{
+          "php":"7.1"
+      },
+        "sort-packages": true
+  }
+}

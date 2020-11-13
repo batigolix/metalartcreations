@@ -13,6 +13,8 @@ content:
   copy:
     weight: 50
     region: content
+    settings: {  }
+    third_party_settings: {  }
   field_first_name:
     weight: 51
     settings:
@@ -30,6 +32,8 @@ content:
   mail:
     weight: -40
     region: content
+    settings: {  }
+    third_party_settings: {  }
   message:
     type: string_textarea
     weight: 0
@@ -41,6 +45,8 @@ content:
   name:
     weight: -50
     region: content
+    settings: {  }
+    third_party_settings: {  }
   preview:
     weight: 50
     settings: {  }
