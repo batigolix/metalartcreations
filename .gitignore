@@ -33,3 +33,5 @@ web/themes/*/.sass-cache
 old/*
 
 tests/backstop/backstop_data
+/.editorconfig
+/.gitattributes
