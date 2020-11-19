@@ -1,10 +1,7 @@
-aliases.drushrc.php
-bin/
 composer.json
 composer.lock
 config_dev/
 configure-env.sh
-drush/
 .git/
 .gitignore
 phpunit.xml.dist
@@ -13,7 +10,6 @@ todo.txt
 .travis.yml
 #vendor/
 web/.csslintrc
-web/drush
 web/.editorconfig
 web/.eslintignore
 web/.eslintrc
