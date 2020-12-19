@@ -1,5 +1,7 @@
 <?php
 
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\Core\Form\FormStateInterface;
 /**
  * @file
  * Provides hooks and helper functions for the mac_tools module.
@@ -8,7 +10,7 @@
 /**
  * Replaces old images folder in HTML source.
  */
-function mac_tools_entity_presave(Drupal\Core\Entity\EntityInterface $entity) {
+function mac_tools_entity_presave(EntityInterface $entity) {
 
   $from = array(
     'src="../fotos/',
@@ -28,7 +30,7 @@ function mac_tools_entity_presave(Drupal\Core\Entity\EntityInterface $entity) {
 /**
  * Implements hook_form_alter().
  */
-function mac_tools_form_contact_message_general_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+function mac_tools_form_contact_message_general_form_alter(&$form, FormStateInterface $form_state, $form_id) {
 
   // Removes the preview button from the form.
   $form['actions']['preview']['#access'] = FALSE;

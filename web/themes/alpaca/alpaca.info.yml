@@ -3,7 +3,6 @@ type: theme
 description: Metalartcreations theme
 package: Custom
 version: 8.x-1.x-dev
-core: 8.x
 libraries:
   - alpaca/font-awesome
   - alpaca/global-styling
@@ -24,3 +23,5 @@ regions:
   footer_col3: Footer column 3
   post_footer: 'Post footer'
   pre_main: 'Pre main'
+core_version_requirement: ^8.8.0 || ^9.0
+base theme: stable
