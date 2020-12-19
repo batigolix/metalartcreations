@@ -31,7 +31,7 @@ $SERVER_CONNECTION "chmod a-w $REMOTE_PRODUCTION_DIR/web/sites/default"
 $SERVER_CONNECTION "chmod a-w $REMOTE_PRODUCTION_DIR/web/sites/default/settings.php"
 
 echo "Deploying, running db & config updates"
-$SERVER_CONNECTION "cd $REMOTE_PRODUCTION_DIR/web && $REMDRUSH updb --y && $REMDRUSH cr --y && $REMDRUSH cim --y && $REMDRUSH cron"
+$SERVER_CONNECTION "cd $REMOTE_PRODUCTION_DIR && $REMDRUSH deploy && $REMDRUSH cron"
 
 echo "Delete password protection on production"
 $SERVER_CONNECTION "rm -f $REMOTE_PRODUCTION_DIR/.htaccess"
