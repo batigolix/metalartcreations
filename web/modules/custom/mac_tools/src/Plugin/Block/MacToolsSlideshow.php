@@ -10,10 +10,6 @@ namespace Drupal\mac_tools\Plugin\Block;
 use Drupal\Core\Block\BlockBase;
 use Drupal\Core\Form\FormStateInterface;
 
-// Use Drupal\Core\Cache\Cache;
-// use Drupal\Core\Form\FormStateInterface;.
-// Use Drupal\Core\Annotation\Translation;
-// use Drupal\my_module\MyEntityInterface;.
 /**
  * Provides a 'Example: configurable text string' block.
  *
@@ -43,10 +39,11 @@ class MacToolsSlideshow extends BlockBase {
     $nids = $query->execute();
     $items = array();
     foreach ($nids as $nid) {
-      $node = entity_load('node', $nid);
-      $node_view = entity_view($node, 'hero_teaser');
+      $node = \Drupal::service('entity_type.manager')->getStorage('node')->load($nid);
+      $builder = \Drupal::entityTypeManager()->getViewBuilder('node');
+      $node_view = $builder->view($node, 'hero_teaser');
       $items[] = array(
-        '#markup' => drupal_render($node_view),
+        '#markup' => \Drupal::service('renderer')->render($node_view),
         '#wrapper_attributes' => array('class' => array('slide')),
       );
     }
