@@ -741,6 +741,19 @@ $settings['file_scan_ignore_directories'] = [
 ];
 
 /**
+ * Temporary file path:
+ *
+ * A local file system path where temporary files will be stored. This directory
+ * must be absolute, outside of the Drupal installation directory and not
+ * accessible over the web.
+ *
+ * If this is not set, the default for the operating system will be used.
+ *
+ * @see \Drupal\Component\FileSystem\FileSystem::getOsTemporaryDirectory()
+ */
+$settings['file_temp_path'] = '/tmp';
+
+/**
  * Load local development override configuration, if available.
  *
  * Use settings.local.php to override variables on secondary (staging,
@@ -759,6 +772,8 @@ $settings['trusted_host_patterns'] = array(
   '^metalartcreations-build\.test$',
   '^metalartcreations-stage\.doesb\.org',
 );
+
+
 
 if (file_exists(__DIR__ . '/settings.local.php')) {
   include __DIR__ . '/settings.local.php';

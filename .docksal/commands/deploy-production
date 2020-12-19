@@ -20,7 +20,7 @@ $SERVER_CONNECTION "chmod a+w $REMOTE_PRODUCTION_DIR/web/sites/default"
 $SERVER_CONNECTION "chmod a+w $REMOTE_PRODUCTION_DIR/web/sites/default/settings.php"
 
 echo "Syncing remote stage folder to remote production folder (replace the production code base)"
-  $SERVER_CONNECTION "cd $REMOTE_STAGE_DIR && rsync -avz --progress --force --delete --progress --protect-args --exclude-from=deploy_exclude.txt $REMOTE_STAGE_DIR/ $REMOTE_PRODUCTION_DIR"
+$SERVER_CONNECTION "cd $REMOTE_STAGE_DIR && rsync -avz --progress --force --delete --progress --protect-args --exclude-from=deploy_exclude.txt $REMOTE_STAGE_DIR/ $REMOTE_PRODUCTION_DIR"
 
 echo "Symlink settings and files"
 $SERVER_CONNECTION "ln -sf $REMOTE_SETTINGS_DIR/production.php $REMOTE_PRODUCTION_DIR/web/sites/default/settings.local.php"

@@ -48,7 +48,8 @@ $SERVER_CONNECTION "ln -sf $REMOTE_SETTINGS_DIR/stage.php $REMOTE_STAGE_DIR/web/
 $SERVER_CONNECTION "ln -sf $REMOTE_PROJECT_DIR/files $REMOTE_STAGE_DIR/web/sites/default/files"
 
 echo "Deploying, running db & config updates"
-$SERVER_CONNECTION "cd $REMOTE_STAGE_DIR && $REMDRUSH updb -y && $REMDRUSH cr && $REMDRUSH cim -y && $REMDRUSH image-flush --all && $REMDRUSH cr && $REMDRUSH cron"
+$SERVER_CONNECTION "cd $REMOTE_STAGE_DIR && $REMDRUSH deploy"
+$SERVER_CONNECTION "cd $REMOTE_STAGE_DIR && $REMDRUSH cron"
 
 echo "Restrict folder & file permissions"
 $SERVER_CONNECTION "chmod a-w $REMOTE_STAGE_DIR/web/sites/default"
@@ -56,3 +57,5 @@ $SERVER_CONNECTION "chmod a-w $REMOTE_STAGE_DIR/web/sites/default/settings.php"
 
 echo "Copy back the basic auth file"
 $SERVER_CONNECTION "cp -rf /tmp/.htaccess $REMOTE_STAGE_DIR"
+
+$SERVER_CONNECTION "cd $REMOTE_STAGE_DIR && $REMDRUSH st"
