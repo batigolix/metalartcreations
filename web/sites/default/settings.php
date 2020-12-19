@@ -767,18 +767,13 @@ $settings['trusted_host_patterns'] = array(
   '^www\.metalartcreations\.nl',
   '^.+\.metalartcreations\.nl$',
   '^\.metalartcreations\.nl',
-    '^metalartcreations\.test$',
+  '^metalartcreations\.nl$',
     '^metalartcreations\.docksal$',
-  '^metalartcreations-build\.test$',
   '^metalartcreations-stage\.doesb\.org',
 );
-
-
 
 if (file_exists(__DIR__ . '/settings.local.php')) {
   include __DIR__ . '/settings.local.php';
 }
 
-#$settings['install_profile'] = 'standard';
-//$config_directories['sync'] = 'sites/default/files/config_OmpzcnhSHzIY-lcb9ZqAVpp-hixEVZCB5n8VKVh0KnK5ir6jBge4cLcUs3Mw0Sgiv09-BcGBPw/sync';
 $settings["config_sync_directory"] = '../config/sync';
