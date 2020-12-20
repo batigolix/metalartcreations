@@ -23,7 +23,6 @@ echo "Syncing remote stage folder to remote production folder (replace the produ
 $SERVER_CONNECTION "cd $REMOTE_STAGE_DIR && rsync -avz --progress --force --delete --progress --protect-args --exclude-from=deploy_exclude.txt $REMOTE_STAGE_DIR/ $REMOTE_PRODUCTION_DIR"
 
 echo "Symlink settings and files"
-$SERVER_CONNECTION "ln -sf $REMOTE_SETTINGS_DIR/production.php $REMOTE_PRODUCTION_DIR/web/sites/default/settings.local.php"
 $SERVER_CONNECTION "ln -sf $REMOTE_PROJECT_DIR/files $REMOTE_PRODUCTION_DIR/web/sites/default/files"
 
 echo "Restrict folder & file permissions"
