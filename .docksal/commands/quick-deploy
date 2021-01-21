@@ -57,5 +57,3 @@ fi
 
 echo "Build and deploy the stage environment"
 fin build-and-deploy-stage -t $TAG
-
-fin drush @metalartcreations.stage st
