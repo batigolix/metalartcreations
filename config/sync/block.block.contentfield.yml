@@ -20,7 +20,7 @@ settings:
   label: 'Content field'
   provider: fieldblock
   label_display: '0'
-  label_from_field: 1
+  label_from_field: true
   field_name: field_image
   formatter_id: image
   formatter_settings:

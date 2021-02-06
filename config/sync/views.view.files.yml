@@ -397,7 +397,7 @@ display:
           type: boolean
           settings:
             format: custom
-            format_custom_false: Temporary
+            format_custom_false: Tijdelijk
             format_custom_true: Permanent
           plugin_id: field
           entity_type: file

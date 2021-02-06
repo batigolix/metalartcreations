@@ -134,7 +134,7 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          action_title: 'With selection'
+          action_title: 'Met selectie'
           include_exclude: exclude
           selected_actions: {  }
           entity_type: contact_message
@@ -146,7 +146,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Subject
+          label: Onderwerp
           exclude: false
           alter:
             alter_text: false
@@ -276,7 +276,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: 'Contact form'
+          label: Contactformulier
           exclude: false
           alter:
             alter_text: false
@@ -380,7 +380,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Operations
+          label: Bewerkingen
           exclude: false
           alter:
             alter_text: false
@@ -438,7 +438,7 @@ display:
           exposed: true
           expose:
             operator_id: contact_form_op
-            label: 'Contact form'
+            label: Contactformulier
             description: ''
             use_operator: false
             operator: contact_form_op
