@@ -116,5 +116,8 @@ jobs:
         run: |
           robo job:build
 
-      - name: Do experiments
+      - name: See status
         run: bin/drush st
+
+      - name: Drush deploy
+        run: bin/drush deploy
