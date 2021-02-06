@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+# backups db
+
+#-------------------------- Settings --------------------------------
+
+# PROJECT_ROOT and DOCROOT are set as env variables in cli
+DOCROOT_PATH="${PROJECT_ROOT}/${DOCROOT}"
+TODAY=$(date +'%Y%m%d')
+DRUSH="fin drush"
+
+#-------------------------- END: Settings --------------------------------
+
+cd $PROJECT_ROOT
+echo "Starting backup"
+$DRUSH sql:dump --gzip --structure-tables-list="cache,cache_*" --result-file="../db/finbk-backup-${TODAY}.sql"
+ls -lhta $PROJECT_ROOT/db
+echo "Showing files in db folder"
