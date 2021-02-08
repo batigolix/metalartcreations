@@ -16,6 +16,11 @@ use Drupal\Core\Form\FormStateInterface;
  */
 class MacToolsTrainings extends BlockBase {
 
+  /**
+   * The default string.
+   *
+   * @var string
+   */
   protected $defaultMarkup = '<p>Cursussen <a href="workshops-cursussen/Cursussen-edelsmeden.html">Edelsmeden</a> te s\'-Hertogenbosch. <br><a href="workshops-cursussen/creatieve-workshops.html">Workshops</a> speciale technieken zoals <a href="workshops-cursussen/workshop-Mokume-gane.htm">Mokume-gane</a>, <a href="workshops-cursussen/workshop-sieraden-vilten.html">Sieraden vilten</a>, <a href="workshops-cursussen/Workshop-sieraden-maken-van-Fimoklei.html">Fimoklei sieraden</a>, <a href="workshops-cursussen/workshop-zilvergieten.html">Zilver gieten</a>, etc. </p>';
 
   /**

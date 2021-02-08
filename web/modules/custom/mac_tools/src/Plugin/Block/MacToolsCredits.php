@@ -16,6 +16,11 @@ use Drupal\Core\Form\FormStateInterface;
  */
 class MacToolsCredits extends BlockBase {
 
+  /**
+   * The default string.
+   *
+   * @var string
+   */
   protected $defaultMarkup = '<ul class="links"><li>© Birgit Doesborg. All rights reserved.</li><li>Design: Dope trope theme by <a href="http://html5up.net">HTML5 UP</a></li><li>Gemaakt met <a href="http://drupal.org">Drupal</a></li></ul>';
 
   /**

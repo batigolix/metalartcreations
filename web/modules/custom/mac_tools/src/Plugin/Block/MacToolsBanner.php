@@ -16,6 +16,11 @@ use Drupal\Core\Form\FormStateInterface;
  */
 class MacToolsBanner extends BlockBase {
 
+  /**
+   * The default string.
+   *
+   * @var string
+   */
   protected $defaultMarkup = ' <section id="banner"><header><h2>Cursussen en workshops edelsmeden</h2><p>Voor individuen en groepen</p></header></section>';
 
   /**

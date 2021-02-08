@@ -2,15 +2,11 @@
 
 /**
  * @file
+ * Provides hooks and helper functions for the mac_tools module.
  */
 
 use Drupal\Core\Entity\EntityInterface;
 use Drupal\Core\Form\FormStateInterface;
-
-/**
- * @file
- * Provides hooks and helper functions for the mac_tools module.
- */
 
 /**
  * Replaces old images folder in HTML source.
