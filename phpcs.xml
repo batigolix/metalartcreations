@@ -3,7 +3,7 @@
   <description>Default PHP CodeSniffer configuration for finalist sites.</description>
   <rule ref="phpcs-ruleset.xml"/>
     <file>web/modules/custom</file>
-    <file>web/themes/custom</file>
+    <file>web/themes</file>
   <arg name="extensions" value="php,inc,module,install,info,test,profile,theme,js,twig,theme"/>
   <arg name="report" value="full"/>
   <arg value="p"/>

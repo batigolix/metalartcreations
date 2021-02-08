@@ -50,7 +50,7 @@ function alpaca_theme_suggestions_menu_alter(array &$suggestions, array $variabl
   // Remove the block and replace dashes with underscores in the block ID to
   // use for the hook name.
   if (isset($variables['attributes']['block'])) {
-    $hook = str_replace(array('block-', '-'), array('', '_'), $variables['attributes']['block']);
+    $hook = str_replace(['block-', '-'], ['', '_'], $variables['attributes']['block']);
     $suggestions[] = $variables['theme_hook_original'] . '__' . $hook;
   }
 }
