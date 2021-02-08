@@ -19,7 +19,6 @@
     "cweagans/composer-patches": "^1.7",
     "drupal/admin_toolbar": "^2.4",
     "drupal/chosen": "^3.0",
-    "drupal/coder": "^8.3",
     "drupal/config_ignore": "^2.3",
     "drupal/config_readonly": "^1.0@beta",
     "drupal/config_split": "^1.7",
@@ -35,13 +34,14 @@
     "drupal/pathauto": "^1.8",
     "drupal/redirect": "^1.6",
     "drupal/token": "^1.9",
+    "drush/drush": "^10.3",
     "harvesthq/chosen": "^1.8",
     "oomphinc/composer-installers-extender": "^2.0"
   },
   "require-dev": {
-    "consolidation/robo": "^2.0",
-    "drupal/devel": "^4.0",
-    "drush/drush": "^10.3"
+    "drupal/coder": "^8.3",
+    "drupal/config_devel": "^1.7",
+    "drupal/devel": "^4.0"
   },
   "conflict": {
     "drupal/drupal": "*"
