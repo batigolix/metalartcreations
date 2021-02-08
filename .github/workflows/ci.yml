@@ -98,13 +98,27 @@ jobs:
 
   experimental:
     runs-on: ubuntu-latest
-    container:
-      image: juampynr/drupal8ci:latest
 
     steps:
       - uses: actions/checkout@v1
         with:
           fetch-depth: 1
+
+      - name: get db
+        uses: mirromutth/mysql-action@v1.1
+        with:
+          mysql version: '5.7'
+          mysql database: 'default'
+          mysql root password: 'root'
+          mysql password: 'root'
+
+      - name: Set up PHP 7.3
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '7.3'
+          tools: composer:v2
+          extensions: mbstring
+          coverage: none
 
       - name: Get composer version
         run: composer --version
@@ -121,9 +135,11 @@ jobs:
           key: ${{ runner.os }}-composer-${{ hashFiles('**/composer.json') }}
           restore-keys: ${{ runner.os }}-composer-
 
-      - name: Build project
-        run: |
-          robo job:build
+      - name: Install dependencies
+        run: composer install --prefer-dist --no-progress --no-suggest
+
+      - name: Copy settings
+        run: cp .github/config/settings.local.php web/sites/default/settings.local.php
 
       - name: See status
         run: bin/drush st

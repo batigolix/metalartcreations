@@ -5,11 +5,11 @@
  */
 
 $databases['default']['default'] = [
-  'database' => 'drupal8',
+  'database' => 'default',
   'username' => 'root',
   'password' => 'root',
   'prefix' => '',
-  'host' => 'mariadb',
+  'host' => '127.0.0.1',
   'port' => '',
   'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
   'driver' => 'mysql',
