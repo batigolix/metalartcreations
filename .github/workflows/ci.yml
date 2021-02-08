@@ -104,6 +104,9 @@ jobs:
         with:
           fetch-depth: 1
 
+      - name: Run code sniffer
+        run: bin/phpcs
+
       - name: get db
         uses: mirromutth/mysql-action@v1.1
         with:
