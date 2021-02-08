@@ -115,8 +115,9 @@ jobs:
 
       - name: See status
         run: |
+          echo $GITHUB_WORKSPACE
           bin/drush sql:drop
-          bin/drush sql:cli < scripts/database/dumps/drupal8.sql
+          bin/drush sql:cli < $GITHUB_WORKSPACE/scripts/database/dumps/drupal8.sql
           bin/drush st
           bin/drush config:get system.site
 
