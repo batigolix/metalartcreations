@@ -115,10 +115,10 @@ jobs:
 
       - name: See status
         run: |
-          bin/drush sql-drop
-          bin/drush sql-cli < ~/scripts/database/dumps/drupal8.sql
+          bin/drush sql:drop
+          bin/drush sql:cli < scripts/database/dumps/drupal8.sql
           bin/drush st
-          bin/drush config-get system.site
+          bin/drush config:get system.site
 
       - name: Drush deploy
         run: bin/drush deploy
