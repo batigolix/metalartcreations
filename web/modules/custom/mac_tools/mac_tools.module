@@ -1,7 +1,12 @@
 <?php
 
+/**
+ * @file
+ */
+
 use Drupal\Core\Entity\EntityInterface;
 use Drupal\Core\Form\FormStateInterface;
+
 /**
  * @file
  * Provides hooks and helper functions for the mac_tools module.
@@ -12,14 +17,14 @@ use Drupal\Core\Form\FormStateInterface;
  */
 function mac_tools_entity_presave(EntityInterface $entity) {
 
-  $from = array(
+  $from = [
     'src="../fotos/',
     'src="fotos/',
-  );
-  $to = array(
+  ];
+  $to = [
     'src="/legacy/images/fotos/',
     'src="/legacy/images/fotos/',
-  );
+  ];
   if (isset($entity->body->value)) {
     $entity->body->value = str_replace($from, $to, $entity->body->value);
     $entity->body->format = $entity->body->format;
@@ -43,7 +48,7 @@ function mac_tools_form_contact_message_general_form_alter(&$form, FormStateInte
     '#title' => 'sadsadsda',
     '#width' => '350',
   ];
-//  $thumb =
+  // $thumb =
   $form['image'] = [
     '#markup' => \Drupal::service('renderer')->render($image_variables),
     '#weight' => 10,
@@ -52,8 +57,8 @@ function mac_tools_form_contact_message_general_form_alter(&$form, FormStateInte
   $form['tools'] = [
     '#type' => 'textfield',
     '#weight' => 12,
-    '#title'=> t('Welk gereedschap ziet u op de foto hierboven?'),
-    '#size'=> 24,
+    '#title' => t('Welk gereedschap ziet u op de foto hierboven?'),
+    '#size' => 24,
     '#description' => t('Ik stel deze vraag om te controleren dat dit formulier niet door een robot wordt ingevuld'),
     '#element_validate' => ['validate_tools'],
   ];
@@ -64,7 +69,7 @@ function mac_tools_form_contact_message_general_form_alter(&$form, FormStateInte
  */
 function validate_tools($element, $form_state) {
   $tools_string = strtolower($form_state->getValue('tools'));
-  if (strpos($tools_string, 'tang') === false) {
+  if (strpos($tools_string, 'tang') === FALSE) {
     $form_state->setError($element, t('Het antwoord op de vraag over welk gereedschap u ziet, is niet juist. Vul de naam in van het gereedschap op de foto. Als het niet lukt, stuur dan een email naar birgit@metalartcreations.nl'));
   }
 }

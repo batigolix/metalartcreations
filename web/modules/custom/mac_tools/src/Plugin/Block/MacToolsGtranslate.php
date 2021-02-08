@@ -1,10 +1,5 @@
 <?php
 
-/**
- * @file
- * Contains \Drupal\mac_tools\Plugin\Block\MacToolsGtranslate.
- */
-
 namespace Drupal\mac_tools\Plugin\Block;
 
 use Drupal\Core\Block\BlockBase;
@@ -24,7 +19,7 @@ class MacToolsGtranslate extends BlockBase {
    * Implements \Drupal\Core\Block\BlockBase::blockBuild().
    */
   public function build() {
-    $build = array();
+    $build = [];
     $build['container']['#markup'] = '<div id="google_translate_element"></div>';
     $build['#attached']['library'][] = 'mac_tools/gtranslate';
     $build['#attached']['library'][] = 'mac_tools/gtranslate_external';

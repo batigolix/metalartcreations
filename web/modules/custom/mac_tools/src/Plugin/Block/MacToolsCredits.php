@@ -1,10 +1,5 @@
 <?php
 
-/**
- * @file
- * Contains \Drupal\mac_tools\Plugin\Block\MacToolsCredits .
- */
-
 namespace Drupal\mac_tools\Plugin\Block;
 
 use Drupal\Core\Block\BlockBase;
@@ -27,28 +22,28 @@ class MacToolsCredits extends BlockBase {
    * {@inheritdoc}
    */
   public function defaultConfiguration() {
-    return array(
+    return [
       'label' => t("Credits"),
       'credits_markup_string' => $this->defaultMarkup,
-      'cache' => array(
+      'cache' => [
         'max_age' => 3600,
-        'contexts' => array(
+        'contexts' => [
           'cache_context.user.roles',
-        ),
-      ),
-    );
+        ],
+      ],
+    ];
   }
 
   /**
    * {@inheritdoc}
    */
   public function blockForm($form, FormStateInterface $form_state) {
-    $form['credits_markup_string_text'] = array(
+    $form['credits_markup_string_text'] = [
       '#type' => 'textarea',
       '#title' => $this->t('Credits markup'),
       '#description' => $this->t('This text will appear in the example block.'),
       '#default_value' => $this->configuration['credits_markup_string'],
-    );
+    ];
     return $form;
   }
 
@@ -64,10 +59,10 @@ class MacToolsCredits extends BlockBase {
    * {@inheritdoc}
    */
   public function build() {
-    return array(
+    return [
       '#type' => 'markup',
       '#markup' => $this->configuration['credits_markup_string'],
-    );
+    ];
   }
 
 }

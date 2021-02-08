@@ -1,15 +1,9 @@
 <?php
 
-/**
- * @file
- * Contains \Drupal\mac_tools\Plugin\Block\MacToolsNews .
- */
-
 namespace Drupal\mac_tools\Plugin\Block;
 
 use Drupal\Core\block\BlockBase;
 use Drupal\Core\Form\FormStateInterface;
-
 
 /**
  * Provides a 'Example: configurable text string' block.
@@ -26,16 +20,16 @@ class MacToolsNews extends BlockBase {
    * Overrides \Drupal\Core\Block\BlockBase::defaultConfiguration().
    */
   public function defaultConfiguration() {
-    return array(
+    return [
       'label' => t("Mac tools: News"),
       'content' => t('Default news content'),
-      'cache' => array(
+      'cache' => [
         'max_age' => 3600,
-        'contexts' => array(
+        'contexts' => [
           'cache_context.user.roles',
-        ),
-      ),
-    );
+        ],
+      ],
+    ];
   }
 
   /**
@@ -46,13 +40,13 @@ class MacToolsNews extends BlockBase {
     // Retrieve existing configuration for this block.
     $config = $this->getConfiguration();
     $nr_items = isset($config['nr_items']) ? $config['nr_items'] : 3;
-    $form['nr_items'] = array(
+    $form['nr_items'] = [
       '#type' => 'select',
-      '#options' => array(2 => 2, 5 => 5, 10 => 10),
+      '#options' => [2 => 2, 5 => 5, 10 => 10],
       '#description' => t('This number of items will be shown in the news block'),
       '#title' => t('Number of items'),
       '#default_value' => $nr_items,
-    );
+    ];
     return $form;
   }
 
@@ -80,15 +74,15 @@ class MacToolsNews extends BlockBase {
       ->range(0, $nr_items);
     $nids = $query->execute();
 
-    $items = array();
+    $items = [];
     foreach ($nids as $nid) {
-      $items[] = array(
+      $items[] = [
         '#markup' => 'sfdsdf',
-        '#wrapper_attributes' => array('class' => array('slide')),
-      );
+        '#wrapper_attributes' => ['class' => ['slide']],
+      ];
     }
 
-    $build = array();
+    $build = [];
     $build['items']['#markup'] = $nr_items;
     $build['elements']['#markup'] = 'placeholder';
     return $build;

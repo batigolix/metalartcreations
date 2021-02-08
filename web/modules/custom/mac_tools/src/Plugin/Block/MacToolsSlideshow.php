@@ -1,10 +1,5 @@
 <?php
 
-/**
- * @file
- * Contains \Drupal\mac_tools\Plugin\Block\MacToolsSlideshow .
- */
-
 namespace Drupal\mac_tools\Plugin\Block;
 
 use Drupal\Core\Block\BlockBase;
@@ -21,7 +16,6 @@ use Drupal\Core\Form\FormStateInterface;
  */
 class MacToolsSlideshow extends BlockBase {
 
-
   /**
    * {@inheritdoc}
    */
@@ -37,21 +31,21 @@ class MacToolsSlideshow extends BlockBase {
       // ->sort($order)
       ->range(0, $nr_items);
     $nids = $query->execute();
-    $items = array();
+    $items = [];
     foreach ($nids as $nid) {
       $node = \Drupal::service('entity_type.manager')->getStorage('node')->load($nid);
       $builder = \Drupal::entityTypeManager()->getViewBuilder('node');
       $node_view = $builder->view($node, 'hero_teaser');
-      $items[] = array(
+      $items[] = [
         '#markup' => \Drupal::service('renderer')->render($node_view),
-        '#wrapper_attributes' => array('class' => array('slide')),
-      );
+        '#wrapper_attributes' => ['class' => ['slide']],
+      ];
     }
-    $build['show'] = array(
+    $build['show'] = [
       '#theme' => 'item_list',
       '#items' => $items,
-      '#attributes' => array('class' => array('slideshow', 'rslides')),
-    );
+      '#attributes' => ['class' => ['slideshow', 'rslides']],
+    ];
     $build['#attributes']['class'][] = 'slideshow-block';
     $build['#attached']['library'][] = 'mac_tools/slideshow';
     $build['#attached']['library'][] = 'mac_tools/responsiveslides';
@@ -69,10 +63,10 @@ class MacToolsSlideshow extends BlockBase {
     $config = $this->getConfiguration();
 
     // Add a form field to the existing block configuration form.
-    $form['slideshow_items'] = array(
+    $form['slideshow_items'] = [
       '#type' => 'select',
       '#title' => t('Number of items'),
-      '#options' => array(
+      '#options' => [
         3 => 3,
         5 => 5,
         7 => 7,
@@ -81,20 +75,20 @@ class MacToolsSlideshow extends BlockBase {
         13 => 13,
         15 => 15,
         17 => 17,
-      ),
+      ],
       '#description' => t('Number of items that will be shown in the slideshow.'),
       '#default_value' => isset($config['slideshow_items']) ? $config['slideshow_items'] : '',
-    );
-    $form['slideshow_order'] = array(
+    ];
+    $form['slideshow_order'] = [
       '#type' => 'select',
       '#title' => t('Order by'),
-      '#options' => array(
+      '#options' => [
         'created ' => t('Creation date'),
         'changed' => t('Date of last change'),
-      ),
+      ],
       '#description' => t('By which date the items will be ordered in the slideshow block'),
       '#default_value' => isset($config['slideshow_order']) ? $config['slideshow_order'] : '',
-    );
+    ];
     return $form;
   }
 

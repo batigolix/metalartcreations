@@ -1,10 +1,5 @@
 <?php
 
-/**
- * @file
- * Contains \Drupal\mac_tools\Plugin\Block\MacToolsFlickr .
- */
-
 namespace Drupal\mac_tools\Plugin\Block;
 
 use Drupal\Core\Block\BlockBase;
@@ -32,20 +27,20 @@ class MacToolsFlickr extends BlockBase {
     $config = $this->getConfiguration();
 
     // Add a form field to the existing block configuration form.
-    $form['flickr_items'] = array(
+    $form['flickr_items'] = [
       '#type' => 'select',
       '#title' => t('Number of items'),
-      '#options' => array(
+      '#options' => [
         10 => 10,
         12 => 12,
         15 => 15,
         16 => 16,
         18 => 18,
         20 => 20,
-      ),
+      ],
       '#description' => t('Number of items that will be shown in the slideshow.'),
       '#default_value' => isset($config['flickr_items']) ? $config['flickr_items'] : '',
-    );
+    ];
     return $form;
   }
 
@@ -62,7 +57,7 @@ class MacToolsFlickr extends BlockBase {
   public function build() {
     $config = $this->getConfiguration();
     $flickr_items = isset($config['flickr_items']) ? $config['flickr_items'] : 12;
-    $build = array();
+    $build = [];
     $build['container']['#markup'] = '<div id="flickr_images"></div>';
     $build['#attached']['library'][] = 'mac_tools/flickr';
     $build['#attached']['drupalSettings']['mac_tools']['flickr']['flickr_items'] = $flickr_items;

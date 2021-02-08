@@ -1,10 +1,5 @@
 <?php
 
-/**
- * @file
- * Contains \Drupal\mac_tools\Plugin\Block\MacToolsGa.
- */
-
 namespace Drupal\mac_tools\Plugin\Block;
 
 use Drupal\Core\Block\BlockBase;
@@ -24,7 +19,7 @@ class MacToolsGa extends BlockBase {
    * Implements \Drupal\Core\Block\BlockBase::blockBuild().
    */
   public function build() {
-    $build = array();
+    $build = [];
     $build['#attached']['library'][] = 'mac_tools/ga';
     return $build;
   }

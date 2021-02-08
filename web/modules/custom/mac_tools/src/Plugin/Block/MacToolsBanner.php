@@ -1,10 +1,5 @@
 <?php
 
-/**
- * @file
- * Contains \Drupal\mac_tools\Plugin\Block\MacToolsBanner .
- */
-
 namespace Drupal\mac_tools\Plugin\Block;
 
 use Drupal\Core\Block\BlockBase;
@@ -27,28 +22,28 @@ class MacToolsBanner extends BlockBase {
    * {@inheritdoc}
    */
   public function defaultConfiguration() {
-    return array(
+    return [
       'label' => t("Banner"),
       'banner_markup_string' => $this->defaultMarkup,
-      'cache' => array(
+      'cache' => [
         'max_age' => 3600,
-        'contexts' => array(
+        'contexts' => [
           'cache_context.user.roles',
-        ),
-      ),
-    );
+        ],
+      ],
+    ];
   }
 
   /**
    * {@inheritdoc}
    */
   public function blockForm($form, FormStateInterface $form_state) {
-    $form['banner_markup_string_text'] = array(
+    $form['banner_markup_string_text'] = [
       '#type' => 'textarea',
       '#title' => $this->t('Banner markup'),
       '#description' => $this->t('This text will appear in the example block.'),
       '#default_value' => $this->configuration['banner_markup_string'],
-    );
+    ];
     return $form;
   }
 
@@ -64,10 +59,10 @@ class MacToolsBanner extends BlockBase {
    * {@inheritdoc}
    */
   public function build() {
-    return array(
+    return [
       '#type' => 'markup',
       '#markup' => $this->configuration['banner_markup_string'],
-    );
+    ];
   }
 
 }

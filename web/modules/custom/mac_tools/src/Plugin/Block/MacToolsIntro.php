@@ -1,10 +1,5 @@
 <?php
 
-/**
- * @file
- * Contains \Drupal\mac_tools\Plugin\Block\MacToolsIntro .
- */
-
 namespace Drupal\mac_tools\Plugin\Block;
 
 use Drupal\Core\Block\BlockBase;
@@ -20,33 +15,32 @@ use Drupal\Core\Block\BlockBase;
  */
 class MacToolsIntro extends BlockBase {
 
-
   /**
    * {@inheritdoc}
    */
   public function build() {
 
     $path = drupal_get_path('module', 'mac_tools');
-    $items = array(
-      'first' => array(
+    $items = [
+      'first' => [
         'img' => $path . '/images/Does-smeed.png',
         'title' => 'Workshops',
         'text' => 'Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus',
-      ),
-      'second' => array(
+      ],
+      'second' => [
         'img' => $path . '/images/Ponzen.png',
         'title' => 'Cursussen',
         'text' => 'Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus',
-      ),
-      'third' => array(
+      ],
+      'third' => [
         'img' => $path . '/images/Polijsten.png',
         'title' => 'Lesmateriaal',
         'text' => 'Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus',
-      ),
-    );
+      ],
+    ];
 
     foreach ($items as $key => $item) {
-      $build[$key] = array(
+      $build[$key] = [
         '#type' => 'markup',
         '#markup' => '<section class="' . $key . '">
                       <img src="/' . $item['img'] . '">
@@ -55,7 +49,7 @@ class MacToolsIntro extends BlockBase {
                       </header>
                       <p>' . $item['text'] . '</p>
                     </section>',
-      );
+      ];
     }
     return $build;
   }
