@@ -19,6 +19,7 @@
     "cweagans/composer-patches": "^1.7",
     "drupal/admin_toolbar": "^2.4",
     "drupal/chosen": "^3.0",
+    "drupal/coder": "^8.3",
     "drupal/config_ignore": "^2.3",
     "drupal/config_readonly": "^1.0@beta",
     "drupal/config_split": "^1.7",
@@ -40,7 +41,6 @@
   "require-dev": {
     "consolidation/robo": "^2.0",
     "dmore/chrome-mink-driver": "^2.7",
-    "drupal/coder": "^8.2",
     "drupal/config_devel": "^1.7",
     "drupal/devel": "^4.0",
     "drush/drush": "^10.3",
