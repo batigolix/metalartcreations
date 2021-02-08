@@ -136,7 +136,7 @@ jobs:
           restore-keys: ${{ runner.os }}-composer-
 
       - name: Install dependencies
-        run: composer install --prefer-dist --no-progress --no-suggest
+        run: composer install --prefer-dist --no-progress --no-suggest --quiet
 
       - name: Copy settings
         run: cp .github/config/settings.local.php web/sites/default/settings.local.php
