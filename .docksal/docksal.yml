@@ -4,3 +4,7 @@ services:
     volumes:
       - /home/boris/.drush/sites:/home/docker/.drush/sites:rw
       - /home/boris/.drush/drush.yml:/home/docker/.drush/drush.yml:rw
+    environment:
+      - SIMPLETEST_BASE_URL
+      - SIMPLETEST_DB
+      - BROWSERTEST_OUTPUT_DIRECTORY
