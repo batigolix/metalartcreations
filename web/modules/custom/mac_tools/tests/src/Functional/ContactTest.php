@@ -14,49 +14,26 @@ class ContactTest extends BrowserTestBase {
   /**
    * {@inheritdoc}
    */
-  protected $defaultTheme = 'stable';
+  protected $profile = 'standard';
 
   /**
    * {@inheritdoc}
    */
-  public static $modules = ['mac_tools'];
+  protected static $modules = ['mac_tools', 'contact', 'node'];
 
   /**
    * {@inheritdoc}
    */
-  protected function setUp() {
+  public function setUp() : void {
     parent::setUp();
-    // Set up the test here.
-  }
 
-  /**
-   * Test callback.
-   */
-  public function testSomething() {
-    $admin_user = $this->drupalCreateUser(['access administration pages']);
-    $this->drupalLogin($admin_user);
-    $this->drupalGet('admin');
-    $this->assertSession()->elementExists('xpath', '//h1[text() = "Administration"]');
   }
 
   /**
    * Test access.
    */
   public function testAccess() {
-    $this->drupalGet('contact');
-    $this->assertSession()->statusCodeEquals(200, 'Status code is equal to 200');
+    $this->drupalGet('user');
+    $this->assertSession()->statusCodeEquals(200);
   }
-
-
-  /**
-   * Test title tag and text.
-   */
-  public function testTitle() {
-    $this->assertSession()
-      ->pageTextContains('Gebruik het formulier beneden om contact op te nemen met Birgit.
-');
-    $this->assertSession()->elementExists('xpath', '//h1[text() = "Contact opnemen"]');
-    $this->assertSession()->elementExists('xpath', '//h3[text() = "Contactformulier"]');
-  }
-
 }
