@@ -24,4 +24,6 @@ jobs:
             git checkout develop
             git pull origin develop
             ${{ secrets.COMPOSER }} install --no-dev --ignore-platform-reqs
+            chmod a-w web/sites/default
+            chmod a-w web/sites/default/settings.php
             bin/drush deploy
