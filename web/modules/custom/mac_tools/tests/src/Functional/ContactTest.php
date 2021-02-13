@@ -36,4 +36,5 @@ class ContactTest extends BrowserTestBase {
     $this->drupalGet('user');
     $this->assertSession()->statusCodeEquals(200);
   }
+
 }
