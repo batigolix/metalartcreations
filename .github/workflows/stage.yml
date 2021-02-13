@@ -27,3 +27,4 @@ jobs:
             chmod a-w web/sites/default
             chmod a-w web/sites/default/settings.php
             bin/drush deploy
+            bin/drush st
