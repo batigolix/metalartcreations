@@ -1,11 +1,6 @@
-#on:
-#  schedule:
-#    - cron: "0 0 * * *"
-
 on:
-  push:
-    branches:
-      - 'develop'
+  schedule:
+    - cron: "*/5 * * * *"
 
 name: Update
 jobs:
@@ -48,8 +43,8 @@ jobs:
     - name: Git status
       run: git status
 
-    - uses: mikeal/publish-to-github-action@master
+    - name: Publish to github
+      uses: mikeal/publish-to-github-action@master
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        BRANCH_NAME: '' #optional defaults to master
-#      name: Publish to githhub
+        BRANCH_NAME: 'develop' #optional defaults to master
