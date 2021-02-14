@@ -57,6 +57,8 @@ jobs:
             cd ${{ secrets.STAGE_DIR }}
             chmod a+w web/sites/default
             chmod a+w web/sites/default/settings.php
+            git stash push --include-untracked
+            git stash drop
             git fetch --all
             git checkout develop
             git pull origin develop
