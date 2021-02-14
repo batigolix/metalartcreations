@@ -18,10 +18,13 @@ jobs:
           debug: true
           script: |
             cd ${{ secrets.PRODUCTION_DIR }}
-            git fetch --all
+            chmod a+w web/sites/default
+            chmod a+w web/sites/default/settings.php
+            git reset --hard
             git checkout master
             git pull origin master
             ${{ secrets.COMPOSER }} install --no-dev --ignore-platform-reqs
             chmod a-w web/sites/default
             chmod a-w web/sites/default/settings.php
             bin/drush deploy
+            bin/drush st
