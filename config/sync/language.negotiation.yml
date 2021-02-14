@@ -4,7 +4,6 @@ url:
   source: path_prefix
   prefixes:
     nl: nl
-    '': null
   domains:
     nl: ''
 selected_langcode: site_default
