@@ -785,3 +785,5 @@ if (strpos(DRUPAL_ROOT, 'stage')) {
 }
 
 $settings["config_sync_directory"] = '../config/sync';
+
+$config['config_split.config_split.dev']['status'] = FALSE;
