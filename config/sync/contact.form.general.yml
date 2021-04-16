@@ -1,11 +1,20 @@
 uuid: 30608703-02be-4732-b946-700389b60d81
 langcode: nl
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - contact_storage
+third_party_settings:
+  contact_storage:
+    submit_text: 'Bericht versturen'
+    show_preview: true
+    disabled_form_message: 'This contact form has been disabled.'
+    maximum_submissions_user: 0
+    page_autoreply_format: plain_text
 id: general
 label: 'Contact opnemen'
 recipients:
-  - birgit@metalartcreations.nl
+  - birgitdoesborg@gmail.com
 reply: ''
 weight: 0
 message: 'Your message has been sent.'

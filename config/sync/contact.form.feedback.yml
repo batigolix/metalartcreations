@@ -7,7 +7,7 @@ _core:
 id: feedback
 label: Website-feedback
 recipients:
-  - birgit@metalartcreations.nl
+  - birgitdoesborg@gmail.com
 reply: ''
 weight: 0
 message: 'Uw bericht is verzonden.'
