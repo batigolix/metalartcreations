@@ -1161,16 +1161,16 @@
         },
         {
             "name": "doctrine/cache",
-            "version": "1.11.0",
+            "version": "1.11.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/cache.git",
-                "reference": "a9c1b59eba5a08ca2770a76eddb88922f504e8e0"
+                "reference": "163074496dc7c3c7b8ccbf3d4376c0187424ed81"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/cache/zipball/a9c1b59eba5a08ca2770a76eddb88922f504e8e0",
-                "reference": "a9c1b59eba5a08ca2770a76eddb88922f504e8e0",
+                "url": "https://api.github.com/repos/doctrine/cache/zipball/163074496dc7c3c7b8ccbf3d4376c0187424ed81",
+                "reference": "163074496dc7c3c7b8ccbf3d4376c0187424ed81",
                 "shasum": ""
             },
             "require": {
@@ -1240,7 +1240,7 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/cache/issues",
-                "source": "https://github.com/doctrine/cache/tree/1.11.0"
+                "source": "https://github.com/doctrine/cache/tree/1.11.1"
             },
             "funding": [
                 {
@@ -1256,7 +1256,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-04-13T14:46:17+00:00"
+            "time": "2021-05-18T16:45:32+00:00"
         },
         {
             "name": "doctrine/collections",
@@ -5925,16 +5925,16 @@
         },
         {
             "name": "symfony/finder",
-            "version": "v4.4.23",
+            "version": "v4.4.24",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
-                "reference": "67b77716f517e3f864759232e1201e7aa2ab0e82"
+                "reference": "a96bc19ed87c88eec78e1a4c803bdc1446952983"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/finder/zipball/67b77716f517e3f864759232e1201e7aa2ab0e82",
-                "reference": "67b77716f517e3f864759232e1201e7aa2ab0e82",
+                "url": "https://api.github.com/repos/symfony/finder/zipball/a96bc19ed87c88eec78e1a4c803bdc1446952983",
+                "reference": "a96bc19ed87c88eec78e1a4c803bdc1446952983",
                 "shasum": ""
             },
             "require": {
@@ -5966,7 +5966,7 @@
             "description": "Finds files and directories via an intuitive fluent interface",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/finder/tree/v4.4.23"
+                "source": "https://github.com/symfony/finder/tree/v4.4.24"
             },
             "funding": [
                 {
@@ -5982,7 +5982,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-05-09T09:13:09+00:00"
+            "time": "2021-05-16T12:27:45+00:00"
         },
         {
             "name": "symfony/http-client-contracts",
@@ -11367,16 +11367,16 @@
         },
         {
             "name": "symfony/browser-kit",
-            "version": "v4.4.22",
+            "version": "v4.4.24",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/browser-kit.git",
-                "reference": "4c8b42b4aae93517e8f67d68c5cbe69413e3e3c1"
+                "reference": "7e6a92d5d97d826830924bd8cd22daa452c9e467"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/browser-kit/zipball/4c8b42b4aae93517e8f67d68c5cbe69413e3e3c1",
-                "reference": "4c8b42b4aae93517e8f67d68c5cbe69413e3e3c1",
+                "url": "https://api.github.com/repos/symfony/browser-kit/zipball/7e6a92d5d97d826830924bd8cd22daa452c9e467",
+                "reference": "7e6a92d5d97d826830924bd8cd22daa452c9e467",
                 "shasum": ""
             },
             "require": {
@@ -11418,7 +11418,7 @@
             "description": "Simulates the behavior of a web browser, allowing you to make requests, click on links and submit forms programmatically",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/browser-kit/tree/v4.4.22"
+                "source": "https://github.com/symfony/browser-kit/tree/v4.4.24"
             },
             "funding": [
                 {
@@ -11434,20 +11434,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-04-08T07:40:10+00:00"
+            "time": "2021-05-16T09:52:47+00:00"
         },
         {
             "name": "symfony/css-selector",
-            "version": "v4.4.22",
+            "version": "v4.4.24",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/css-selector.git",
-                "reference": "01c77324d1d47efbfd7891f62a7c256c69330115"
+                "reference": "947cacaf1b3a2af6f13a435392873d5ddaba5f70"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/css-selector/zipball/01c77324d1d47efbfd7891f62a7c256c69330115",
-                "reference": "01c77324d1d47efbfd7891f62a7c256c69330115",
+                "url": "https://api.github.com/repos/symfony/css-selector/zipball/947cacaf1b3a2af6f13a435392873d5ddaba5f70",
+                "reference": "947cacaf1b3a2af6f13a435392873d5ddaba5f70",
                 "shasum": ""
             },
             "require": {
@@ -11483,7 +11483,7 @@
             "description": "Converts CSS selectors to XPath expressions",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/css-selector/tree/v4.4.22"
+                "source": "https://github.com/symfony/css-selector/tree/v4.4.24"
             },
             "funding": [
                 {
@@ -11499,20 +11499,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-04-07T15:47:03+00:00"
+            "time": "2021-05-16T09:52:47+00:00"
         },
         {
             "name": "symfony/dom-crawler",
-            "version": "v4.4.20",
+            "version": "v4.4.24",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/dom-crawler.git",
-                "reference": "be133557f1b0e6672367325b508e65da5513a311"
+                "reference": "fc0bd1f215b0cd9f4efdc63bb66808f3417331bc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/dom-crawler/zipball/be133557f1b0e6672367325b508e65da5513a311",
-                "reference": "be133557f1b0e6672367325b508e65da5513a311",
+                "url": "https://api.github.com/repos/symfony/dom-crawler/zipball/fc0bd1f215b0cd9f4efdc63bb66808f3417331bc",
+                "reference": "fc0bd1f215b0cd9f4efdc63bb66808f3417331bc",
                 "shasum": ""
             },
             "require": {
@@ -11556,7 +11556,7 @@
             "description": "Eases DOM navigation for HTML and XML documents",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/dom-crawler/tree/v4.4.20"
+                "source": "https://github.com/symfony/dom-crawler/tree/v4.4.24"
             },
             "funding": [
                 {
@@ -11572,7 +11572,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-02-14T12:29:41+00:00"
+            "time": "2021-05-16T09:52:47+00:00"
         },
         {
             "name": "symfony/lock",
@@ -11653,16 +11653,16 @@
         },
         {
             "name": "symfony/phpunit-bridge",
-            "version": "v5.2.8",
+            "version": "v5.2.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/phpunit-bridge.git",
-                "reference": "b3cf2c3f7f6196fb498002920c1ae9036d9e5619"
+                "reference": "ea24e42c1ee04792f5d814da6f0814b20ece2907"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/phpunit-bridge/zipball/b3cf2c3f7f6196fb498002920c1ae9036d9e5619",
-                "reference": "b3cf2c3f7f6196fb498002920c1ae9036d9e5619",
+                "url": "https://api.github.com/repos/symfony/phpunit-bridge/zipball/ea24e42c1ee04792f5d814da6f0814b20ece2907",
+                "reference": "ea24e42c1ee04792f5d814da6f0814b20ece2907",
                 "shasum": ""
             },
             "require": {
@@ -11716,7 +11716,7 @@
             "description": "Provides utilities for PHPUnit, especially user deprecation notices management",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/phpunit-bridge/tree/v5.2.8"
+                "source": "https://github.com/symfony/phpunit-bridge/tree/v5.2.9"
             },
             "funding": [
                 {
@@ -11732,7 +11732,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-05-07T12:56:09+00:00"
+            "time": "2021-05-16T13:07:46+00:00"
         },
         {
             "name": "theseer/tokenizer",
