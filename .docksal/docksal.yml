@@ -2,6 +2,7 @@ version: "2.1"
 services:
   cli:
     volumes:
+      - /home/boris/.drush:/home/docker/.drush:rw
       - /home/boris/.drush/sites:/home/docker/.drush/sites:rw
       - /home/boris/.drush/drush.yml:/home/docker/.drush/drush.yml:rw
     environment:
