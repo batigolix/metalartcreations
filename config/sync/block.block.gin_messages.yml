@@ -1,22 +1,22 @@
-uuid: 4f4af267-9b9d-4d28-9f02-f35ba9a0814d
-langcode: nl
+uuid: f9e2ac18-a139-4c37-85ec-532e15e4c163
+langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - seven
+    - gin
 _core:
-  default_config_hash: XJqWwLt1LDCnazcEN6QkJmCLjk4R0__-8s0OO9xeNjg
-id: seven_messages
-theme: seven
+  default_config_hash: WvPhI8OwllG0gE69-F8qL3ai3nd5SbYD6JpmEuZcyok
+id: gin_messages
+theme: gin
 region: highlighted
 weight: 0
 provider: null
 plugin: system_messages_block
 settings:
   id: system_messages_block
-  label: Statusberichten
+  label: 'Status messages'
   provider: system
   label_display: '0'
 visibility: {  }
