@@ -19,7 +19,7 @@ base_field: nid
 display:
   default:
     id: default
-    display_title: Hoofd
+    display_title: Standaard
     display_plugin: default
     position: 0
     display_options:

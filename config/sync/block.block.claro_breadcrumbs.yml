@@ -1,22 +1,22 @@
-uuid: 46719788-3c06-4394-8323-916a563822e0
+uuid: 939b939f-1af8-4fa8-a4f3-9718e61926bd
 langcode: nl
 status: true
 dependencies:
   module:
     - system
   theme:
-    - seven
+    - claro
 _core:
-  default_config_hash: WWu2OQswgCztl9OeXjD1stexIEMZsSgPMYIdC-JHx9c
-id: seven_breadcrumbs
-theme: seven
+  default_config_hash: b6mUaCq5YPapRUABXRHfNTT6fxWIj5lgf0Mg4HaRJ_I
+id: claro_breadcrumbs
+theme: claro
 region: breadcrumb
 weight: 0
 provider: null
 plugin: system_breadcrumb_block
 settings:
   id: system_breadcrumb_block
-  label: Kruimelpad
+  label: Breadcrumbs
   provider: system
   label_display: '0'
 visibility: {  }

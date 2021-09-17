@@ -1,22 +1,22 @@
-uuid: 8ff4424c-092c-4e75-9bd8-0b80cfdebf59
-langcode: nl
+uuid: 2e9f0edc-1e7e-4f54-a00f-18a59b195552
+langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - seven
+    - gin
 _core:
-  default_config_hash: YRY68JWkaUiGeZlWMv1nzeIgDm0ZZwXYgpqUpLFzwAY
-id: seven_content
-theme: seven
+  default_config_hash: hBHXB7hC05XU7pDYzETt-GUcpFlogK1gkjyAsg0Ym58
+id: gin_content
+theme: gin
 region: content
 weight: 0
 provider: null
 plugin: system_main_block
 settings:
   id: system_main_block
-  label: 'Primaire inhoud van de pagina'
+  label: 'Main page content'
   provider: system
   label_display: '0'
 visibility: {  }

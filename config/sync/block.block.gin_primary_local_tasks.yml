@@ -1,20 +1,20 @@
-uuid: 02337edb-9e8e-425c-99cb-63caf4f43aec
-langcode: nl
+uuid: 7ab72cd0-bb18-456f-841e-199888969a58
+langcode: en
 status: true
 dependencies:
   theme:
-    - seven
+    - gin
 _core:
-  default_config_hash: ddy1OsBbWxjwEI8VL1viD4I69qcLHOkul4BxbTqLBTs
-id: seven_primary_local_tasks
-theme: seven
+  default_config_hash: Hh01DLj9k7UnNdPpOQXHZHW7GHf2OPNDQyCJF7_R9ac
+id: gin_primary_local_tasks
+theme: gin
 region: header
 weight: 0
 provider: null
 plugin: local_tasks_block
 settings:
   id: local_tasks_block
-  label: 'Primaire tabs'
+  label: 'Primary tabs'
   provider: core
   label_display: '0'
   primary: true
