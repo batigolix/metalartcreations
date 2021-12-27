@@ -610,16 +610,16 @@
         },
         {
             "name": "consolidation/output-formatters",
-            "version": "4.1.2",
+            "version": "4.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/consolidation/output-formatters.git",
-                "reference": "5821e6ae076bf690058a4de6c94dce97398a69c9"
+                "reference": "2a1a541987f9a8ab7a680e1a382bd32188a24a9e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/consolidation/output-formatters/zipball/5821e6ae076bf690058a4de6c94dce97398a69c9",
-                "reference": "5821e6ae076bf690058a4de6c94dce97398a69c9",
+                "url": "https://api.github.com/repos/consolidation/output-formatters/zipball/2a1a541987f9a8ab7a680e1a382bd32188a24a9e",
+                "reference": "2a1a541987f9a8ab7a680e1a382bd32188a24a9e",
                 "shasum": ""
             },
             "require": {
@@ -663,9 +663,9 @@
             "description": "Format text by applying transformations provided by plug-in formatters.",
             "support": {
                 "issues": "https://github.com/consolidation/output-formatters/issues",
-                "source": "https://github.com/consolidation/output-formatters/tree/4.1.2"
+                "source": "https://github.com/consolidation/output-formatters/tree/4.1.3"
             },
-            "time": "2020-12-12T19:04:59+00:00"
+            "time": "2021-12-24T13:27:27+00:00"
         },
         {
             "name": "consolidation/robo",
