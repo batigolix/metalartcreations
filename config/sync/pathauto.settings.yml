@@ -1,3 +1,8 @@
+_core:
+  default_config_hash: YrQtUD-tjwXmWch1oNpPqr3qb5S17-dXdlKwqhiHjNI
+langcode: nl
+enabled_entity_types:
+  - user
 punctuation:
   double_quotes: 0
   quotes: 0
@@ -40,8 +45,3 @@ reduce_ascii: true
 case: true
 ignore_words: 'a, an, as, at, before, but, by, for, from, is, in, into, like, of, off, on, onto, per, since, than, the, this, that, to, up, via, with, aan, als, bij, dan, dat, de, deze, die, dit, door, een, er, het, in, is, maar, met, n, naar, om, op, per, sinds, uit, van, via, voor, zoals'
 update_action: 2
-_core:
-  default_config_hash: YrQtUD-tjwXmWch1oNpPqr3qb5S17-dXdlKwqhiHjNI
-langcode: nl
-enabled_entity_types:
-  - user

@@ -15,12 +15,13 @@ plugin: mac_tools_credits
 settings:
   id: mac_tools_credits
   label: Credits
-  provider: mac_tools
   label_display: '0'
+  provider: mac_tools
   credits_markup_string: '<ul class="links"><li>© Birgit Doesborg. All rights reserved.</li><li>Design: Dope trope theme by <a href="http://html5up.net">HTML5 UP</a></li><li>Gemaakt met <a href="http://drupal.org">Drupal</a></li></ul>'
   cache:
     max_age: 3600
     contexts:
+      - cache_context.user.roles
       - cache_context.user.roles
       - cache_context.user.roles
       - cache_context.user.roles

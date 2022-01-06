@@ -18,12 +18,12 @@ plugin: 'fieldblock:node'
 settings:
   id: 'fieldblock:node'
   label: 'Content field'
-  provider: fieldblock
   label_display: '0'
+  provider: fieldblock
   label_from_field: true
   field_name: field_image
   formatter_id: image
   formatter_settings:
-    image_style: large_wide_783x290_
     image_link: content
+    image_style: large_wide_783x290_
 visibility: {  }

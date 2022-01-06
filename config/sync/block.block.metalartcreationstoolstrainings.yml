@@ -15,12 +15,13 @@ plugin: mac_tools_trainings
 settings:
   id: mac_tools_trainings
   label: Trainingen
-  provider: mac_tools
   label_display: visible
+  provider: mac_tools
   trainings_markup_string: '<p>Cursussen <a href="workshops-cursussen/Cursussen-edelsmeden.html">Edelsmeden</a> te s''-Hertogenbosch. <br><a href="workshops-cursussen/creatieve-workshops.html">Workshops</a> speciale technieken zoals <a href="workshops-cursussen/workshop-Mokume-gane.htm">Mokume-gane</a>, <a href="workshops-cursussen/workshop-sieraden-vilten.html">Sieraden vilten</a>, <a href="workshops-cursussen/Workshop-sieraden-maken-van-Fimoklei.html">Fimoklei sieraden</a>, <a href="workshops-cursussen/workshop-zilvergieten.html">Zilver gieten</a>, etc. </p>'
   cache:
     max_age: 3600
     contexts:
+      - cache_context.user.roles
       - cache_context.user.roles
       - cache_context.user.roles
       - cache_context.user.roles

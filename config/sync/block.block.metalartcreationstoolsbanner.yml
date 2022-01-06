@@ -16,8 +16,8 @@ plugin: mac_tools_banner
 settings:
   id: mac_tools_banner
   label: Banner
-  provider: mac_tools
   label_display: '0'
+  provider: mac_tools
   banner_markup_string: '<section class="jumbo-banner"><header><h2>Cursussen en workshops edelsmeden</h2><p>Voor individuen en groepen</p></header></section>'
   cache:
     max_age: 3600
@@ -30,9 +30,10 @@ settings:
       - cache_context.user.roles
       - cache_context.user.roles
       - cache_context.user.roles
+      - cache_context.user.roles
 visibility:
   request_path:
     id: request_path
-    pages: '<front>'
     negate: false
     context_mapping: {  }
+    pages: '<front>'

@@ -11,12 +11,12 @@ pattern: 'lesmateriaal/[node:title]'
 selection_criteria:
   f059f74a-e061-4d7e-b9af-e19df9569c66:
     id: node_type
-    bundles:
-      tutorial: tutorial
     negate: false
+    uuid: f059f74a-e061-4d7e-b9af-e19df9569c66
     context_mapping:
       node: node
-    uuid: f059f74a-e061-4d7e-b9af-e19df9569c66
+    bundles:
+      tutorial: tutorial
 selection_logic: and
 weight: -5
 relationships: {  }

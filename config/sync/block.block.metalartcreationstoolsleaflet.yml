@@ -16,11 +16,11 @@ plugin: leaflet
 settings:
   id: leaflet
   label: 'Metalartcreations tools: Leaflet'
-  provider: mac_tools
   label_display: '0'
+  provider: mac_tools
 visibility:
   request_path:
     id: request_path
-    pages: /locatie
     negate: false
     context_mapping: {  }
+    pages: /locatie

@@ -1,3 +1,6 @@
+_core:
+  default_config_hash: m2GVq11UAOVuNgj8x0t5fMOPujpvQQ_zxLoaly1BMEU
+langcode: nl
 module:
   admin_toolbar: 0
   admin_toolbar_search: 0
@@ -62,7 +65,4 @@ theme:
   alpaca: 0
   claro: 0
   gin: 0
-_core:
-  default_config_hash: m2GVq11UAOVuNgj8x0t5fMOPujpvQQ_zxLoaly1BMEU
-langcode: nl
 profile: standard

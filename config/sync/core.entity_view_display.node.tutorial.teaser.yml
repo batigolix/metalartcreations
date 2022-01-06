@@ -19,26 +19,26 @@ bundle: tutorial
 mode: teaser
 content:
   body:
-    label: hidden
     type: text_summary_or_trimmed
-    weight: 1
+    label: hidden
     settings:
       trim_length: 140
     third_party_settings: {  }
+    weight: 1
     region: content
   field_image:
     type: image
-    weight: 0
     label: hidden
     settings:
-      image_style: small_landscape_183x125_
       image_link: content
+      image_style: small_landscape_183x125_
     third_party_settings: {  }
+    weight: 0
     region: content
   links:
-    weight: 2
     settings: {  }
     third_party_settings: {  }
+    weight: 2
     region: content
 hidden:
   field_tutorial_type: true

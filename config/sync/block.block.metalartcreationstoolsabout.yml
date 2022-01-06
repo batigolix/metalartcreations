@@ -16,8 +16,8 @@ plugin: mac_tools_about
 settings:
   id: mac_tools_about
   label: 'Over Birgit'
-  provider: mac_tools
   label_display: visible
+  provider: mac_tools
   about_markup_string: '<p>Birgit Doesborg is meestergoudsmid en parttime docent metaaltechniek. De mogelijkheid bestaat om haar als gastdocent uit te nodigen bij kunst educatieve centra''s en/of scholen.<br> Zie<a href="workshops-cursussen/Priveles.html"> privé workshops.</a> <br>Zelf ontwerpt zij haar eigen stijl, handgemaakte sieraden en objecten met als specialiteit Mokume-gane die te bezichtigen zijn op <a href="http://www.doesdesign.nl/">Doesdesign.nl</a>'
   cache:
     max_age: 3600
@@ -27,9 +27,10 @@ settings:
       - cache_context.user.roles
       - cache_context.user.roles
       - cache_context.user.roles
+      - cache_context.user.roles
 visibility:
   request_path:
     id: request_path
-    pages: '<front>'
     negate: true
     context_mapping: {  }
+    pages: '<front>'

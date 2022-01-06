@@ -1,3 +1,6 @@
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI
+langcode: nl
 uuid: e777564f-f274-4112-8a36-93bca942a15b
 name: Metalartcreations
 mail: birgitdoesborg@gmail.com
@@ -8,8 +11,5 @@ page:
   front: /homepage
 admin_compact_mode: false
 weight_select_max: 100
-langcode: nl
 default_langcode: nl
-_core:
-  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI
 mail_notification: ''

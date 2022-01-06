@@ -15,6 +15,6 @@ plugin: ga
 settings:
   id: ga
   label: 'Metalartcreations tools: Google analytics'
-  provider: mac_tools
   label_display: '0'
+  provider: mac_tools
 visibility: {  }
