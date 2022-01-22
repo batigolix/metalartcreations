@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 fin up
+git stash clear
 git stash
 git checkout master
 git pull origin master
@@ -15,8 +16,8 @@ git push origin master
 echo "printing dev login link"
 fin drush @self uli
 echo "printing stage login link"
-fin drush @cristina.stage uli
+fin drush @metalartcreations.stage uli
 echo "printing live login link"
-fin drush @cristina.live uli
+fin drush @metalartcreations.live uli
 
 git stash pop
