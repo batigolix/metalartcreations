@@ -3166,30 +3166,30 @@
         },
         {
             "name": "drupal/gin",
-            "version": "3.0.0-alpha37",
+            "version": "3.0.0-beta1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/gin.git",
-                "reference": "8.x-3.0-alpha37"
+                "reference": "8.x-3.0-beta1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/gin-8.x-3.0-alpha37.zip",
-                "reference": "8.x-3.0-alpha37",
-                "shasum": "56f7226618f7e45697ee799e5e02c57d79cb3b1a"
+                "url": "https://ftp.drupal.org/files/projects/gin-8.x-3.0-beta1.zip",
+                "reference": "8.x-3.0-beta1",
+                "shasum": "dbe47c411408c6877b8b4c04e45f82b7c229a786"
             },
             "require": {
-                "drupal/core": "^8.8 || ^9 || ^10",
+                "drupal/core": "^8.9 || ^9 || ^10",
                 "drupal/gin_toolbar": "^1.0@beta"
             },
             "type": "drupal-theme",
             "extra": {
                 "drupal": {
-                    "version": "8.x-3.0-alpha37",
-                    "datestamp": "1632767973",
+                    "version": "8.x-3.0-beta1",
+                    "datestamp": "1646929485",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Alpha releases are not covered by Drupal security advisories."
+                        "message": "Beta releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -3223,17 +3223,17 @@
         },
         {
             "name": "drupal/gin_toolbar",
-            "version": "1.0.0-beta20",
+            "version": "1.0.0-beta21",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/gin_toolbar.git",
-                "reference": "8.x-1.0-beta20"
+                "reference": "8.x-1.0-beta21"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/gin_toolbar-8.x-1.0-beta20.zip",
-                "reference": "8.x-1.0-beta20",
-                "shasum": "770d6945de7ae001e3981db83daace610d4db5c4"
+                "url": "https://ftp.drupal.org/files/projects/gin_toolbar-8.x-1.0-beta21.zip",
+                "reference": "8.x-1.0-beta21",
+                "shasum": "25522839cc22b25410cd478902096a649fd9ab61"
             },
             "require": {
                 "drupal/core": "^8 || ^9 || ^10"
@@ -3241,8 +3241,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.0-beta20",
-                    "datestamp": "1635149692",
+                    "version": "8.x-1.0-beta21",
+                    "datestamp": "1646929714",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Beta releases are not covered by Drupal security advisories."
