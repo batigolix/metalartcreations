@@ -3186,7 +3186,7 @@
             "extra": {
                 "drupal": {
                     "version": "8.x-3.0-beta1",
-                    "datestamp": "1646986688",
+                    "datestamp": "1648220588",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Beta releases are not covered by Drupal security advisories."
@@ -3242,7 +3242,7 @@
             "extra": {
                 "drupal": {
                     "version": "8.x-1.0-beta21",
-                    "datestamp": "1646929714",
+                    "datestamp": "1648220706",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Beta releases are not covered by Drupal security advisories."
