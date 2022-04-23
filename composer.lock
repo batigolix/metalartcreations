@@ -3348,25 +3348,24 @@
         },
         {
             "name": "drupal/migrate_plus",
-            "version": "5.2.0",
+            "version": "5.3.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/migrate_plus.git",
-                "reference": "8.x-5.2"
+                "reference": "8.x-5.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/migrate_plus-8.x-5.2.zip",
-                "reference": "8.x-5.2",
-                "shasum": "03ae34c362ccfacc4ae95b58469b25522e0ffb68"
+                "url": "https://ftp.drupal.org/files/projects/migrate_plus-8.x-5.3.zip",
+                "reference": "8.x-5.3",
+                "shasum": "3cf6dde235d7604ee49be2986812c0ee5e2982f6"
             },
             "require": {
                 "drupal/core": "^9.1"
             },
             "require-dev": {
                 "drupal/migrate_example_advanced_setup": "*",
-                "drupal/migrate_example_setup": "*",
-                "drush/drush": "^10"
+                "drupal/migrate_example_setup": "*"
             },
             "suggest": {
                 "ext-soap": "*",
@@ -3375,16 +3374,11 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-5.2",
-                    "datestamp": "1641478565",
+                    "version": "8.x-5.3",
+                    "datestamp": "1650658156",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
-                    }
-                },
-                "drush": {
-                    "services": {
-                        "drush.services.yml": "^9 || ^10"
                     }
                 }
             },
@@ -10121,16 +10115,16 @@
         },
         {
             "name": "phpstan/phpdoc-parser",
-            "version": "1.4.4",
+            "version": "1.4.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpdoc-parser.git",
-                "reference": "d8e9fd97ca11f2f24fc1aafbcfb1f78bce762267"
+                "reference": "129a63b3bc7caeb593c224c41f420675e63cfefc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpdoc-parser/zipball/d8e9fd97ca11f2f24fc1aafbcfb1f78bce762267",
-                "reference": "d8e9fd97ca11f2f24fc1aafbcfb1f78bce762267",
+                "url": "https://api.github.com/repos/phpstan/phpdoc-parser/zipball/129a63b3bc7caeb593c224c41f420675e63cfefc",
+                "reference": "129a63b3bc7caeb593c224c41f420675e63cfefc",
                 "shasum": ""
             },
             "require": {
@@ -10159,9 +10153,9 @@
             "description": "PHPDoc parser with support for nullable, intersection and generic types",
             "support": {
                 "issues": "https://github.com/phpstan/phpdoc-parser/issues",
-                "source": "https://github.com/phpstan/phpdoc-parser/tree/1.4.4"
+                "source": "https://github.com/phpstan/phpdoc-parser/tree/1.4.5"
             },
-            "time": "2022-04-14T12:24:06+00:00"
+            "time": "2022-04-22T11:11:01+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",
