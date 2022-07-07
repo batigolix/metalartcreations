@@ -11,7 +11,7 @@ type: 'canonical_entities:node'
 pattern: 'workshops-cursussen/[node:title]'
 selection_criteria:
   8dc71065-74db-4205-8fda-a0aff310c4d4:
-    id: node_type
+    id: 'entity_bundle:node'
     negate: false
     uuid: 8dc71065-74db-4205-8fda-a0aff310c4d4
     context_mapping:
