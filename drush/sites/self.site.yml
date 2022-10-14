@@ -1,8 +1,8 @@
 # drush site aliases
 
 ddev:
-  root: /var/www/html/web
-  uri: http://metalartcreations.ddev.site
+  root: ${env.DOCUMENT_ROOT}
+  uri: ${env.DDEV_HOSTNAME}
   paths:
     config-sync: '/var/www/web/config/sync'
 
