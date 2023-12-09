@@ -1,62 +1,80 @@
 uuid: 07e8d0b2-dc7a-4504-9adc-2689a05e2a52
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - filter.format.advanced_html
+    - node.type.page
+    - node.type.training
+    - node.type.tutorial
+  module:
+    - contact
+    - contextual
+    - file
+    - filter
+    - locale
+    - node
+    - path
+    - pathauto
+    - redirect
+    - shortcut
+    - system
+    - toolbar
 id: webmaster
 label: Webmaster
 weight: 3
 is_admin: null
 permissions:
-  2: 'access site-wide contact form'
-  3: 'access user contact forms'
-  4: 'access contextual links'
-  5: 'access files overview'
-  6: 'access content overview'
-  7: 'delete all revisions'
-  8: 'revert all revisions'
-  9: 'view all revisions'
-  10: 'view own unpublished content'
-  11: 'access content'
-  12: 'create page content'
-  13: 'delete any page content'
-  14: 'delete own page content'
-  15: 'delete page revisions'
-  16: 'edit any page content'
-  17: 'edit own page content'
-  18: 'revert page revisions'
-  19: 'view page revisions'
-  20: 'create training content'
-  21: 'delete any training content'
-  22: 'delete own training content'
-  23: 'delete training revisions'
-  24: 'edit any training content'
-  25: 'edit own training content'
-  26: 'revert training revisions'
-  27: 'view training revisions'
-  28: 'create tutorial content'
-  29: 'delete any tutorial content'
-  30: 'delete own tutorial content'
-  31: 'delete tutorial revisions'
-  32: 'edit any tutorial content'
-  33: 'edit own tutorial content'
-  34: 'revert tutorial revisions'
-  35: 'view tutorial revisions'
-  36: 'create url aliases'
-  37: 'access in-place editing'
-  38: 'customize shortcut links'
-  39: 'switch shortcut sets'
-  40: 'access shortcuts'
-  41: 'access administration pages'
-  42: 'access site in maintenance mode'
-  43: 'access toolbar'
-  44: 'view the administration theme'
-  46: 'use text format advanced_html'
-  47: 'administer menu'
-  48: 'administer nodes'
-  49: 'administer contact forms'
-  50: 'administer pathauto'
-  51: 'notify of path changes'
-  52: 'administer redirects'
-  53: 'administer url aliases'
-  54: 'access site reports'
-  55: 'translate interface'
+  - 'access administration pages'
+  - 'access content'
+  - 'access content overview'
+  - 'access contextual links'
+  - 'access files overview'
+  - 'access in-place editing'
+  - 'access shortcuts'
+  - 'access site in maintenance mode'
+  - 'access site reports'
+  - 'access site-wide contact form'
+  - 'access toolbar'
+  - 'access user contact forms'
+  - 'administer contact forms'
+  - 'administer menu'
+  - 'administer nodes'
+  - 'administer pathauto'
+  - 'administer redirects'
+  - 'administer url aliases'
+  - 'create page content'
+  - 'create training content'
+  - 'create tutorial content'
+  - 'create url aliases'
+  - 'customize shortcut links'
+  - 'delete all revisions'
+  - 'delete any page content'
+  - 'delete any training content'
+  - 'delete any tutorial content'
+  - 'delete own page content'
+  - 'delete own training content'
+  - 'delete own tutorial content'
+  - 'delete page revisions'
+  - 'delete training revisions'
+  - 'delete tutorial revisions'
+  - 'edit any page content'
+  - 'edit any training content'
+  - 'edit any tutorial content'
+  - 'edit own page content'
+  - 'edit own training content'
+  - 'edit own tutorial content'
+  - 'notify of path changes'
+  - 'revert all revisions'
+  - 'revert page revisions'
+  - 'revert training revisions'
+  - 'revert tutorial revisions'
+  - 'switch shortcut sets'
+  - 'translate interface'
+  - 'use text format advanced_html'
+  - 'view all revisions'
+  - 'view own unpublished content'
+  - 'view page revisions'
+  - 'view the administration theme'
+  - 'view training revisions'
+  - 'view tutorial revisions'

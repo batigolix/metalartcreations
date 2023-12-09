@@ -11,7 +11,6 @@ module:
   chosen: 0
   chosen_lib: 0
   ckeditor: 0
-  color: 0
   config: 0
   config_filter: 0
   config_split: 0
@@ -53,6 +52,7 @@ module:
   token: 0
   toolbar: 0
   update: 0
+  upgrade_status: 0
   user: 0
   views_ui: 0
   menu_link_content: 1
