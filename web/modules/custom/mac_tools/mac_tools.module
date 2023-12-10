@@ -39,7 +39,7 @@ function mac_tools_form_contact_message_general_form_alter(&$form, FormStateInte
   // Adds an image field that is used to do a simple spammer check.
   $image_variables = [
     '#theme' => 'image',
-    '#uri' => $path =  Drupal\Core\Extension\ExtensionPathResolver::getPath('module', 'mac_tools') . '/images/Gereedschap.jpg',
+    '#uri' => \Drupal::service('extension.list.module')->getPath('mac_tools') . '/images/Gereedschap.jpg',
     '#alt' => 'asdsadsa',
     '#title' => 'sadsadsda',
     '#width' => '350',
