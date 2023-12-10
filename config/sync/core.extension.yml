@@ -10,8 +10,7 @@ module:
   breakpoint: 0
   chosen: 0
   chosen_lib: 0
-  ckeditor: 0
-  color: 0
+  ckeditor5: 0
   config: 0
   config_filter: 0
   config_split: 0
@@ -45,6 +44,7 @@ module:
   page_cache: 0
   path: 0
   path_alias: 0
+  phpass: 0
   redirect: 0
   redirect_404: 0
   shortcut: 0
@@ -65,4 +65,5 @@ theme:
   alpaca: 0
   claro: 0
   gin: 0
+  stable9: 0
 profile: standard

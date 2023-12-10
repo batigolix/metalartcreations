@@ -7,7 +7,7 @@ dependencies:
 _core:
   default_config_hash: DWLCIpl8ku4NbiI9t3GgDeuW13KSOy2l1zho7ReP_Bg
 id: who_s_online
-label: '''Wie is online''-blok'
+label: "'Wie is online'-blok"
 module: user
 description: 'Toont de gebruikersnamen van de meest recente actieve gebruikers, en het totale aantal actieve gebruikers.'
 tag: default
