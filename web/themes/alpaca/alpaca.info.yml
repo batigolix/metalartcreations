@@ -24,4 +24,4 @@ regions:
   post_footer: 'Post footer'
   pre_main: 'Pre main'
 core_version_requirement: ^8.8.0 || ^9.0 || ^10
-base theme: stable
+base theme: stable9
