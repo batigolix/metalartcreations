@@ -19,6 +19,8 @@
     "cweagans/composer-patches": "^1.7",
     "drupal/admin_toolbar": "^3.2",
     "drupal/chosen": "^3.0",
+    "drupal/ckeditor": "^1.0",
+    "drupal/classy": "^1.0",
     "drupal/config_filter": "^2.2",
     "drupal/config_readonly": "^1.0@beta",
     "drupal/config_split": "^2.0",
@@ -36,15 +38,9 @@
     "drupal/redirect": "^1.6",
     "drupal/stable": "^2.0",
     "drupal/token": "^1.9",
-    "drush/drush": "^10.3",
+    "drush/drush": "^12.4",
     "harvesthq/chosen": "^1.8",
     "oomphinc/composer-installers-extender": "^2.0"
-  },
-  "require-dev": {
-    "drupal/coder": "^8.3",
-    "drupal/config_devel": "^1.7",
-    "drupal/core-dev": "^9.1",
-    "phpspec/prophecy-phpunit": "^2.0"
   },
   "conflict": {
     "drupal/drupal": "*"
