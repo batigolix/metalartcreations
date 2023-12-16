@@ -1,7 +1,13 @@
 uuid: 3d4326a4-9716-486e-be0b-04721401d68f
 langcode: nl
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - filter.format.restricted_html
+  module:
+    - contact
+    - filter
+    - system
 _core:
   default_config_hash: j5zLMOdJBqC0bMvSdth5UebkprJB8g_2FXHqhfpJzow
 id: anonymous
