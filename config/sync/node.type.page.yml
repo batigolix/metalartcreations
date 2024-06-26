@@ -14,7 +14,7 @@ _core:
 name: 'Eenvoudige pagina'
 type: page
 description: "Gebruik <em>basic pages</em> voor algemene pagina's zoals 'About us' of 'Routebeschrijving'"
-help: ''
+help: null
 new_revision: true
 preview_mode: 1
 display_submitted: false
