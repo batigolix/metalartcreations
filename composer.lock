@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e0ebe826ba8e149c0220c8acd1466151",
+    "content-hash": "63d518e6d46414c5ed62cbb00aaffbe8",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1278,27 +1278,27 @@
         },
         {
             "name": "drupal/chosen",
-            "version": "4.0.3",
+            "version": "5.0.1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/chosen.git",
-                "reference": "4.0.3"
+                "reference": "5.0.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/chosen-4.0.3.zip",
-                "reference": "4.0.3",
-                "shasum": "72a4090b4b21ff7341d1f2e05866b25feede3188"
+                "url": "https://ftp.drupal.org/files/projects/chosen-5.0.1.zip",
+                "reference": "5.0.1",
+                "shasum": "e12bad5888c965823f5bad647a18c41ce6bac073"
             },
             "require": {
                 "drupal/chosen_lib": "*",
-                "drupal/core": "^9.2 || ^10 || ^11"
+                "drupal/core": "^10.2 || ^11"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "4.0.3",
-                    "datestamp": "1725307446",
+                    "version": "5.0.1",
+                    "datestamp": "1740832971",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -1335,7 +1335,7 @@
                     "homepage": "https://www.drupal.org/user/1763952"
                 },
                 {
-                    "name": "Pol",
+                    "name": "pol",
                     "homepage": "https://www.drupal.org/user/47194"
                 },
                 {
@@ -1347,7 +1347,7 @@
                     "homepage": "https://www.drupal.org/user/235438"
                 }
             ],
-            "description": "Makes select elements more user-friendly using <a href=\"https://github.com/JJJ/chosen\">Chosen</a>.",
+            "description": "Makes select elements more user-friendly using <a href=\"https://github.com/noli42/chosen\">Chosen</a>.",
             "homepage": "https://www.drupal.org/project/chosen",
             "support": {
                 "source": "https://git.drupalcode.org/project/chosen"
@@ -1355,16 +1355,16 @@
         },
         {
             "name": "drupal/chosen_lib",
-            "version": "4.0.3",
+            "version": "5.0.1",
             "require": {
-                "drupal/chosen": "^4",
-                "drupal/core": "^9.2 || ^10 || ^11"
+                "drupal/chosen": "^5",
+                "drupal/core": "^10.2 || ^11"
             },
             "type": "metapackage",
             "extra": {
                 "drupal": {
-                    "version": "4.0.3",
-                    "datestamp": "1725307446",
+                    "version": "5.0.1",
+                    "datestamp": "1740832971",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -1401,7 +1401,7 @@
                     "homepage": "https://www.drupal.org/user/1763952"
                 },
                 {
-                    "name": "Pol",
+                    "name": "pol",
                     "homepage": "https://www.drupal.org/user/47194"
                 },
                 {
@@ -1413,7 +1413,7 @@
                     "homepage": "https://www.drupal.org/user/235438"
                 }
             ],
-            "description": "Add <a href=\"https://github.com/JJJ/chosen\">chosen</a> library definition.",
+            "description": "Add <a href=\"https://github.com/noli42/chosen\">chosen</a> library definition.",
             "homepage": "https://www.drupal.org/project/chosen",
             "support": {
                 "source": "https://git.drupalcode.org/project/chosen"
