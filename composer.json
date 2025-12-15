@@ -28,7 +28,7 @@
   ],
   "require": {
     "composer/installers": "^2.0",
-    "cweagans/composer-patches": "^1.7",
+    "cweagans/composer-patches": "^2.0",
     "drupal/admin_toolbar": "^3.2",
     "drupal/chosen": "^4.0",
     "drupal/ckeditor": "^1.0",
