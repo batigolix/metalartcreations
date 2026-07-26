@@ -44,8 +44,6 @@ settings:
         - '<dd>'
         - '<a hreflang>'
         - '<blockquote cite>'
-        - '<ul type>'
-        - '<ol type>'
         - '<img src alt data-entity-type data-entity-uuid data-align data-caption>'
         - '<iframe width height src frameborder allwofullscreen>'
         - '<div id>'

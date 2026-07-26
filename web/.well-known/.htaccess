@@ -1,0 +1,3 @@
+<Files "traffic-advice">
+  ForceType application/trafficadvice+json
+</Files>

@@ -44,8 +44,6 @@ settings:
         - '<span>'
         - '<a hreflang>'
         - '<blockquote cite>'
-        - '<ul type>'
-        - '<ol type>'
         - '<img src alt height width data-entity-type data-entity-uuid data-align data-caption>'
         - '<h2 id>'
         - '<h3 id>'
