@@ -42,8 +42,6 @@
     "drupal/ctools": "^4.0",
     "drupal/environment_indicator": "^4.0",
     "drupal/fieldblock": "^2.0@alpha",
-    "drupal/gin": "^5.0",
-    "drupal/gin_toolbar": "^3.0",
     "drupal/honeypot": "^2.0",
     "drupal/pathauto": "^1.8",
     "drupal/perimeter": "^3",
