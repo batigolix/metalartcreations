@@ -1,0 +1,7 @@
+{
+  "database": "dolt",
+  "backend": "dolt",
+  "dolt_mode": "embedded",
+  "dolt_database": "metalartcreations",
+  "project_id": "62259f47-d31b-4b17-aae3-f51903d14511"
+}

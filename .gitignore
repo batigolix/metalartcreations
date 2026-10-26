@@ -36,3 +36,8 @@ old/*
 tests/backstop/backstop_data
 /.editorconfig
 /.gitattributes
+
+# Beads / Dolt files (added by bd init)
+.dolt/
+*.db
+.beads-credential-key
