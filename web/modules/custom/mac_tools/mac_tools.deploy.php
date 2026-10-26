@@ -12,6 +12,7 @@ declare(strict_types=1);
 use Drupal\Core\Database\Database;
 use Drupal\editor\Entity\Editor;
 use Drupal\filter\Entity\FilterFormat;
+use Drupal\node\Entity\Node;
 
 /**
  * Migrate all content to advanced_html; remove the other CKEditor formats.
@@ -58,4 +59,32 @@ function mac_tools_deploy_consolidate_text_formats(): string {
     ? ' Rows migrated: ' . implode(', ', $migrated) . '.'
     : ' No rows needed migration.';
   return 'Consolidated text formats onto advanced_html.' . $summary;
+}
+
+/**
+ * Fix scheme-less href on node 34 that caused a crawler 404 flood.
+ */
+function mac_tools_deploy_fix_node_34_schemeless_href(): string {
+  $node = Node::load(34);
+  if (!$node) {
+    return 'Node 34 not found; skipping.';
+  }
+  $body = $node->get('body')->value;
+  $fixed = str_replace(
+    'href="www.metalartcreations.nl/',
+    'href="https://www.metalartcreations.nl/',
+    $body
+  );
+  if ($fixed === $body) {
+    return 'Node 34 already clean; no changes.';
+  }
+  $node->set('body', [
+    'value' => $fixed,
+    'format' => $node->get('body')->format,
+    'summary' => $node->get('body')->summary,
+  ]);
+  $node->setNewRevision(TRUE);
+  $node->revision_log = 'Fix scheme-less href on node 34 (crawler 404 flood).';
+  $node->save();
+  return 'Node 34 body updated and new revision created.';
 }
