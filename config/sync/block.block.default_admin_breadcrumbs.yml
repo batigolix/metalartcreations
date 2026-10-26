@@ -1,15 +1,15 @@
-uuid: 670295a0-fcb5-4c67-b3d1-9dc3f4b7377c
-langcode: nl
+uuid: 8f472f9f-287f-4e86-9af7-6940419eec50
+langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - gin
+    - default_admin
 _core:
-  default_config_hash: y9X3xgCsO59pQyzNLzY1D3SDJJxCHILLWkpPnmuTJ2E
-id: gin_breadcrumbs
-theme: gin
+  default_config_hash: wYrg3zFzlz7ALa_iUH20Ohj1O7HtwWMOtFHR66dR4J8
+id: default_admin_breadcrumbs
+theme: default_admin
 region: breadcrumb
 weight: 0
 provider: null
