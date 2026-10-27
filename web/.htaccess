@@ -186,4 +186,9 @@ AddEncoding gzip svgz
   Header always set X-Content-Type-Options nosniff
   # Disable Proxy header, since it's an attack vector.
   RequestHeader unset Proxy
+  # Limit information leakage to third-party sites.
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  # Content Security Policy — report-only first so Boris can observe
+  # violations in the browser console before flipping to enforce.
+  Header always set Content-Security-Policy-Report-Only "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data: https:; frame-ancestors 'self'; object-src 'none'; base-uri 'self'"
 </IfModule>
