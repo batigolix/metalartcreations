@@ -13,13 +13,13 @@ dependencies:
     - file
     - filter
     - locale
+    - navigation
     - node
     - path
     - pathauto
     - redirect
     - shortcut
     - system
-    - toolbar
 id: webmaster
 label: Webmaster
 weight: 3
@@ -30,11 +30,11 @@ permissions:
   - 'access content overview'
   - 'access contextual links'
   - 'access files overview'
+  - 'access navigation'
   - 'access shortcuts'
   - 'access site in maintenance mode'
   - 'access site reports'
   - 'access site-wide contact form'
-  - 'access toolbar'
   - 'access user contact forms'
   - 'administer contact forms'
   - 'administer menu'
