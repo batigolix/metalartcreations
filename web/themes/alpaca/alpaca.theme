@@ -39,7 +39,9 @@ function alpaca_preprocess_block(&$variables) {
       break;
   }
 
-  $variables['content']['#attributes']['block'] = $variables['attributes']['id'];
+  if (isset($variables['attributes']['id'])) {
+    $variables['content']['#attributes']['block'] = $variables['attributes']['id'];
+  }
 }
 
 /**
