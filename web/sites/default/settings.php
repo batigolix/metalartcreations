@@ -793,3 +793,8 @@ $ddev_settings = dirname(__FILE__) . '/settings.ddev.php';
 if (getenv('IS_DDEV_PROJECT') == 'true' && is_readable($ddev_settings)) {
   require $ddev_settings;
 }
+
+// Drupal recommends READ COMMITTED isolation for MySQL/MariaDB. Set per
+// session so this works regardless of server-side configuration. No-op on
+// servers that already run READ COMMITTED globally.
+$databases['default']['default']['init_commands']['isolation'] = "SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED";
