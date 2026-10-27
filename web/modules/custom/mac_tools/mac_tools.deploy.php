@@ -20,6 +20,27 @@ use Drupal\node\Entity\Node;
  * FieldPurger::purgeBatch() runs on every cron and blows up on these
  * (e.g. field_tags referencing taxonomy_term after taxonomy was uninstalled).
  */
+/**
+ * Re-apply node.field_image storage definition so installed matches current.
+ *
+ * Drupal's strict array compare triggers an Entity/field definitions
+ * mismatch when settings keys are in a different order. Re-saving the
+ * current definition normalizes it. Idempotent.
+ */
+function mac_tools_deploy_refresh_field_image_definition(): string {
+  $m = \Drupal::entityDefinitionUpdateManager();
+  if (!$m->needsUpdates()) {
+    return 'No pending entity definition updates.';
+  }
+  $storage = \Drupal::service('entity_field.manager')
+    ->getFieldStorageDefinitions('node')['field_image'] ?? NULL;
+  if (!$storage) {
+    return 'node.field_image storage not found; skipping.';
+  }
+  $m->updateFieldStorageDefinition($storage);
+  return 'Refreshed node.field_image storage definition.';
+}
+
 function mac_tools_deploy_purge_orphan_deleted_fields_v3(): string {
   $state = \Drupal::state();
   $valid = array_keys(\Drupal::entityTypeManager()->getDefinitions());
