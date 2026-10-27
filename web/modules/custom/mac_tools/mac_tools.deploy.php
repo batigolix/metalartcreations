@@ -20,13 +20,13 @@ use Drupal\node\Entity\Node;
  * FieldPurger::purgeBatch() runs on every cron and blows up on these
  * (e.g. field_tags referencing taxonomy_term after taxonomy was uninstalled).
  */
-function mac_tools_deploy_purge_orphan_deleted_fields_v2(): string {
+function mac_tools_deploy_purge_orphan_deleted_fields_v3(): string {
   $state = \Drupal::state();
   $valid = array_keys(\Drupal::entityTypeManager()->getDefinitions());
   $removed = [];
-  $dropped_fields = [];
 
   $storages = $state->get('field.storage.deleted') ?: [];
+  $storage_index = [];
   foreach ($storages as $uuid => $storage) {
     if (!is_object($storage)) {
       continue;
@@ -35,9 +35,10 @@ function mac_tools_deploy_purge_orphan_deleted_fields_v2(): string {
     $target = $storage->getSettings()['target_type'] ?? NULL;
     if (!in_array($host, $valid, TRUE) || ($target !== NULL && !in_array($target, $valid, TRUE))) {
       $removed[] = "storage " . $storage->getName();
-      $dropped_fields["$host:" . $storage->getName()] = TRUE;
       unset($storages[$uuid]);
+      continue;
     }
+    $storage_index["$host:" . $storage->getName()] = TRUE;
   }
   $state->set('field.storage.deleted', $storages);
 
@@ -48,7 +49,9 @@ function mac_tools_deploy_purge_orphan_deleted_fields_v2(): string {
     }
     $host = $field->getTargetEntityTypeId();
     $key = "$host:" . $field->getName();
-    if (!in_array($host, $valid, TRUE) || isset($dropped_fields[$key])) {
+    // Drop fields whose host is gone, or whose storage no longer exists in
+    // field.storage.deleted (left over from a prior incomplete cleanup).
+    if (!in_array($host, $valid, TRUE) || !isset($storage_index[$key])) {
       $removed[] = "field " . $field->getName() . "@" . $field->getTargetBundle();
       unset($fields[$uuid]);
     }
