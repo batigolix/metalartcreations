@@ -15,6 +15,48 @@ use Drupal\filter\Entity\FilterFormat;
 use Drupal\node\Entity\Node;
 
 /**
+ * Purge orphaned deleted-field entries whose entity type no longer exists.
+ *
+ * FieldPurger::purgeBatch() runs on every cron and blows up on these
+ * (e.g. field_tags referencing taxonomy_term after taxonomy was uninstalled).
+ */
+function mac_tools_deploy_purge_orphan_deleted_fields(): string {
+  $state = \Drupal::state();
+  $valid = array_keys(\Drupal::entityTypeManager()->getDefinitions());
+  $removed = [];
+
+  $storages = $state->get('field.storage.deleted') ?: [];
+  foreach ($storages as $uuid => $storage) {
+    if (!is_object($storage)) {
+      continue;
+    }
+    $host = $storage->getTargetEntityTypeId();
+    $target = $storage->getSettings()['target_type'] ?? NULL;
+    if (!in_array($host, $valid, TRUE) || ($target !== NULL && !in_array($target, $valid, TRUE))) {
+      $removed[] = "storage " . $storage->getName();
+      unset($storages[$uuid]);
+    }
+  }
+  $state->set('field.storage.deleted', $storages);
+
+  $fields = $state->get('field.field.deleted') ?: [];
+  foreach ($fields as $uuid => $field) {
+    if (!is_object($field)) {
+      continue;
+    }
+    if (!in_array($field->getTargetEntityTypeId(), $valid, TRUE)) {
+      $removed[] = "field " . $field->getName() . "@" . $field->getTargetBundle();
+      unset($fields[$uuid]);
+    }
+  }
+  $state->set('field.field.deleted', $fields);
+
+  return $removed
+    ? 'Purged orphan deleted-field entries: ' . implode(', ', $removed) . '.'
+    : 'No orphan deleted-field entries to purge.';
+}
+
+/**
  * Migrate all content to advanced_html; remove the other CKEditor formats.
  */
 function mac_tools_deploy_consolidate_text_formats(): string {
