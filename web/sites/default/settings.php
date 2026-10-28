@@ -798,3 +798,11 @@ if (getenv('IS_DDEV_PROJECT') == 'true' && is_readable($ddev_settings)) {
 // session so this works regardless of server-side configuration. No-op on
 // servers that already run READ COMMITTED globally.
 $databases['default']['default']['init_commands']['isolation'] = "SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED";
+
+// Opt out of HTML5 form validation. In Drupal 12 this becomes the default;
+// setting it explicitly now avoids surprises and silences the status report.
+$settings['enable_html5_validation'] = FALSE;
+
+// Explicit SameSite setting so Drupal doesn't warn about relying on
+// browser defaults, and so cross-origin flows behave predictably.
+ini_set('session.cookie_samesite', 'Lax');
