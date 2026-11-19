@@ -50,7 +50,8 @@
       "drupal/core-composer-scaffold": true,
       "drupal/core-project-message": true,
       "php-http/discovery": true,
-      "symfony/runtime": true
+      "symfony/runtime": true,
+      "phpstan/extension-installer": true
     }
   },
   "extra": {
@@ -137,5 +138,12 @@
         "      composer remove drupal/core-project-message"
       ]
     }
+  },
+  "require-dev": {
+    "drupal/coder": "^9.0",
+    "mglaman/phpstan-drupal": "^2.4",
+    "phpstan/extension-installer": "^1.4",
+    "phpstan/phpstan": "^2.3",
+    "squizlabs/php_codesniffer": "^4.0"
   }
 }
