@@ -28,7 +28,7 @@ class MacToolsContactExtended extends BlockBase {
    */
   public function defaultConfiguration() {
     return [
-      'label' => t("Contact extended"),
+      'label' => $this->t("Contact extended"),
       'contact_extended_markup_string' => $this->defaultMarkup,
       'cache' => [
         'max_age' => 3600,
