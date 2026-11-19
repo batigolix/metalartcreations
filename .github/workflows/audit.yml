@@ -29,7 +29,7 @@ jobs:
       - uses: actions/checkout@v7
       - uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '26'
       - name: NPM audit per theme
         run: |
           for lock in web/themes/custom/*/package-lock.json web/themes/alpaca/package-lock.json; do
