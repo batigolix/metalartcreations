@@ -27,7 +27,7 @@ jobs:
     if: hashFiles('web/themes/custom/**/package-lock.json', 'web/themes/alpaca/package-lock.json') != ''
     steps:
       - uses: actions/checkout@v7
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         with:
           node-version: '26'
       - name: NPM audit per theme
