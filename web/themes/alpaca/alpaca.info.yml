@@ -2,7 +2,6 @@ name: Alpaca
 type: theme
 description: Metalartcreations theme
 package: Custom
-version: 8.x-1.x-dev
 libraries:
   - alpaca/font-awesome
   - alpaca/global-styling
