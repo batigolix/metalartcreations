@@ -1,5 +1,5 @@
-name: Security audit
 # AI generated
+name: Security audit
 
 on:
   schedule:
