@@ -4,7 +4,7 @@
  * @file
  * Deploy hooks for mac_tools.
  *
- * AI generated
+ * AI generated.
  */
 
 declare(strict_types=1);
@@ -20,6 +20,7 @@ use Drupal\node\Entity\Node;
  * FieldPurger::purgeBatch() runs on every cron and blows up on these
  * (e.g. field_tags referencing taxonomy_term after taxonomy was uninstalled).
  */
+
 /**
  * Re-apply node.field_image storage definition so installed matches current.
  *
@@ -41,6 +42,9 @@ function mac_tools_deploy_refresh_field_image_definition(): string {
   return 'Refreshed node.field_image storage definition.';
 }
 
+/**
+ * Purge orphan deleted-field entries whose host/target entity type is gone.
+ */
 function mac_tools_deploy_purge_orphan_deleted_fields_v3(): string {
   $state = \Drupal::state();
   $valid = array_keys(\Drupal::entityTypeManager()->getDefinitions());

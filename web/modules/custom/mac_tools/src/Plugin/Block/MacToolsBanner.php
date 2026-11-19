@@ -28,7 +28,7 @@ class MacToolsBanner extends BlockBase {
    */
   public function defaultConfiguration() {
     return [
-      'label' => t("Banner"),
+      'label' => $this->t("Banner"),
       'banner_markup_string' => $this->defaultMarkup,
       'cache' => [
         'max_age' => 3600,

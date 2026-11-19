@@ -22,14 +22,6 @@ class ContactTest extends BrowserTestBase {
   protected static $modules = ['mac_tools', 'contact', 'node'];
 
   /**
-   * {@inheritdoc}
-   */
-  public function setUp() : void {
-    parent::setUp();
-
-  }
-
-  /**
    * Test access.
    */
   public function testAccess() {

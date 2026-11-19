@@ -28,7 +28,7 @@ class MacToolsCredits extends BlockBase {
    */
   public function defaultConfiguration() {
     return [
-      'label' => t("Credits"),
+      'label' => $this->t("Credits"),
       'credits_markup_string' => $this->defaultMarkup,
       'cache' => [
         'max_age' => 3600,

@@ -28,7 +28,7 @@ class MacToolsTrainings extends BlockBase {
    */
   public function defaultConfiguration() {
     return [
-      'label' => t("Trainings"),
+      'label' => $this->t("Trainings"),
       'trainings_markup_string' => $this->defaultMarkup,
       'cache' => [
         'max_age' => 3600,

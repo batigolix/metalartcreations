@@ -29,7 +29,7 @@ class MacToolsFlickr extends BlockBase {
     // Add a form field to the existing block configuration form.
     $form['flickr_items'] = [
       '#type' => 'select',
-      '#title' => t('Number of items'),
+      '#title' => $this->t('Number of items'),
       '#options' => [
         10 => 10,
         12 => 12,
@@ -38,8 +38,8 @@ class MacToolsFlickr extends BlockBase {
         18 => 18,
         20 => 20,
       ],
-      '#description' => t('Number of items that will be shown in the slideshow.'),
-      '#default_value' => isset($config['flickr_items']) ? $config['flickr_items'] : '',
+      '#description' => $this->t('Number of items that will be shown in the slideshow.'),
+      '#default_value' => $config['flickr_items'] ?? '',
     ];
     return $form;
   }
@@ -56,7 +56,7 @@ class MacToolsFlickr extends BlockBase {
    */
   public function build() {
     $config = $this->getConfiguration();
-    $flickr_items = isset($config['flickr_items']) ? $config['flickr_items'] : 12;
+    $flickr_items = $config['flickr_items'] ?? 12;
     $build = [];
     $build['container']['#markup'] = '<div id="flickr_images"></div>';
     $build['#attached']['library'][] = 'mac_tools/flickr';
