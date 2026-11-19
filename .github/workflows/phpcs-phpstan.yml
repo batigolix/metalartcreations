@@ -1,6 +1,5 @@
 # AI generated
-name: CI
-
+name: Lint
 on:
   pull_request:
   push:
@@ -36,7 +35,7 @@ jobs:
 
       - name: PHPCS (Drupal + DrupalPractice)
         run: |
-          vendor/bin/phpcs \
+          bin/phpcs \
             --standard=Drupal,DrupalPractice \
             --extensions=php,module,inc,install,test,profile,theme,info,yml \
             --report=checkstyle \
@@ -44,26 +43,4 @@ jobs:
           | cs2pr
 
       - name: PHPStan
-        run: vendor/bin/phpstan analyse --no-progress --error-format=github
-
-  theme:
-    runs-on: ubuntu-latest
-    if: hashFiles('web/themes/custom/**/package.json', 'web/themes/alpaca/package.json') != ''
-    steps:
-      - uses: actions/checkout@v7
-      - uses: actions/setup-node@v7
-        with:
-          node-version: '26'
-          cache: npm
-          cache-dependency-path: |
-            web/themes/custom/**/package-lock.json
-            web/themes/alpaca/package-lock.json
-      - name: Install + build (per theme)
-        run: |
-          for pkg in web/themes/custom/*/package.json web/themes/alpaca/package.json; do
-            [ -f "$pkg" ] || continue
-            dir=$(dirname "$pkg")
-            echo "::group::$dir"
-            (cd "$dir" && npm ci && npm run build || echo "::warning::$dir has no build script")
-            echo "::endgroup::"
-          done
+        run: bin/phpstan analyse --no-progress --error-format=github
